@@ -1,9 +1,9 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.24)  21 DEC 2016 17:56
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.24)  21 DEC 2016 18:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**ronbun1220.tex
-(./ronbun1220.tex
+**ronbun1221.tex
+(./ronbun1221.tex
 pLaTeX2e <2006/11/10> (based on LaTeX2e <2011/06/27> patch level 0)
 Babel <3.9h> and hyphenation patterns for 11 languages loaded.
 (./sotsuken_abst.cls
@@ -132,8 +132,8 @@ Package: layout 2000/09/25 v1.2c Show layout parameters
 \f@ncyO@olf=\skip56
 \f@ncyO@orf=\skip57
 ))
-(./ronbun1220.aux)
-\openout1 = `ronbun1220.aux'.
+(./ronbun1221.aux)
+\openout1 = `ronbun1221.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
 LaTeX Font Info:    ... okay on input line 41.
@@ -167,18 +167,73 @@ LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 42.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 42.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 45.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 45.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 45.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 45.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 46.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 46.
+LaTeX Font Info:    Font shape `JT1/gt/bx/n' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 46.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 46.
+LaTeX Font Info:    Font shape `JY1/gt/bx/n' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 46.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 46.
 
-! Undefined control sequence.
-l.45 \chapter
-             {研究の目的}
-? x
- 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: 4.png Graphic file (type bmp)
+ <4.png>
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 64.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 64.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <9> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 64.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 64.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <9> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 64.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 64.
+File: 3.png Graphic file (type bmp)
+
+<3.png>
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 100.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 100.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 100.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 5.76599pt on input line 100.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 4.805pt on input line 100.
+ [1
+
+
+]
+File: motion.jpg Graphic file (type bmp)
+ <motion.jpg>
+File: 1.png Graphic file (type bmp)
+ <1.png>
+File: 2.png Graphic file (type bmp)
+ <2.png> [2] (./ronbun1221.aux) ) 
 Here is how much of TeX's memory you used:
- 1079 strings out of 495129
- 12777 string characters out of 6182594
- 66604 words of memory out of 5000000
- 4471 multiletter control sequences out of 15000+600000
- 10126 words of font info for 45 fonts, out of 8000000 for 9000
+ 1133 strings out of 495129
+ 13305 string characters out of 6182594
+ 72604 words of memory out of 5000000
+ 4504 multiletter control sequences out of 15000+600000
+ 14778 words of font info for 66 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
- 32i,2n,45p,213b,195s stack positions out of 5000i,500n,10000p,200000b,80000s
-No pages of output.
+ 32i,8n,45p,337b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on ronbun1221.dvi (2 pages, 9112 bytes).
