@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.24)  21 DEC 2016 18:19
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2016.7.7)  22 DEC 2016 18:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -228,12 +228,12 @@ File: 1.png Graphic file (type bmp)
 File: 2.png Graphic file (type bmp)
  <2.png> [2] (./ronbun1221.aux) ) 
 Here is how much of TeX's memory you used:
- 1133 strings out of 495129
- 13305 string characters out of 6182594
+ 1135 strings out of 495129
+ 13319 string characters out of 6182596
  72604 words of memory out of 5000000
- 4504 multiletter control sequences out of 15000+600000
+ 4506 multiletter control sequences out of 15000+600000
  14778 words of font info for 66 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
  32i,8n,45p,337b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on ronbun1221.dvi (2 pages, 9112 bytes).
+Output written on ronbun1221.dvi (2 pages, 9420 bytes).
