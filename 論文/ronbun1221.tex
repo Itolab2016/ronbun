@@ -38,11 +38,28 @@
 \author{金沢工業高等専門学校　佐々井翔也,戸澗健,畠中和久}
 \date{2016-12-20}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setcounter{page}{13}
+\lhead{}
+\chead{}
+\rhead{{\sf 12・207}\\{\bf 機械工学科}}
+\lfoot{}
+\cfoot{{\sf-\ M-\thepage \ -}}
+%\rfoot{}
+\renewcommand{\headrulewidth}{3pt}
+%\renewcommand{\footrulewidth}{1pt}
+
 \begin{document}
+%\layout
 \maketitle
+\thispagestyle{fancy}
+\pagestyle{fancy}
+
+\setlength{\baselineskip}{5.6truemm}
+\kanjiskip=.07zw plus 3pt minus 3pt
+\xkanjiskip=.07zw plus 3pt minus 3pt
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{研究の目的}
+\section{緒言}
 \subsection{研究の背景}
 %そこで今回は走破性の向上を考え,前年度の改善案として低重心化とそれを補佐する懸架装置に注目し,”超低重心6輪独立懸架ローバー”を制作する
 前年度つくばチャレンジ2015で使用したロボットの重心が高かったため,凸凹道やコンクリートなどでロボットが傾きそのまま転倒しかける様子が見られた.
@@ -142,6 +159,17 @@
 \section{結言}
 走破性の高いロボットの開発の実現にあたり,つくば市内での走行が問題なく行えたため,走破性の高いロボットの開発は達成したと考える.また移動量の取得とマップ生成の実現にあたり,生成したマップは旋回時に大きく歪むことが確認されたが直線時には問題がなかったため3次元復元技術の基礎は確立できたと考える.
 
+% 参考文献
+\begin{thebibliography}{8}
+%  \bibitem{harris} LandingProducts, APCPro\nolinebreak pellers,\nolinebreak
+%http://www.\linebreak apcprop. com{\slash}v{\slash}index.html,
+%2012/8/21
+%\bibitem{kyonenn} GPS測位計算プログラム入門,ROS,http://www.enri.go.jp/~fks442/K_MUSEN
+\bibitem{ros} Bradski,Kaehler:詳解 OpenCV,433,株式会社オライリー・ジャパン(2012)
+\bibitem{kyonenn} 理解するためのGPS測位計算プログラム入門,http://www.enri.go.jp/~fks442%/K_MUSEN
+%  \bibitem{koukuu} 中村　資郎:新航空工学講座　第7巻　プロペラ：日本航空技術協会，pp．23-24，1988
+%  \bibitem{rikigaku} 加藤　寛一郎，大屋　昭男，柄沢　研治：航空機力学入門，東京大学出版会，pp．32，1982
+\end{thebibliography}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
