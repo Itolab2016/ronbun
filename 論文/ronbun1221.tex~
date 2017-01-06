@@ -38,8 +38,25 @@
 \author{金沢工業高等専門学校　佐々井翔也,戸澗健,畠中和久}
 \date{2016-12-20}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setcounter{page}{13}
+\lhead{}
+\chead{}
+\rhead{{\sf 12・207}\\{\bf 機械工学科}}
+\lfoot{}
+\cfoot{{\sf-\ M-\thepage \ -}}
+%\rfoot{}
+\renewcommand{\headrulewidth}{3pt}
+%\renewcommand{\footrulewidth}{1pt}
+
 \begin{document}
+%\layout
 \maketitle
+\thispagestyle{fancy}
+\pagestyle{fancy}
+
+\setlength{\baselineskip}{5.6truemm}
+\kanjiskip=.07zw plus 3pt minus 3pt
+\xkanjiskip=.07zw plus 3pt minus 3pt
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{緒言}
@@ -109,7 +126,7 @@
 
 \begin{figure}[htp]
  \begin{center}
-  \includegraphics[width=30mm]{motion.jpg}
+  \includegraphics[width=40mm]{motion.jpg}
  　\caption{モーションセンサー}
   \label{fig:motion}%ここに文章中で使用する名前を指定する
  \end{center}
@@ -149,7 +166,11 @@
 %2012/8/21
 %\bibitem{kyonenn} GPS測位計算プログラム入門,ROS,http://www.enri.go.jp/~fks442/K_MUSEN
 \bibitem{ros} Bradski,Kaehler:詳解 OpenCV,433,株式会社オライリー・ジャパン(2012)
+<<<<<<< HEAD
+\bibitem{kyonenn} 理解するためのGPS測位計算プログラム入門,http://www.enri.go.jp/~fks442%/K_MUSEN
+=======
 \bibitem{kyonenn} 理解するためのGPS測位計算プログラム入門,ROS,http://www.enri.go.jp/~fks442%/K_MUSEN
+>>>>>>> dd8bb50aaa6e7ae6ec5b2669c3c27174d9f9828e
 %  \bibitem{koukuu} 中村　資郎:新航空工学講座　第7巻　プロペラ：日本航空技術協会，pp．23-24，1988
 %  \bibitem{rikigaku} 加藤　寛一郎，大屋　昭男，柄沢　研治：航空機力学入門，東京大学出版会，pp．32，1982
 \end{thebibliography}
