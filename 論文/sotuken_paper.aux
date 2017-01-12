@@ -3,7 +3,7 @@
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{toc}{\contentsline {section}{\numberline {1.1}研究の背景}{3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.1.1}前年度のロボットの問題点}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1.1}安定性の改善}{3}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1.2}自己位置の推定}{3}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1.3}三角測量とカメラの移動量}{4}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.2}研究の目的}{4}}
@@ -21,44 +21,82 @@
 \@writefile{toc}{\contentsline {chapter}{\numberline {第3章}ハードウェアの概要}{9}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}ロボットの構成}{9}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces ハードウェアの構成}}{9}}
-\newlabel{tab:op}{{3.1}{9}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}ロボットの外観}{9}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}システムの構成}{9}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}低重心化の実現}{9}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces システム構成}}{10}}
-\newlabel{fig:sisutemu}{{3.1}{10}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces 走行モジュール}}{10}}
-\newlabel{fig:cad}{{3.2}{10}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.5}超堤・超壕能力}{10}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces 懸架装置}}{11}}
-\newlabel{fig:kenka}{{3.3}{11}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {第4章}マップ生成}{12}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}台車開発の狙い}{9}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces 目標数値}}{9}}
+\newlabel{tab:joken}{{3.1}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}サスペンションの概要}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces ダブルウィッシュボーン式サスペンション}}{10}}
+\newlabel{fig:doublewish}{{3.1}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces ストラット式サスペンション}}{10}}
+\newlabel{fig:strat}{{3.2}{10}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}台車の概要}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces 6輪ローバ}}{11}}
+\newlabel{fig:rokurin}{{3.3}{11}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}サスペンションの配置}{11}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}ばねのストロークの算出}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces 平行リンク}}{12}}
+\newlabel{fig:box}{{3.4}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces 平行リンク簡易図}}{13}}
+\newlabel{fig:bix}{{3.5}{13}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces 平行リンクの移動量変化}}{13}}
+\newlabel{fig:rink}{{3.6}{13}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.6}ばね定数の算出}{13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.1}点Aでの力学計算}{14}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.2}点Bでの力学計算}{14}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.3}点Cでの力学計算}{14}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.4}力学計算まとめ}{14}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces FBD}}{15}}
+\newlabel{fig:fbd}{{3.7}{15}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces 各点にかかる力}}{16}}
+\newlabel{fig:bai}{{3.8}{16}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.7}ロボットの構成}{16}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces ハードウェアの構成}}{16}}
+\newlabel{tab:op}{{3.2}{16}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.8}ロボットの外観}{16}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.9}システムの構成}{16}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces ロボットの外観図}}{17}}
+\newlabel{fig:gaikan}{{3.9}{17}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.3}{\ignorespaces 車体の仕様}}{17}}
+\newlabel{tab:siyou}{{3.3}{17}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.10}使用したライブラリ}{17}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.11}低重心化の実現}{17}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces システム構成}}{18}}
+\newlabel{fig:sisutemu}{{3.10}{18}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.4}{\ignorespaces 使用したライブラリ}}{18}}
+\newlabel{tab:op}{{3.4}{18}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces 走行モジュール}}{18}}
+\newlabel{fig:cad}{{3.11}{18}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.12}{\ignorespaces 懸架装置}}{19}}
+\newlabel{fig:kenka}{{3.12}{19}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.12}超堤・超壕能力}{19}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {第4章}マップ生成}{20}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}移動量の取得}{12}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces モーションセンサー}}{12}}
-\newlabel{fig:motion}{{4.1}{12}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}マップ生成環境}{12}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces マップ生成環境}}{13}}
-\newlabel{fig:map}{{4.2}{13}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}マップ生成}{13}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}移動量のばらつき}{13}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces 生成したマップ}}{14}}
-\newlabel{fig:mapp}{{4.3}{14}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces 移動量のばらつき}}{14}}
-\newlabel{fig:gps}{{4.4}{14}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {第5章}結言}{15}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}移動量の取得}{20}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces モーションセンサー}}{20}}
+\newlabel{fig:motion}{{4.1}{20}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}座標変換}{20}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}マップ生成環境}{20}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces 地平座標への変換}}{21}}
+\newlabel{fig:zahyou}{{4.2}{21}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces マップ生成環境}}{21}}
+\newlabel{fig:map}{{4.3}{21}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}マップ生成}{21}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces 生成したマップ}}{22}}
+\newlabel{fig:mapp}{{4.4}{22}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}移動量のばらつき}{22}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces 移動量のばらつき}}{23}}
+\newlabel{fig:gps}{{4.5}{23}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {第5章}結言}{24}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}本研究のまとめ}{15}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}今後の課題}{15}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}自己位置推定と自律走行}{15}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}タイヤ素材検討}{15}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}屋内対応}{15}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.4}全天候性の付与}{15}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}本研究のまとめ}{24}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}今後の課題}{24}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}自己位置推定と自律走行}{24}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}タイヤ素材検討}{24}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}屋内対応}{24}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.4}全天候性の付与}{25}}
 \bibcite{ros}{1}
 \bibcite{kyonenn}{2}
-\@writefile{toc}{\contentsline {chapter}{参考文献}{16}}
-\@writefile{toc}{\contentsline {chapter}{謝辞}{17}}
+\@writefile{toc}{\contentsline {chapter}{参考文献}{26}}
+\@writefile{toc}{\contentsline {chapter}{謝辞}{27}}
