@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.12.22)  16 JAN 2017 17:07
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2016.7.7)  16 JAN 2017 17:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -423,6 +423,12 @@ LaTeX Warning: Reference `fig:sankaku2' on page 3 undefined on input line 36.
 
 LaTeX Warning: Reference `fig:sankaku2' on page 3 undefined on input line 36.
 
+
+LaTeX Warning: Reference `fig:rouka' on page 3 undefined on input line 36.
+
+
+LaTeX Warning: Reference `fig:rouka' on page 3 undefined on input line 36.
+
 [3
 
 ] [4]
@@ -522,12 +528,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2826 strings out of 495129
- 33121 string characters out of 6182594
+ 2827 strings out of 495129
+ 33132 string characters out of 6182596
  91881 words of memory out of 5000000
- 6066 multiletter control sequences out of 15000+600000
+ 6067 multiletter control sequences out of 15000+600000
  48541 words of font info for 130 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
  34i,11n,45p,771b,410s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on sotuken_paper.dvi (27 pages, 50984 bytes).
+Output written on sotuken_paper.dvi (27 pages, 51260 bytes).
