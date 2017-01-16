@@ -21,7 +21,7 @@
 \chapter{緒言}
 \section{研究の背景}
 
-\subsection{前年度のロボットの問題点}
+\subsection{安定性の改善}
 前年度,つくばチャレンジで使用したロボットの重心が高かったため,凸凹道やコンクリートなどでロボットが傾きそのまま転倒する恐れがあった.
 そのため,前年度の問題点を元に転倒しても走行可能なロボットの開発を試みた.だが,今年度のつくばチャレンジに参加するにあたり,ロボットの高さ制限を満たし,転倒しても走行可能な機構の開発ができなかった.
 よって今回はロボットの走破性を高めることで,転倒しにくいロボットの開発を行った.
@@ -41,6 +41,7 @@
 \section{論文の構成}
 
 \chapter{つくばチャレンジについて}
+%\section{つくばチャレンジの概要}
 \section{つくばチャレンジの概要}
 今年度参加したつくばチャレンジについて説明する.つくばチャレンジとは茨城県南部に位置するつくば市の屋外で行こなわれるロボット実験である.これは人間とロボットの共存する社会の実現のための先端的技術への挑戦が狙いである.人間とロボットの共存を目的とするため,ロボットには以下のことが求められる.
 \begin{enumerate}
@@ -74,7 +75,192 @@
 ロボットは環境内にもともと存在する街路樹や縁石柵あるいは建物を走行のガイドとして用いるのは自由であるが,ロボットの走行の為に新しくガイドとなるものを設置することや,環境を改変することは許されない.
 
 \subsection{ロボットに必要な機能}
+つくばチャレンジは人間が暮らす環境である.人間は多少の凸凹や路面のひび割れ,フレーチングの溝などの障害は問題なく歩行できる.だが,ロボットは人間のようにフレキシブルではない,段差で転んだり溝にハマることが大いに考えられる.よって走行の際に必要なロボットの機能として悪路が走行できる,溝に嵌っても自力で這い上がることができる等路面走行に対してフレキシブルに対応することが求められる.
 \chapter{ハードウェアの概要}
+\section{台車開発の狙い}
+サスペンションを内蔵する台車を制作する.つくばチャレンジ2016では走破性向上を目的として低重心を目標としているため,台車の全高を小さく設計することでその目標に尽くす.また今回のロボットの超低重心を実現するための数値を表\ref{tab:joken} に示す
+
+\begin{table}[htp]
+ 　\begin{center}
+    \caption{目標数値}
+  \begin{tabular}{|c|c|c|c|} \hline
+横幅 & 600mm以内  \\  \hline
+長さ & 1000mm以内\\ \hline
+高さ & 150mm以内 \\ \hline
+    乗り越える段差 & およそ30mm  \\ \hline
+  \end{tabular}
+　   \label{tab:joken}
+  \end{center}
+\end{table}
+
+\section{サスペンションの概要}
+製作するロボットはある程度の段差を超えるための上下できる機構が必要である.よって近年最も身近な上下機構を持つ機械として,車に利用されるサスペンションを参考にした.図\ref{fig:doublewish}に示すダブルウィッシュボーン式サスペンションは上下のアームとショックアブソーバ,ばねからなるもので,レーシングカーに多く使用されている.図\ref{fig:strat}に示すストラット式サスペンションと呼ばれるものはショックアブソーバとサスペンションを一体化したものをアッパーアームにしたもので,近年の車やミニ四駆などに使用されている.両方とも独立懸架で安定性や利便性に置いてはストラット式が大きく優るが,今回はコンパクトに構成することも必要なため,もともと上下アームで囲われているスペースを活かせることができそうなダブルウィッシュボーン式サスペンションを基礎として開発する.
+
+\begin{figure}[htp]
+ \begin{center}
+  \includegraphics[width=50mm]{img/hard/fig1.png}
+ 　\caption{ダブルウィッシュボーン式サスペンション}
+  \label{fig:doublewish}%ここに文章中で使用する名前を指定する
+ \end{center}
+\end{figure}
+
+\begin{figure}[htp]
+ \begin{center}
+  \includegraphics[width=40mm]{img/hard/fig2.png}
+ 　\caption{ストラット式サスペンション}
+  \label{fig:strat}%ここに文章中で使用する名前を指定する
+ \end{center}
+\end{figure}
+
+\section{台車の概要}
+
+製作する”超低重心6輪独立懸架ローバー”（以下6輪ローバ）は図\ref{fig:rokurin}に示すとおり低重心であるがゆえにロボットそのものが平たく大きい物になる.そのままではメンテナンス性にかける他,運搬時に非常に不便なため,モータを持つドライブモジュール（以下Dモジュール）と指示塔であるコントロールモジュール（以下Cモジュール）に分解できるように台車を設計し,分解から組み立てを容易とするようにした.つまり2つのDモジュールと１つのCモジュールからなる1つの台車である.
+
+\begin{figure}[htp]
+ \begin{center}
+  \includegraphics[height=51mm,width=80mm]{img/hard/fig3.png}
+ 　\caption{6輪ローバ}
+  \label{fig:rokurin}%ここに文章中で使用する名前を指定する
+ \end{center}
+\end{figure}
+
+\section{サスペンションの配置}
+%ダブルウィッシュボーン式サスペンションは便利ではあるが問題点も目立つ.例えばばねのストロークが少ない,ストロークを大きくしようとすれば車体との接続が困難になる,決められた場所にしか設置できない等,どれもスペースが大きく関係してくる.
+
+台車の全高は小さくなるため,サスペンションの配置は小スペースに収めることが必要になる.そこで図\ref{fig:box}のように軸棒,ユニバーサルジョイント,車輪を上下のリンクと板を用いて1つの平行リンクをつくり,その平行リンクの両斜辺に2つ直接斜めに振動吸収となるばねを設置すれば車輪の径に左右されるものの従来のものよりスペースが小さく上下機構が得られるのではないかと考えた.
+
+\begin{figure}[htbt]
+ \begin{center}
+  \includegraphics[width=60mm]{img/hard/fig4.png}
+ 　\caption{平行リンク}
+  \label{fig:box}%ここに文章中で使用する名前を指定する
+ \end{center}
+\end{figure}
+
+\section{ばねのストロークの算出}
+図\ref{fig:bix}に平行リンクの簡易図を示す.また平行リンクが移動した際の図を図\ref{fig:rink}示す.これらの数値よりサスペンションのストロークの長さを求める.サスペンションの全体長さは斜辺に設置するため余弦定理より
+\begin{eqnarray}
+   AC = b^2 & = & a_1^2+c^2-2a_1\cdot c\cdot cos\angle B \\
+  b & = & \sqrt{38^2+60^2-2\cdot 38\cdot 60\cdot cos90} \\
+    & = &71.022 ≒　71.0[mm]
+\end{eqnarray}
+となる.また今回は30[mm]程度の障害物を乗り越える想定しているため,この平行リンクが点A,Bを回転軸として点C,Dが30[mm]上昇した際の平行四辺形の斜辺AC'を求める必要がある.平行リンクが移動してできるΔAC'Eの斜辺AC'はΔAD'Eの辺d'に等しい.よってAC'の式は余弦定理と代入法より
+\begin{eqnarray}
+	AE& = &d' =  \sqrt{a_2^2+e_1^2-2a_2\cdot e\cdot cos\angle D} \\
+	d' & = & c' \\
+	AC'&= &e_2  =  \sqrt{c'^2+a_3^2-2\cdot c'\cdot a_3\cdot cos\angle E}
+\end{eqnarray}
+となる.またΔAD'Eの\[\angle A\]は30[mm]上がった際に30[deg]になることから,斜辺AC'は
+\begin{eqnarray}
+	d' &=& \sqrt{30^2+60^2-2\cdot 30\cdot 60\cdot cos\angle 60} \\
+	d'&=&30\sqrt{3}=c' \\
+	AC'&= &e_2  =  \sqrt{c'^2+a_3^2-2\cdot c'\cdot a_3\cdot cos\angle E}  \\
+	AC' &=& \sqrt{(30\sqrt{3})^2+8^2-2\cdot 30\sqrt{3}\cdot 8\cdot cos90} \\
+	& = & 52.574 ≒ 52.6 [mm]
+\end{eqnarray}
+となる.　\\
+サスペンションは伸縮するものであり,それはこれらの辺ACと辺AC'の差分だけ変化することになる.今回の値から変化値x≒18[mm]程度の変化があることが確認された.以上のAC,AC',xを用いてサスペンションの細かい設計を行う.
+
+\begin{figure}[htp]
+ \begin{center}
+  \includegraphics[width=60mm]{img/hard/fig5.png}
+ 　\caption{平行リンク簡易図}
+  \label{fig:bix}%ここに文章中で使用する名前を指定する
+ \end{center}
+\end{figure}
+
+
+\begin{figure}[htp]
+ \begin{center}
+  \includegraphics[width=60mm]{img/hard/fig6.png}
+ 　\caption{平行リンクの移動量変化}
+  \label{fig:rink}%ここに文章中で使用する名前を指定する
+ \end{center}
+\end{figure}
+
+\section{ばね定数の算出}
+サスペンションには路面の凹凸を車体に伝えない緩衝装置としての機能としてばねが必要であるため,フックの法則よりばねを選定する.　\\
+平行リンクの点A,Bをそれぞれ固定支点と考えて計算を行う.図\ref{fig:fbd}に Free Body Diagram(FBD)を示す.図\ref{fig:fbd}よりスラスト方向荷重x,ラジアル方向荷重y,モーメントMの式はそれぞれ
+
+\begin{eqnarray}
+	x & = & R_AX+R_BX=0 \\
+	y & = & R_AY+R_BY+F=0 \\
+	M & = & BC\cdot F-AB\cdot R_AX=0
+\end{eqnarray}
+となる.更に点A,B,Cそれぞれの力は以下のようになる.
+
+\subsection{点Aでの力学計算}
+点Aでは図\ref{fig:bai}より以下のように計算できる.
+\begin{eqnarray}
+	R_AX+FAC\cdot cosθ & = & 0 \\
+	R_AY & = & FAC\cdot sinθ 
+\end{eqnarray}
+\subsection{点Bでの力学計算}
+点Bは図\ref{fig:bai}より以下のように計算できる.
+\begin{eqnarray}
+	R_BX+FBC & = & 0 \\
+	R_BY & = & 0
+\end{eqnarray}
+\subsection{点Cでの力学計算}
+点Cは図\ref{fig:bai}より以下のように計算できる.
+\begin{eqnarray}
+	FAC\cdot cosθ+FBC & = & 0 \\
+	F+FAC\cdot sinθ & = & 0
+\end{eqnarray}
+\subsection{力学計算まとめ}
+上記で求めた式より,ACにかかる力FACの式を計算する.
+FACは式(14)と式(18)より
+\begin{eqnarray}
+	R_AY+F & = & 0 \\
+		F & = & -R_AY 
+\end{eqnarray}
+\begin{eqnarray}
+	　　　　R_AY & = & FAC\cdot sinθ \\
+		FAC & = & \frac{F}{sinθ} [N] 
+\end{eqnarray}
+\begin{eqnarray}
+	F+FAD\cdot sinθ & = & 0 \\
+	FAC & = & \frac{F}{sinθ} [N]
+\end{eqnarray}
+
+となることが確認できる.　\\
+力FAC[N]はばね全体に掛る力なので,これをばね1個辺りに加わる力に除算する必要がある.今回作成する6輪ローバは1輪に2つのばねを持つため,ばねを合計で12個保有する.よってばね1個にかかる力FAC[N]は
+
+\begin{eqnarray}
+	FAC & = & \frac{F}{sinθ}\cdot \frac{1}{12} [N]
+\end{eqnarray}
+
+となる.今回は重量が15kgになると想定して,ばね定数を求めると
+\begin{eqnarray}
+	FAC & = & \frac{F}{sinθ}\cdot \frac{1}{12} \\
+	FAC & = & \frac{15 \cdot  9.81}{sin30}\cdot \frac{1}{12} [N] \\
+	     & =& 24.525[N] 
+\end{eqnarray}
+	{これより}　
+\begin{eqnarray}
+	k& = &  \frac{F}{x} \\
+	k& = &  \frac{24.525}{18} \\
+	 & = & 1.3625 [N/mm]
+\end{eqnarray}
+となる.よってばね定数は1.0[N/mm]の物を採用する.
+\subsection{使用したばね定数}
+上記でばね定数を求めたが,実際に使用した際に車体が沈むのが確認された.想定していた15kgを超えたせいだと考えられる.車体を沈ませないこと,また段差を超えるため車体を浮かせるために2,3N/mmの物を用意し,使用した.結果的に2N/mmは沈まなかったがばねが反発しなかったため,3N/mmのばねを使用することとなった.
+
+\begin{figure}[htp]
+ \begin{center}
+  \includegraphics[width=50mm]{img/hard/fig7.png}
+ 　\caption{FBD}
+  \label{fig:fbd}%ここに文章中で使用する名前を指定する
+ \end{center}
+\end{figure}
+
+\begin{figure}[htp]
+ \begin{center}
+  \includegraphics[width=70mm]{img/hard/fig8.png}
+ 　\caption{各点にかかる力}
+  \label{fig:bai}%ここに文章中で使用する名前を指定する
+ \end{center}
+\end{figure}
 
 \section{ロボットの構成}
 今年度のロボットに搭載したセンサを以下の表\ref{tab:op}に示す.
@@ -83,7 +269,7 @@
  　\begin{center}
     \caption{ハードウェアの構成}
     \small
-  \scalebox{1.00}{
+  \scalebox{0.85}{
   \begin{tabular}{|c|c|} \hline
     構成要素 & メーカ・型番・スペックなど \\ \hline
     Mian PC & NVIDIA JETSON TK1 \\ \hline
@@ -100,8 +286,37 @@
 \end{table}
 
 \section{ロボットの外観}
+以下の図\ref{fig:gaikan}にロボットの外観を示す.また,車体の仕様を表\ref{tab:siyou}に示す
+
+\begin{figure}[htp]
+ \begin{center}
+  \includegraphics[width=100mm]{img/hard/gaikan.jpg}
+ 　\caption{ロボットの外観図}
+  \label{fig:gaikan}%ここに文章中で使用する名前を指定する
+ \end{center}
+\end{figure}
+
+\begin{table}[htp]
+ 　\begin{center}
+    \caption{車体の仕様}
+  \begin{tabular}{|l|l|l|l|l|l|l|l|} \hline
+全高 & 72[cm] \\  \hline
+全長 & 58[cm] \\ \hline
+車幅 & 61[cm] \\ \hline
+重量 & 20.6[kg] \\ \hline
+駆動形式 & 6車輪２輪駆動 \\ \hline
+タイヤ径 & 直径19[cm] \\ \hline
+使用モータ &  MABUCHI MOTOR RS-555VC-5524\\ \hline
+最大速度 & 4[km/h] \\ \hline
+  \end{tabular}
+　   \label{tab:siyou}
+  \end{center}
+\end{table}
+
+
 
 \section{システムの構成}
+ロボットのシステム構成を図\ref{fig:sisutemu}に示す.Nvidia TK1 jetsonをUSBハブに接続し,そこから各センサ類に接続する.得られたデータはUSBハブを介してNvidia TK1 jetsonに送信され,モータ類に指令を与える.
 \begin{figure}[htp]
  \begin{center}
   \includegraphics[width=100mm]{img/hard/sisutemu.png}
@@ -130,9 +345,8 @@
 \end{table}
 
 
-
 \section{低重心化の実現}
-設計した走行モジュールのCAD図を図\ref{fig:cad}に示す。図から確認できるように全高がタイヤ直径である190mm内に収まっているため低重心化が達成された.また6輪に付属している懸架装置を図\ref{fig:kenka}に示す.ばねを2本設置することでサスペンションとし,またそれらの取り付け位置を斜めにすることでさらに低重心が可能となった.
+設計した走行モジュールのCADを図\ref{fig:cad}に示す。図から確認できるように全高がタイヤ直径である190mm内に収まっているため低重心化が達成された.また6輪に付属している懸架装置を図\ref{fig:kenka}に示す.ばねを2本設置することでサスペンションとし,またそれらの取り付け位置を斜めにすることでさらに低重心が可能となった.
 
 \begin{figure}[htp]
  \begin{center}
@@ -153,6 +367,7 @@
 
 \section{超堤・超壕能力}
 今回作成したロボットの性能を調査するため,超堤・超壕実験を行った結果,超堤:110[mm],超壕220[mm]が得られた.
+
 
 \chapter{マップ生成}
 \section{移動量の取得}

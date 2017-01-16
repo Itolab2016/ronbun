@@ -22,12 +22,13 @@
 \contentsline {subsection}{\numberline {3.6.2}点Bでの力学計算}{14}
 \contentsline {subsection}{\numberline {3.6.3}点Cでの力学計算}{14}
 \contentsline {subsection}{\numberline {3.6.4}力学計算まとめ}{14}
-\contentsline {section}{\numberline {3.7}ロボットの構成}{16}
+\contentsline {subsection}{\numberline {3.6.5}使用したばね定数}{15}
+\contentsline {section}{\numberline {3.7}ロボットの構成}{15}
 \contentsline {section}{\numberline {3.8}ロボットの外観}{16}
 \contentsline {section}{\numberline {3.9}システムの構成}{16}
-\contentsline {section}{\numberline {3.10}使用したライブラリ}{17}
-\contentsline {section}{\numberline {3.11}低重心化の実現}{17}
-\contentsline {section}{\numberline {3.12}超堤・超壕能力}{19}
+\contentsline {section}{\numberline {3.10}使用したライブラリ}{18}
+\contentsline {section}{\numberline {3.11}低重心化の実現}{18}
+\contentsline {section}{\numberline {3.12}超堤・超壕能力}{18}
 \contentsline {chapter}{\numberline {第4章}マップ生成}{20}
 \contentsline {section}{\numberline {4.1}移動量の取得}{20}
 \contentsline {section}{\numberline {4.2}座標変換}{20}
