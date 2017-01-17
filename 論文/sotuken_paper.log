@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2016.7.7)  16 JAN 2017 17:59
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2016.7.7)  17 JAN 2017 19:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -279,6 +279,9 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 
 LaTeX Warning: Label `tab:op' multiply defined.
 
+
+LaTeX Warning: Label `fig:sankaku１' multiply defined.
+
 )
 \openout1 = `sotuken_paper.aux'.
 
@@ -418,12 +421,6 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
 LaTeX Warning: Reference `fig:sankaku1' on page 3 undefined on input line 36.
 
 
-LaTeX Warning: Reference `fig:sankaku2' on page 3 undefined on input line 36.
-
-
-LaTeX Warning: Reference `fig:sankaku2' on page 3 undefined on input line 36.
-
-
 LaTeX Warning: Reference `fig:rouka' on page 3 undefined on input line 36.
 
 
@@ -431,93 +428,109 @@ LaTeX Warning: Reference `fig:rouka' on page 3 undefined on input line 36.
 
 [3
 
-] [4]
+]
+File: img/soft/sankaku1.png Graphic file (type bmp)
+ <img/soft/sankaku1.png>
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 41.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 41.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 41.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 41.
+File: img/soft/sankaku2.png Graphic file (type bmp)
+ <img/soft/sankaku2.png> [4] [5]
 第2章
 File: img/hard/tizu.jpg Graphic file (type bmp)
-<img/hard/tizu.jpg>
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 58.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 58.
-LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 58.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 58.
- [5
+<img/hard/tizu.jpg> [6
 
-] [6] [7] [8]
+] [7] [8] [9]
 第3章
-[9
+[10
 
 ]
 File: img/hard/fig1.png Graphic file (type bmp)
  <img/hard/fig1.png>
 File: img/hard/fig2.png Graphic file (type bmp)
- <img/hard/fig2.png> [10]
+ <img/hard/fig2.png> [11]
 File: img/hard/fig3.png Graphic file (type bmp)
  <img/hard/fig3.png>
 File: img/hard/fig4.png Graphic file (type bmp)
 
-<img/hard/fig4.png> [11]
+<img/hard/fig4.png> [12]
 File: img/hard/fig5.png Graphic file (type bmp)
- <img/hard/fig5.png> [12]
+ <img/hard/fig5.png> [13]
 File: img/hard/fig6.png Graphic file (type bmp)
- <img/hard/fig6.png> [13]
-[14]
+ <img/hard/fig6.png> [14]
+[15]
 File: img/hard/fig7.png Graphic file (type bmp)
  <img/hard/fig7.png>
 File: img/hard/fig8.png Graphic file (type bmp)
  <img/hard/fig8.png>
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 283.
+(Font)              scaled to size 6.72699pt on input line 301.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 283.
+(Font)              scaled to size 4.805pt on input line 301.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 283.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 301.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 283.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 301.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 283.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 301.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 283.
+(Font)              scaled to size 6.72699pt on input line 301.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 4.805pt on input line 283.
+(Font)              scaled to size 4.805pt on input line 301.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 File: img/hard/gaikan.jpg Graphic file (type bmp)
-<img/hard/gaikan.jpg> [15]
+<img/hard/gaikan.jpg> [16]
 File: img/hard/sisutemu.png Graphic file (type bmp)
- <img/hard/sisutemu.png> [16]
+ <img/hard/sisutemu.png> [17]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[17]
+[18]
 File: img/hard/4.png Graphic file (type bmp)
  <img/hard/4.png>
 File: img/hard/3.png Graphic file (type bmp)
- <img/hard/3.png> [18] [19]
+ <img/hard/3.png> [19] [20]
 第4章
+
+LaTeX Warning: Reference `fig:sankaku1' on page 21 undefined on input line 394.
+
+
+File: img/soft/sankaku1.png Graphic file (type bmp)
+<img/soft/sankaku1.png>
+
+LaTeX Warning: Reference `fig:sankaku1' on page 21 undefined on input line 412.
+
+
+[21
+
+] [22]
 File: img/soft/motion.jpg Graphic file (type bmp)
-<img/soft/motion.jpg>
+ <img/soft/motion.jpg>
 File: img/soft/zahyou.png Graphic file (type bmp)
- <img/soft/zahyou.png>
-File: img/soft/1.png Graphic file (type bmp)
- <img/soft/1.png> [20
-
-] [21]
-File: img/soft/2.png Graphic file (type bmp)
-
-<img/soft/2.png>
-File: img/soft/gps.png Graphic file (type bmp)
- <img/soft/gps.png> [22] [23]
+ <img/soft/zahyou.png> [23] [24]
 第5章
-[24
+File: img/soft/1.png Graphic file (type bmp)
+<img/soft/1.png> [25
 
-] [25] [26
+]
+File: img/soft/2.png Graphic file (type bmp)
+ <img/soft/2.png>
+File: img/soft/gps.png Graphic file (type bmp)
+ <img/soft/gps.png> [26] [27]
+第6章
+[28
 
-] [27
+] [29] [30
+
+] [31
 
 ] (./sotuken_paper.aux)
 
@@ -528,12 +541,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2827 strings out of 495129
- 33132 string characters out of 6182596
+ 2832 strings out of 495129
+ 33213 string characters out of 6182596
  91881 words of memory out of 5000000
- 6067 multiletter control sequences out of 15000+600000
+ 6070 multiletter control sequences out of 15000+600000
  48541 words of font info for 130 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
  34i,11n,45p,771b,410s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on sotuken_paper.dvi (27 pages, 51260 bytes).
+Output written on sotuken_paper.dvi (31 pages, 55916 bytes).
