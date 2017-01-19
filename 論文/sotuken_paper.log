@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.12.22)  19 JAN 2017 14:06
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.24)  19 JAN 2017 17:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -519,10 +519,13 @@ LaTeX Warning: Reference `fig:sankaku1' on page 23 undefined on input line 474.
 
 
 [23]
+File: img/soft/chou.png Graphic file (type bmp)
+ <img/soft/chou.png> [24]
 File: img/soft/motion.jpg Graphic file (type bmp)
  <img/soft/motion.jpg>
 File: img/soft/zahyou.png Graphic file (type bmp)
- <img/soft/zahyou.png> [24] [25]
+ <img/soft/zahyou.png>
+[25]
 第5章
 File: img/soft/1.png Graphic file (type bmp)
 <img/soft/1.png> [26
@@ -548,12 +551,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2838 strings out of 495129
- 33305 string characters out of 6182594
+ 2841 strings out of 495129
+ 33340 string characters out of 6182594
  90881 words of memory out of 5000000
- 6075 multiletter control sequences out of 15000+600000
+ 6077 multiletter control sequences out of 15000+600000
  48541 words of font info for 130 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
  34i,12n,45p,771b,410s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on sotuken_paper.dvi (32 pages, 57264 bytes).
+Output written on sotuken_paper.dvi (32 pages, 57728 bytes).
