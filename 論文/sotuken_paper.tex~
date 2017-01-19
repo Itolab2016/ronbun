@@ -390,7 +390,7 @@ FACは式(14)と式(18)より
  　\begin{center}
     \caption{目標数値}
   \begin{tabular}{|c|c|c|c|} \hline
-横幅 & 型番 &　メーカー  \\  \hline
+品名 & 型番 &　メーカー  \\  \hline
 長さ & 1000mm以内 &\\ \hline
 高さ & 150mm以内 &\\ \hline
 乗り越える段差 & およそ30mm &  \\ \hline
