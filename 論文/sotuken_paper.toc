@@ -40,7 +40,7 @@
 \contentsline {section}{\numberline {4.4}射影変換行列の算出}{25}
 \contentsline {subsection}{\numberline {4.4.1}内部パラメータ行列の算出}{25}
 \contentsline {subsection}{\numberline {4.4.2}外部パラメータ行列の算出}{25}
-\contentsline {subsection}{\numberline {4.4.3}特徴点抽出と対応付け}{26}
+\contentsline {subsection}{\numberline {4.4.3}特徴点抽出と対応付け}{25}
 \contentsline {subsection}{\numberline {4.4.4}射影変換行列の算出}{27}
 \contentsline {section}{\numberline {4.5}移動量の取得}{27}
 \contentsline {subsection}{\numberline {4.5.1}座標変換}{27}

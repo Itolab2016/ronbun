@@ -454,17 +454,17 @@ RX220マイコンボード & K-08769 \\ \hline
 カメラでは対象物を写した2枚の画像と射影変換行列から三角測量を行うことができる.以下にその原理を図\ref{fig:sankaku1}として示す.
 図より三角測量の原理を用いて対象物の座標は以下の式で求めることができる.
 \begin{eqnarray}
-	X&=&\frac{L(Xl+Xr)}{2(Xl-Xr)}\\
-	Y&=&\frac{L(Yl+Yr)}{2(Xl-Xr)}\\
-	Z&=&\frac{fL}{Xl-Xr}
+	X&=&\frac{L(X_l+X_r)}{2(X_l-X_r)}\\
+	Y&=&\frac{L(Y_l+Y_r)}{2(X_l-X_r)}\\
+	Z&=&\frac{fL}{X_l-X_r}
 \end{eqnarray}
 よって射影変換行列とカメラ間の距離を求めることで対象物の座標がわかる.
 
 \begin{figure}[htp]
  \begin{center}
-  \includegraphics[width=120mm]{img/soft/sankaku1.png}
+  \includegraphics[width=120mm]{img/soft/sankaku2.png}
  　\caption{三角測量の原理}
-  \label{fig:sankaku1}%ここに文章中で使用する名前を指定する
+  \label{fig:sankaku2}%ここに文章中で使用する名前を指定する
  \end{center}
 \end{figure}
 
@@ -474,9 +474,9 @@ RX220マイコンボード & K-08769 \\ \hline
 
 \begin{figure}[htp]
  \begin{center}
-  \includegraphics[width=120mm]{img/soft/sankaku2.png}
+  \includegraphics[width=120mm]{img/soft/sankaku1.png}
  　\caption{単眼カメラによる三角測量}
-  \label{fig:sankaku2}%ここに文章中で使用する名前を指定する
+  \label{fig:sankaku1}%ここに文章中で使用する名前を指定する
  \end{center}
 \end{figure}
 
