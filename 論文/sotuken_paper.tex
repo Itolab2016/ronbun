@@ -58,368 +58,381 @@
 
 \section{論文の構成}
 
-\chapter{つくばチャレンジについて}
-%\section{つくばチャレンジの概要}
-\section{つくばチャレンジの概要}
-今年度参加したつくばチャレンジについて説明する.つくばチャレンジとは茨城県南部に位置するつくば市の屋外で行こなわれるロボット実験である.これは人間とロボットの共存する社会の実現のための先端的技術への挑戦が狙いである.人間とロボットの共存を目的とするため,ロボットには以下のことが求められる.
-\begin{enumerate}
- \item そこにいる人間が安全であること
-\item そこにいる人間に危害を加えないこと.またそのように取られる不安感を与えないこと
- \item 環境内に存在するものに手を加えないこと.また環境景観を損なわない外観であること
-\item 環境内に存在するものの邪魔にならないこと.また,環境内の運動を妨害しないこと
-\end{enumerate}
-これらの項目が満たされていなければつくばチャレンジでは走行を行うことができない.また,つくばチャレンジではその走行に対して課題が与えられる.以下につくばチャレンジのコースを図\ref{fig:tizu}として示す(つくばチャレンジ2016の課題より参照).
+\chapter{つくばチャレンジについて} 
+%\section{つくばチャレンジの概要} 
+\section{つくばチャレンジの概要} 
+今年度参加したつくばチャレンジについて説明する.つくばチャレンジとは茨城県南部に位置するつくば市の屋外で行こなわれるロボット実験である.これは人間とロボットの共存する社会の実現のための先端的技術への挑戦が狙いである.人間とロボットの共存を目的とするため,ロボットには以下のことが求められる. 
+\begin{enumerate} 
+ \item そこにいる人間が安全であること 
+\item そこにいる人間に危害を加えないこと.またそのように取られる不安感を与えないこと 
+ \item 環境内に存在するものに手を加えないこと.また環境景観を損なわない外観であること 
+\item 環境内に存在するものの邪魔にならないこと.また,環境内の運動を妨害しないこと 
+\end{enumerate} 
+これらの項目が満たされていなければつくばチャレンジでは走行を行うことができない.また,つくばチャレンジではその走行に対して課題が与えられる.以下につくばチャレンジのコースを図\ref{fig:tizu}として示す(つくばチャレンジ2016の課題より参照). 
 
-\begin{figure}[htp]
- \begin{center}
-  \includegraphics[width=100mm]{img/hard/tizu.jpg}
- 　\caption{つくばチャレンジコース図}
-  \label{fig:tizu}%ここに文章中で使用する名前を指定する
- \end{center}
-\end{figure}
+\begin{figure}[htp] 
+ \begin{center} 
+  \includegraphics[width=100mm]{img/hard/tizu.jpg} 
+ 　\caption{つくばチャレンジコース図} 
+  \label{fig:tizu}%ここに文章中で使用する名前を指定する 
+ \end{center} 
+\end{figure} 
 
-\section{今年の課題}
-今年度のつくばチャレンジの課題について説明する.全体のコース,コース環境,そしてロボットに必要な機能をそれぞれ述べる.またロボットは歩道橋等を走行するが,その場合原則として端より1m以上離れての走行とされる.
-\subsection{全体のコース}
-本コースのスタート地点は図\ref{fig:tizu}の右下に位置するつくば市大清水公園東側の歩道をスタート点とし、公園内を反時計回りに周回する.コースは大清水公園から遊歩道へと進み,更に北上してつくばセンター広場へと出る.この広場の東側を探索エリアと呼ぶ.センター広場から北上し,途中左折して中央公園に入り,公園内を反時計回りに周回する.中央公園内の周回途中で,一旦右折して信号機付の横断歩道を渡る.そして北１駐車場脇で折り返し,再度横断歩道を渡り中央公園に戻る.中央公園を周回したあと,再度つくば公園通りの遊歩道に戻り,つくばセンター広場に向かって南下する.センター広場では,西側にあるBiViつくば（つくばバスターミナルビル）の2階の自動扉を通り,その中を通り抜ける.そのまま遊歩道を南下大清水公園に戻る.大清水公園入口のつくばカピオ前がゴールである.
+\section{今年の課題} 
+今年度のつくばチャレンジの課題について説明する.全体のコース,コース環境,そしてロボットに必要な機能をそれぞれ述べる.またロボットは歩道橋等を走行するが,その場合原則として端より1m以上離れての走行とされる. 
+\subsection{全体のコース} 
+本コースのスタート地点は図\ref{fig:tizu}の右下に位置するつくば市大清水公園東側の歩道をスタート点とし、公園内を反時計回りに周回する.コースは大清水公園から遊歩道へと進み,更に北上してつくばセンター広場へと出る.この広場の東側を探索エリアと呼ぶ.センター広場から北上し,途中左折して中央公園に入り,公園内を反時計回りに周回する.中央公園内の周回途中で,一旦右折して信号機付の横断歩道を渡る.そして北１駐車場脇で折り返し,再度横断歩道を渡り中央公園に戻る.中央公園を周回したあと,再度つくば公園通りの遊歩道に戻り,つくばセンター広場に向かって南下する.センター広場では,西側にあるBiViつくば（つくばバスターミナルビル）の2階の自動扉を通り,その中を通り抜ける.そのまま遊歩道を南下大清水公園に戻る.大清水公園入口のつくばカピオ前がゴールである. 
 
-\subsection{コース環境}
-本大会のコースはつくば市民が日頃生活をしている生活環境である.したがって日常のように人や自転車が通行している.つくばチャレンジでは危険防止のため安全責任者を各チーム内から定め,ロボットの走行時には通行人や見物人に注意を呼びかける.
-
-
-ロボットの走行エリアと市民の歩く領域は区別されない.天候は当日の天候状況によるが,小雨程度であれば滞り無く開催される.また路面や環境の状況(落ち葉,水たまりなど)も前日やそれ以前の天候,または社会的条件(お祭りなど)に大きく影響を受ける.
+\subsection{コース環境} 
+本大会のコースはつくば市民が日頃生活をしている生活環境である.したがって日常のように人や自転車が通行している.つくばチャレンジでは危険防止のため安全責任者を各チーム内から定め,ロボットの走行時には通行人や見物人に注意を呼びかける. 
 
 
-ロボットは環境内にもともと存在する街路樹や縁石柵あるいは建物を走行のガイドとして用いるのは自由であるが,ロボットの走行の為に新しくガイドとなるものを設置することや,環境を改変することは許されない.
-
-\subsection{ロボットに必要な機能}
-つくばチャレンジは人間が暮らす環境である.人間は多少の凸凹や路面のひび割れ,フレーチングの溝などの障害は問題なく歩行できる.だが,ロボットは人間のようにフレキシブルではない,段差で転んだり溝にハマることが大いに考えられる.よって走行の際に必要なロボットの機能として悪路が走行できる,溝に嵌っても自力で這い上がることができる等路面走行に対してフレキシブルに対応することが求められる.
+ロボットの走行エリアと市民の歩く領域は区別されない.天候は当日の天候状況によるが,小雨程度であれば滞り無く開催される.また路面や環境の状況(落ち葉,水たまりなど)も前日やそれ以前の天候,または社会的条件(お祭りなど)に大きく影響を受ける. 
 
 
+ロボットは環境内にもともと存在する街路樹や縁石柵あるいは建物を走行のガイドとして用いるのは自由であるが,ロボットの走行の為に新しくガイドとなるものを設置することや,環境を改変することは許されない. 
 
-\chapter{システムの全体像}
-この章では3.1から3.3でロボットの全体像, 3.4で前半にメカ,後半に電気設計を記し, 3.5から使用したソフトウェアについて述べていく.
-\section{ロボットの構成}
-今年度のロボットに搭載したセンサを以下の表\ref{tab:op}に示す.
-
-\begin{table}[h]
- 　\begin{center}
-    \caption{ハードウェアの構成}
-    \small
-  \scalebox{0.85}{
-  \begin{tabular}{|c|c|} \hline
-    構成要素 & メーカ・型番・スペックなど \\ \hline
-    Mian PC & NVIDIA JETSON TK1 \\ \hline
-    OS & Ubuntu 14.04 LTS \\ \hline
-    camera & Panasonic HX-A1H \\ \hline
-    Buttery & KyPOM KT5100 4S 35C \\ \hline
-    Motor & MABUCHI MOTOR RS-555VC-5524 \\ \hline
-    Motion Sensor & 東京航空計器株式会社　CSM-MG100\\ \hline
-
-  \end{tabular}
-  }
-　   \label{tab:op}
-  \end{center}
-\end{table}
-
-\section{ロボットの外観}
-以下の図\ref{fig:gaikan}にロボットの外観を示す.また,車体の仕様を表\ref{tab:siyou}に示す
-
-\begin{figure}[htp]
- \begin{center}
-  \includegraphics[width=100mm]{img/hard/gaikan.jpg}
- 　\caption{ロボットの外観図}
-  \label{fig:gaikan}%ここに文章中で使用する名前を指定する
- \end{center}
-\end{figure}
-
-\begin{table}[htp]
- 　\begin{center}
-    \caption{車体の仕様}
-  \begin{tabular}{|l|l|l|l|l|l|l|l|} \hline
-全高 & 72[cm] \\  \hline
-全長 & 58[cm] \\ \hline
-車幅 & 61[cm] \\ \hline
-重量 & 20.6[kg] \\ \hline
-駆動形式 & 6車輪２輪駆動 \\ \hline
-タイヤ径 & 直径19[cm] \\ \hline
-使用モータ &  MABUCHI MOTOR RS-555VC-5524\\ \hline
-最大速度 & 4[km/h] \\ \hline
-  \end{tabular}
-　   \label{tab:siyou}
-  \end{center}
-\end{table}
+\subsection{ロボットに必要な機能} 
+つくばチャレンジは人間が暮らす環境である.人間は多少の凸凹や路面のひび割れ,フレーチングの溝などの障害は問題なく歩行できる.だが,ロボットは人間のようにフレキシブルではない,段差で転んだり溝にハマることが大いに考えられる.よって走行の際に必要なロボットの機能として悪路が走行できる,溝に嵌っても自力で這い上がることができる等路面走行に対してフレキシブルに対応することが求められる. 
 
 
 
-\section{システムの構成}
-ロボットのシステム構成を図\ref{fig:sisutemu}に示す.Nvidia TK1 jetsonをUSBハブに接続し,そこから各センサ類に接続する.得られたデータはUSBハブを介してNvidia TK1 jetsonに送信され,モータ類に指令を与える.
-\begin{figure}[htp]
- \begin{center}
-  \includegraphics[width=100mm]{img/hard/sisutemu.png}
- 　\caption{システム構成}
-  \label{fig:sisutemu}%ここに文章中で使用する名前を指定する
- \end{center}
-\end{figure}
-\section{機械設計}
+\chapter{システムの全体像} 
+%この章では3.1から3.3でロボットの全体像, 3.4で前半にメカ,後半に電気設計を記し, 3.5から使用したソフトウェアについて述べていく. 
+\section{機械要素}
+\subsection{ロボットの構成} 
+今年度のロボットに搭載したセンサを以下の表\ref{tab:op}に示す. 
 
-\subsection{ハードウェア開発の狙い}
-サスペンションを内蔵するハードウェアを制作する.つくばチャレンジ2016では走破性向上を目的として低重心を目標としているため,ハードウェアの全高を小さく設計することでその目標に尽くす.また今回のロボットの超低重心を実現するための数値を表\ref{tab:joken} に示す
+\begin{table}[h] 
+ 　\begin{center} 
+    \caption{ハードウェアの構成} 
+    \small 
+  \scalebox{0.85}{ 
+  \begin{tabular}{|c|c|} \hline 
+    構成要素 & メーカ・型番・スペックなど \\ \hline 
+    Mian PC & NVIDIA JETSON TK1 \\ \hline 
+    OS & Ubuntu 14.04 LTS \\ \hline 
+    camera & Panasonic HX-A1H \\ \hline 
+    Buttery & KyPOM KT5100 4S 35C \\ \hline 
+    Motor & MABUCHI MOTOR RS-555VC-5524 \\ \hline 
+    Motion Sensor & 東京航空計器株式会社　CSM-MG100\\ \hline 
 
-\begin{table}[htp]
- 　\begin{center}
-    \caption{目標数値}
-  \begin{tabular}{|c|c|c|c|} \hline
-横幅 & 600mm以内  \\  \hline
-長さ & 1000mm以内\\ \hline
-高さ & 150mm以内 \\ \hline
-    乗り越える段差 & およそ30mm  \\ \hline
-  \end{tabular}
-　   \label{tab:joken}
-  \end{center}
-\end{table}
+  \end{tabular} 
+  } 
+　   \label{tab:op} 
+  \end{center} 
+\end{table} 
 
-\subsection{サスペンションの概要}
-製作するロボットはある程度の段差を超えるための上下できる機構が必要である.よって近年最も身近な上下機構を持つ機械として,車に利用されるサスペンションを参考にした.図\ref{fig:doublewish}に示すダブルウィッシュボーン式サスペンションは上下のアームとショックアブソーバ,ばねからなるもので,レーシングカーに多く使用されている.図\ref{fig:strat}に示すストラット式サスペンションと呼ばれるものはショックアブソーバとサスペンションを一体化したものをアッパーアームにしたもので,近年の車やミニ四駆などに使用されている.両方とも独立懸架で安定性や利便性に置いてはストラット式が大きく優るが,今回はコンパクトに構成することも必要なため,もともと上下アームで囲われているスペースを活かせることができそうなダブルウィッシュボーン式サスペンションを基礎として開発する.
+\subsection{ロボットの外観} 
+以下の図\ref{fig:gaikan}にロボットの外観を示す.また,車体の仕様を表\ref{tab:siyou}に示す 
 
-\begin{figure}[htp]
- \begin{center}
-  \includegraphics[width=50mm]{img/hard/fig1.png}
- 　\caption{ダブルウィッシュボーン式サスペンション}
-  \label{fig:doublewish}%ここに文章中で使用する名前を指定する
- \end{center}
-\end{figure}
+\begin{figure}[htp] 
+ \begin{center} 
+  \includegraphics[width=100mm]{img/hard/gaikan.jpg} 
+ 　\caption{ロボットの外観図} 
+  \label{fig:gaikan}%ここに文章中で使用する名前を指定する 
+ \end{center} 
+\end{figure} 
 
-\begin{figure}[htp]
- \begin{center}
-  \includegraphics[width=40mm]{img/hard/fig2.png}
- 　\caption{ストラット式サスペンション}
-  \label{fig:strat}%ここに文章中で使用する名前を指定する
- \end{center}
-\end{figure}
-
-\subsection{メカの概要}
-
-製作する”超低重心6輪独立懸架ローバー”（以下6輪ローバ）は図\ref{fig:rokurin}に示すとおり低重心であるがゆえにロボットそのものが平たく大きい物になる.そのままではメンテナンス性にかける他,運搬時に非常に不便なため,モータを持つドライブモジュール（以下Dモジュール）と指示塔であるコントロールモジュール（以下Cモジュール）に分解できるようにハードウェアを設計し,分解から組み立てを容易とするようにした.つまり2つのDモジュールと１つのCモジュールからなる1つのハードウェアである.
-
-\begin{figure}[htp]
- \begin{center}
-  \includegraphics[height=51mm,width=80mm]{img/hard/fig3.png}
- 　\caption{6輪ローバ}
-  \label{fig:rokurin}%ここに文章中で使用する名前を指定する
- \end{center}
-\end{figure}
-
-\subsection{サスペンションの配置}
-%ダブルウィッシュボーン式サスペンションは便利ではあるが問題点も目立つ.例えばばねのストロークが少ない,ストロークを大きくしようとすれば車体との接続が困難になる,決められた場所にしか設置できない等,どれもスペースが大きく関係してくる.
-
-ハードウェアの全高は小さくなるため,サスペンションの配置は小スペースに収めることが必要になる.そこで図\ref{fig:box}のように軸棒,ユニバーサルジョイント,車輪を上下のリンクと板を用いて1つの平行リンクをつくり,その平行リンクの両斜辺に2つ直接斜めに振動吸収となるばねを設置すれば車輪の径に左右されるものの従来のものよりスペースが小さく上下機構が得られるのではないかと考えた.
-
-\begin{figure}[htbt]
- \begin{center}
-  \includegraphics[width=60mm]{img/hard/fig4.png}
- 　\caption{平行リンク}
-  \label{fig:box}%ここに文章中で使用する名前を指定する
- \end{center}
-\end{figure}
-
-\subsection{ばねのストロークの算出}
-図\ref{fig:bix}に平行リンクの簡易図を示す.また平行リンクが移動した際の図を図\ref{fig:rink}示す.これらの数値よりサスペンションのストロークの長さを求める.サスペンションの全体長さは斜辺に設置するため余弦定理より
-\begin{eqnarray}
-   AC = b^2 & = & a_1^2+c^2-2a_1\cdot c\cdot cos\angle B \\
-  b & = & \sqrt{38^2+60^2-2\cdot 38\cdot 60\cdot cos90} \\
-    & = &71.022 ≒　71.0[mm]
-\end{eqnarray}
-となる.また今回は30[mm]程度の障害物を乗り越える想定しているため,この平行リンクが点A,Bを回転軸として点C,Dが30[mm]上昇した際の平行四辺形の斜辺AC'を求める必要がある.平行リンクが移動してできるΔAC'Eの斜辺AC'はΔAD'Eの辺d'に等しい.よってAC'の式は余弦定理と代入法より
-\begin{eqnarray}
-	AE& = &d' =  \sqrt{a_2^2+e_1^2-2a_2\cdot e\cdot cos\angle D} \\
-	d' & = & c' \\
-	AC'&= &e_2  =  \sqrt{c'^2+a_3^2-2\cdot c'\cdot a_3\cdot cos\angle E}
-\end{eqnarray}
-となる.またΔAD'Eの\[\angle A\]は30[mm]上がった際に30[deg]になることから,斜辺AC'は
-\begin{eqnarray}
-	d' &=& \sqrt{30^2+60^2-2\cdot 30\cdot 60\cdot cos\angle 60} \\
-	d'&=&30\sqrt{3}=c' \\
-	AC'&= &e_2  =  \sqrt{c'^2+a_3^2-2\cdot c'\cdot a_3\cdot cos\angle E}  \\
-	AC' &=& \sqrt{(30\sqrt{3})^2+8^2-2\cdot 30\sqrt{3}\cdot 8\cdot cos90} \\
-	& = & 52.574 ≒ 52.6 [mm]
-\end{eqnarray}
-となる.　\\
-サスペンションは伸縮するものであり,それはこれらの辺ACと辺AC'の差分だけ変化することになる.今回の値から変化値x≒18[mm]程度の変化があることが確認された.以上のAC,AC',xを用いてサスペンションの細かい設計を行う.
-
-\begin{figure}[htp]
- \begin{center}
-  \includegraphics[width=60mm]{img/hard/fig5.png}
- 　\caption{平行リンク簡易図}
-  \label{fig:bix}%ここに文章中で使用する名前を指定する
- \end{center}
-\end{figure}
+\begin{table}[htp] 
+ 　\begin{center} 
+    \caption{車体の仕様} 
+  \begin{tabular}{|l|l|l|l|l|l|l|l|} \hline 
+全高 & 72[cm] \\  \hline 
+全長 & 58[cm] \\ \hline 
+車幅 & 61[cm] \\ \hline 
+重量 & 20.6[kg] \\ \hline 
+駆動形式 & 6車輪２輪駆動 \\ \hline 
+タイヤ径 & 直径19[cm] \\ \hline 
+使用モータ &  MABUCHI MOTOR RS-555VC-5524\\ \hline 
+最大速度 & 4[km/h] \\ \hline 
+  \end{tabular} 
+　   \label{tab:siyou} 
+  \end{center} 
+\end{table} 
 
 
-\begin{figure}[htp]
- \begin{center}
-  \includegraphics[width=60mm]{img/hard/fig6.png}
- 　\caption{平行リンクの移動量変化}
-  \label{fig:rink}%ここに文章中で使用する名前を指定する
- \end{center}
-\end{figure}
 
-\subsection{ばね定数の算出}
-サスペンションには路面の凹凸を車体に伝えない緩衝装置としての機能としてばねが必要であるため,フックの法則よりばねを選定する.　\\
-平行リンクの点A,Bをそれぞれ固定支点と考えて計算を行う.図\ref{fig:fbd}に Free Body Diagram(FBD)を示す.図\ref{fig:fbd}よりスラスト方向荷重x,ラジアル方向荷重y,モーメントMの式はそれぞれ
+\subsection{システムの構成} 
+ロボットのシステム構成を図\ref{fig:sisutemu}に示す.NVIDIA JETSON TK1をUSBハブに接続し,そこから各センサ類に接続する.得られたデータはUSBハブを介してNVIDIA JETSON TK1に送信され,モータ類に指令を与える. 
+\begin{figure}[htp] 
+ \begin{center} 
+  \includegraphics[width=100mm]{img/hard/sisutemu.png} 
+ 　\caption{システム構成} 
+  \label{fig:sisutemu}%ここに文章中で使用する名前を指定する 
+ \end{center} 
+\end{figure} 
 
-\begin{eqnarray}
-	x & = & R_AX+R_BX=0 \\
-	y & = & R_AY+R_BY+F=0 \\
-	M & = & BC\cdot F-AB\cdot R_AX=0
-\end{eqnarray}
-となる.更に点A,B,Cそれぞれの力は以下のようになる.
+%\section{機械設計} 
 
-\subsubsection{点Aでの力学計算}
-点Aでは図\ref{fig:bai}より以下のように計算できる.
-\begin{eqnarray}
-	R_AX+FAC\cdot cosθ & = & 0 \\
+\subsection{ハードウェア開発の狙い} 
+サスペンションを内蔵するハードウェアを制作する.つくばチャレンジ2016では走破性向上を目的として低重心を目標としているため,ハードウェアの全高を小さく設計することでその目標に尽くす.また今回のロボットの超低重心を実現するための数値を表\ref{tab:joken} に示す 
+
+\begin{table}[htp] 
+ 　\begin{center} 
+    \caption{目標数値} 
+  \begin{tabular}{|c|c|c|c|} \hline 
+横幅 & 600mm以内  \\  \hline 
+長さ & 1000mm以内\\ \hline 
+高さ & 150mm以内 \\ \hline 
+    乗り越える段差 & およそ30mm  \\ \hline 
+  \end{tabular} 
+　   \label{tab:joken} 
+  \end{center} 
+\end{table} 
+
+\subsection{サスペンションの概要} 
+製作するロボットはある程度の段差を超えるための上下できる機構が必要である.よって近年最も身近な上下機構を持つ機械として,車に利用されるサスペンションを参考にした.図\ref{fig:doublewish}に示すダブルウィッシュボーン式サスペンションは上下のアームとショックアブソーバ,ばねからなるもので,レーシングカーに多く使用されている.図\ref{fig:strat}に示すストラット式サスペンションと呼ばれるものはショックアブソーバとサスペンションを一体化したものをアッパーアームにしたもので,近年の車やミニ四駆などに使用されている.両方とも独立懸架で安定性や利便性に置いてはストラット式が大きく優るが,今回はコンパクトに構成することも必要なため,もともと上下アームで囲われているスペースを活かせることができそうなダブルウィッシュボーン式サスペンションを基礎として開発する. 
+
+\begin{figure}[htp] 
+ \begin{center} 
+  \includegraphics[width=50mm]{img/hard/fig1.png} 
+ 　\caption{ダブルウィッシュボーン式サスペンション} 
+  \label{fig:doublewish}%ここに文章中で使用する名前を指定する 
+ \end{center} 
+\end{figure} 
+
+\begin{figure}[htp] 
+ \begin{center} 
+  \includegraphics[width=40mm]{img/hard/fig2.png} 
+ 　\caption{ストラット式サスペンション} 
+  \label{fig:strat}%ここに文章中で使用する名前を指定する 
+ \end{center} 
+\end{figure} 
+
+\subsection{メカの概要} 
+
+製作する”超低重心6輪独立懸架ローバー”（以下6輪ローバ）は図\ref{fig:rokurin}に示すとおり低重心であるがゆえにロボットそのものが平たく大きい物になる.そのままではメンテナンス性にかける他,運搬時に非常に不便なため,モータを持つドライブモジュール（以下Dモジュール）と指示塔であるコントロールモジュール（以下Cモジュール）に分解できるようにハードウェアを設計し,分解から組み立てを容易とするようにした.つまり2つのDモジュールと１つのCモジュールからなる1つのハードウェアである. 
+
+\begin{figure}[htp] 
+ \begin{center} 
+  \includegraphics[width=100mm]{img/hard/fig3.png} 
+ 　\caption{6輪ローバ} 
+  \label{fig:rokurin}%ここに文章中で使用する名前を指定する 
+ \end{center} 
+\end{figure} 
+
+\subsection{サスペンションの配置} 
+%ダブルウィッシュボーン式サスペンションは便利ではあるが問題点も目立つ.例えばばねのストロークが少ない,ストロークを大きくしようとすれば車体との接続が困難になる,決められた場所にしか設置できない等,どれもスペースが大きく関係してくる. 
+
+ハードウェアの全高は小さくなるため,サスペンションの配置は小スペースに収めることが必要になる.そこで図\ref{fig:box}のように軸棒,ユニバーサルジョイント,車輪を上下のリンクと板を用いて1つの平行リンクをつくり,その平行リンクの両斜辺に2つ直接斜めに振動吸収となるばねを設置すれば車輪の径に左右されるものの従来のものよりスペースが小さく上下機構が得られるのではないかと考えた. 
+
+\begin{figure}[htbt] 
+ \begin{center} 
+  \includegraphics[width=100mm]{img/hard/fig4.png} 
+ 　\caption{平行リンク} 
+  \label{fig:box}%ここに文章中で使用する名前を指定する 
+ \end{center} 
+\end{figure} 
+
+\subsection{ばねのストロークの算出} 
+図\ref{fig:bix}に平行リンクの簡易図を示す.また平行リンクが移動した際の図を図\ref{fig:rink}示す.これらの数値よりサスペンションのストロークの長さを求める.サスペンションの全体長さは斜辺に設置するため余弦定理より 
+\begin{eqnarray} 
+   AC = b^2 & = & a_1^2+c^2-2a_1\cdot c\cdot cos\angle B \\ 
+  b & = & \sqrt{38^2+60^2-2\cdot 38\cdot 60\cdot cos90} \\ 
+    & = &71.022 ≒　71.0[mm] 
+\end{eqnarray} 
+となる.また今回は30[mm]程度の障害物を乗り越える想定しているため,この平行リンクが点A,Bを回転軸として点C,Dが30[mm]上昇した際の平行四辺形の斜辺AC'を求める必要がある.平行リンクが移動してできるΔAC'Eの斜辺AC'はΔAD'Eの辺d'に等しい.よってAC'の式は余弦定理と代入法より 
+\begin{eqnarray} 
+	AE& = &d' =  \sqrt{a_2^2+e_1^2-2a_2\cdot e\cdot cos\angle D} \\ 
+	d' & = & c' \\ 
+	AC'&= &e_2  =  \sqrt{c'^2+a_3^2-2\cdot c'\cdot a_3\cdot cos\angle E} 
+\end{eqnarray} 
+となる.またΔAD'Eの\[\angle A\]は30[mm]上がった際に30[deg]になることから,斜辺AC'は 
+\begin{eqnarray} 
+	d' &=& \sqrt{30^2+60^2-2\cdot 30\cdot 60\cdot cos\angle 60} \\ 
+	d'&=&30\sqrt{3}=c' \\ 
+	AC'&= &e_2  =  \sqrt{c'^2+a_3^2-2\cdot c'\cdot a_3\cdot cos\angle E}  \\ 
+	AC' &=& \sqrt{(30\sqrt{3})^2+8^2-2\cdot 30\sqrt{3}\cdot 8\cdot cos90} \\ 
+	& = & 52.574 ≒ 52.6 [mm] 
+\end{eqnarray} 
+となる.　\\ 
+サスペンションは伸縮するものであり,それはこれらの辺ACと辺AC'の差分だけ変化することになる.今回の値から変化値x≒18[mm]程度の変化があることが確認された.以上のAC,AC',xを用いてサスペンションの細かい設計を行う. 
+
+\begin{figure}[htp] 
+ \begin{center} 
+  \includegraphics[width=100mm]{img/hard/fig5.png} 
+ 　\caption{平行リンク簡易図} 
+  \label{fig:bix}%ここに文章中で使用する名前を指定する 
+ \end{center} 
+\end{figure} 
+
+
+\begin{figure}[htp] 
+ \begin{center} 
+  \includegraphics[width=100mm]{img/hard/fig6.png} 
+ 　\caption{平行リンクの移動量変化} 
+  \label{fig:rink}%ここに文章中で使用する名前を指定する 
+ \end{center} 
+\end{figure} 
+
+\subsection{ばね定数の算出} 
+サスペンションには路面の凹凸を車体に伝えない緩衝装置としての機能としてばねが必要であるため,フックの法則よりばねを選定する.　\\ 
+平行リンクの点A,Bをそれぞれ固定支点と考えて計算を行う.図\ref{fig:fbd}に Free Body Diagram(FBD)を示す.図\ref{fig:fbd}よりスラスト方向荷重x,ラジアル方向荷重y,モーメントMの式はそれぞれ 
+
+\begin{eqnarray} 
+	x & = & R_AX+R_BX=0 \\ 
+	y & = & R_AY+R_BY+F=0 \\ 
+	M & = & BC\cdot F-AB\cdot R_AX=0 
+\end{eqnarray} 
+となる.更に点A,B,Cそれぞれの力は以下のようになる. 
+
+\subsubsection{点Aでの力学計算} 
+点Aでは図\ref{fig:bai}より以下のように計算できる. 
+\begin{eqnarray} 
+	R_AX+FAC\cdot cosθ & = & 0 \\ 
 	R_AY & = & FAC\cdot sinθ 
-\end{eqnarray}
-\subsubsection{点Bでの力学計算}
-点Bは図\ref{fig:bai}より以下のように計算できる.
-\begin{eqnarray}
-	R_BX+FBC & = & 0 \\
-	R_BY & = & 0
-\end{eqnarray}
-\subsubsection{点Cでの力学計算}
-点Cは図\ref{fig:bai}より以下のように計算できる.
-\begin{eqnarray}
-	FAC\cdot cosθ+FBC & = & 0 \\
-	F+FAC\cdot sinθ & = & 0
-\end{eqnarray}
-%\subsubsection{力学計算まとめ}
-上記で求めた式より,ACにかかる力FACの式を計算する.
-FACは式(14)と式(18)より
-\begin{eqnarray}
-	R_AY+F & = & 0 \\
+\end{eqnarray} 
+\subsubsection{点Bでの力学計算} 
+点Bは図\ref{fig:bai}より以下のように計算できる. 
+\begin{eqnarray} 
+	R_BX+FBC & = & 0 \\ 
+	R_BY & = & 0 
+\end{eqnarray} 
+\subsubsection{点Cでの力学計算} 
+点Cは図\ref{fig:bai}より以下のように計算できる. 
+\begin{eqnarray} 
+	FAC\cdot cosθ+FBC & = & 0 \\ 
+	F+FAC\cdot sinθ & = & 0 
+\end{eqnarray} 
+%\subsubsection{力学計算まとめ} 
+上記で求めた式より,ACにかかる力FACの式を計算する. 
+FACは式(14)と式(18)より 
+\begin{eqnarray} 
+	R_AY+F & = & 0 \\ 
 		F & = & -R_AY 
-\end{eqnarray}
-\begin{eqnarray}
-	　　　　R_AY & = & FAC\cdot sinθ \\
+\end{eqnarray} 
+\begin{eqnarray} 
+	　　　　R_AY & = & FAC\cdot sinθ \\ 
 		FAC & = & \frac{F}{sinθ} [N] 
-\end{eqnarray}
-\begin{eqnarray}
-	F+FAD\cdot sinθ & = & 0 \\
-	FAC & = & \frac{F}{sinθ} [N]
-\end{eqnarray}
+\end{eqnarray} 
+\begin{eqnarray} 
+	F+FAD\cdot sinθ & = & 0 \\ 
+	FAC & = & \frac{F}{sinθ} [N] 
+\end{eqnarray} 
 
-となることが確認できる.　\\
-力FAC[N]はばね全体に掛る力なので,これをばね1個辺りに加わる力に除算する必要がある.今回作成する6輪ローバは1輪に2つのばねを持つため,ばねを合計で12個保有する.よってばね1個にかかる力FAC[N]は
+となることが確認できる.　\\ 
+力FAC[N]はばね全体に掛る力なので,これをばね1個辺りに加わる力に除算する必要がある.今回作成する6輪ローバは1輪に2つのばねを持つため,ばねを合計で12個保有する.よってばね1個にかかる力FAC[N]は 
 
-\begin{eqnarray}
-	FAC & = & \frac{F}{sinθ}\cdot \frac{1}{12} [N]
-\end{eqnarray}
+\begin{eqnarray} 
+	FAC & = & \frac{F}{sinθ}\cdot \frac{1}{12} [N] 
+\end{eqnarray} 
 
-となる.今回は重量が15kgになると想定して,ばね定数を求めると
-\begin{eqnarray}
-	FAC & = & \frac{F}{sinθ}\cdot \frac{1}{12} \\
-	FAC & = & \frac{15 \cdot  9.81}{sin30}\cdot \frac{1}{12} [N] \\
+となる.今回は重量が15kgになると想定して,ばね定数を求めると 
+\begin{eqnarray} 
+	FAC & = & \frac{F}{sinθ}\cdot \frac{1}{12} \\ 
+	FAC & = & \frac{15 \cdot  9.81}{sin30}\cdot \frac{1}{12} [N] \\ 
 	     & =& 24.525[N] 
-\end{eqnarray}
-	{これより}　
-\begin{eqnarray}
-	k& = &  \frac{F}{x} \\
-	k& = &  \frac{24.525}{18} \\
-	 & = & 1.3625 [N/mm]
-\end{eqnarray}
-となる.よってばね定数は1.0[N/mm]の物を採用する.
-\subsection{使用したばね定数}
-上記でばね定数を求めたが,実際に使用した際に車体が沈むのが確認された.想定していた15kgを超えたせいだと考えられる.車体を沈ませないこと,また段差を超えるため車体を浮かせるために2,3N/mmの物を用意し,使用した.結果的に2N/mmは沈まなかったがばねが反発しなかったため,3N/mmのばねを使用することとなった.
+\end{eqnarray} 
+	{これより}　 
+\begin{eqnarray} 
+	k& = &  \frac{F}{x} \\ 
+	k& = &  \frac{24.525}{18} \\ 
+	 & = & 1.3625 [N/mm] 
+\end{eqnarray} 
+となる.よってばね定数は1.0[N/mm]の物を採用する. 
+\subsection{使用したばね定数} 
+上記でばね定数を求めたが,実際に使用した際に車体が沈むのが確認された.想定していた15kgを超えたせいだと考えられる.車体を沈ませないこと,また段差を超えるため車体を浮かせるために2,3N/mmの物を用意し,使用した.結果的に2N/mmは沈まなかったがばねが反発しなかったため,3N/mmのばねを使用することとなった. 
 
-\begin{figure}[htp]
- \begin{center}
-  \includegraphics[width=50mm]{img/hard/fig7.png}
- 　\caption{FBD}
-  \label{fig:fbd}%ここに文章中で使用する名前を指定する
- \end{center}
-\end{figure}
+\begin{figure}[htp] 
+ \begin{center} 
+  \includegraphics[width=100mm]{img/hard/fig7.png} 
+ 　\caption{FBD} 
+  \label{fig:fbd}%ここに文章中で使用する名前を指定する 
+ \end{center} 
+\end{figure} 
 
-\begin{figure}[htp]
- \begin{center}
-  \includegraphics[width=70mm]{img/hard/fig8.png}
- 　\caption{各点にかかる力}
-  \label{fig:bai}%ここに文章中で使用する名前を指定する
- \end{center}
-\end{figure}
-
-
+\begin{figure}[htp] 
+ \begin{center} 
+  \includegraphics[width=100mm]{img/hard/fig8.png} 
+ 　\caption{各点にかかる力} 
+  \label{fig:bai}%ここに文章中で使用する名前を指定する 
+ \end{center} 
+\end{figure} 
 
 
-\subsection{低重心化の実現}
-設計した走行モジュールのCADを図\ref{fig:cad}に示す。図から確認できるように全高がタイヤ直径である190mm内に収まっているため低重心化が達成された.また6輪に付属している懸架装置を図\ref{fig:kenka}に示す.ばねを2本設置することでサスペンションとし,またそれらの取り付け位置を斜めにすることでさらに低重心が可能となった.
-
-\begin{figure}[htp]
- \begin{center}
-  \includegraphics[width=100mm]{img/hard/4.png}
- 　\caption{走行モジュール}
-  \label{fig:cad}%ここに文章中で使用する名前を指定する
- \end{center}
-\end{figure}
-
-\begin{figure}[htp]
- \begin{center}
-  \includegraphics[width=100mm]{img/hard/3.png}
- 　\caption{懸架装置}
-  \label{fig:kenka}%ここに文章中で使用する名前を指定する
- \end{center}
-\end{figure}
 
 
-\subsection{超堤・超壕能力}
-今回作成したロボットの性能を調査するため,超堤・超壕実験を行った結果,超堤:110[mm],超壕220[mm]が得られた.
+\subsection{低重心化の実現} 
+設計した走行モジュールのCADを図\ref{fig:cad}に示す。図から確認できるように全高がタイヤ直径である190mm内に収まっているため低重心化が達成された.また6輪に付属している懸架装置を図\ref{fig:kenka}に示す.ばねを2本設置することでサスペンションとし,またそれらの取り付け位置を斜めにすることでさらに低重心が可能となった. 
 
-\subsection{電気設計}
-ロボットに搭載したモータドライバの回路図を図\ref{fig:denkikairo}に示し,使用した部品を表\ref{denkibuhin}に示す.
+\begin{figure}[htp] 
+ \begin{center} 
+  \includegraphics[width=150mm]{img/hard/4.png} 
+ 　\caption{走行モジュール} 
+  \label{fig:cad}%ここに文章中で使用する名前を指定する 
+ \end{center} 
+\end{figure} 
 
-\begin{figure}[htp]
- \begin{center}
-  \includegraphics[width=150mm]{img/hard/denkikairo.png}
- 　\caption{モータドライバ}
-  \label{fig:denkikairo}%ここに文章中で使用する名前を指定する
- \end{center}
-\end{figure}
+\begin{figure}[htp] 
+ \begin{center} 
+  \includegraphics[width=100mm]{img/hard/3.png} 
+ 　\caption{懸架装置} 
+  \label{fig:kenka}%ここに文章中で使用する名前を指定する 
+ \end{center} 
+\end{figure} 
 
 
-\begin{table}[htp]
- 　\begin{center}
-    \caption{目標数値}
-  \begin{tabular}{|c|c|c|c|} \hline
-品名 & 型番 &　メーカー  \\  \hline
-長さ & 1000mm以内 &\\ \hline
-高さ & 150mm以内 &\\ \hline
-乗り越える段差 & およそ30mm &  \\ \hline
-  \end{tabular}
-　   \label{tab:denkibuhin}
-  \end{center}
+\subsection{超堤・超壕能力} 
+今回作成したロボットの性能を調査するため,超堤・超壕実験を行った結果,超堤:110[mm],超壕220[mm]が得られた. 
+
+\subsection{電気設計} 
+ロボットに搭載したモータドライバの回路図を図\ref{fig:denkikairo}に示し,使用した部品を表\ref{tab:denkibuhin}に示す.モータドライバは各Dモジュールに1つづつの設置とした. 
+
+\begin{figure}[htp] 
+ \begin{center} 
+  \includegraphics[width=150mm]{img/hard/denkikairo.png} 
+ 　\caption{モータドライバ} 
+  \label{fig:denkikairo}%ここに文章中で使用する名前を指定する 
+ \end{center} 
+\end{figure} 
+
+
+\begin{table}[htp] 
+ 　\begin{center} 
+    \caption{使用した電気部品} 
+  \begin{tabular}{|c|c|c|c|} \hline 
+品名 & 型番 & メーカ & 単価 \\  \hline 
+自作MD板  &\\ \hline 
+トロイダルコイル 330μH9A  & 秋月電子\\ \hline 
+EIコネクタ4ピンオス  &\\ \hline 
+EIコネクタ2ピンオス  &  \\ \hline 
+FET & \\ \hline 
+カーボン抵抗 1/4Ｗ 47kΩ （100本入） & R-25473 \\ \hline 
+カーボン抵抗 1/4Ｗ 47Ω （100本入） &  R-25470\\ \hline 
+カーボン抵抗 1/4Ｗ 10kΩ （100本入） & R-25103 \\ \hline 
+セラミックコンデンサ103 &  \\ \hline 
+セラミックコンデンサ105 &  \\ \hline 
+発光ダイオード &  \\ \hline 
+RX220マイコンボード & K-08769 \\ \hline 
+  \end{tabular} 
+　   \label{tab:denkibuhin} 
+  \end{center} 
+\end{table} 
+
+\section{ソフト}
+\subsection{使用ソフトウェア} 
+ロボットのソフトウェアにはUbuntu 14.04とGNU Compilerを用いる.また使用言語はC++言語である. 
+
+\subsection{使用したライブラリ} 
+表\ref{tab:op}に使用したライブラリを示す. OpenCVは画像処理・画像解析および機械学習等の機能を持つC/C++、Java、Python、MATLAB用ライブラリであり,後述するマップ作成の主に画像処理に用いる. Point Cloud Librayとは2,3次元の点群からフィルタリング、特徴推定、サーフェス再構成、レジストレーション（位置合わせ）、モデルフィッティング、セグメンテーションなどのアルゴリズムが使用できる.これはOpenCVから得られた点情報を画面上に表示するために使用する. Urg libraryとはレーザ距離センサ URG シリーズ用のオープンソースライブラリである.今回は障害物回避のため用いる. 
+\begin{table}[h] 
+ 　\begin{center} 
+    \caption{使用したライブラリ} 
+    \small 
+  \scalebox{1.00}{ 
+  \begin{tabular}{|c|c|} \hline 
+    ライブラリ &　 使用用途 \\ \hline 
+    OpenCV 3.00 &  画像処理\\ \hline 
+    Point Cloud Library 1.7 &  点群管理 \\ \hline 
+    urg library 1.2.0 &  障害物回避 \\ \hline 
+
+  \end{tabular} 
+  } 
+　   \label{tab:op} 
+  \end{center} 
 \end{table}
 
-\section{使用ソフトウェア}
-ロボットのソフトウェアにはUbuntu 14.04とGNU Compilerを用いる.また使用言語はC++言語である.
-
-\section{使用したライブラリ}
-以下に使用したライブラリを示す.
-\begin{table}[h]
- 　\begin{center}
-    \caption{使用したライブラリ}
-    \small
-  \scalebox{1.00}{
-  \begin{tabular}{|c|c|} \hline
-    ライブラリ &　使用用途 \\ \hline
-    OpenCV 3.00 &  画像処理\\ \hline
-    Point Cloud Library 1.7 & 点群管理 \\ \hline
-    urg library 1.2.0 & 障害物回避 \\ \hline
-
-  \end{tabular}
-  }
-　   \label{tab:op}
-  \end{center}
-\end{table}
 \chapter{単眼カメラによる三次元測量}
 \section{カメラの幾何学}
 カメラの姿勢を並進・回転の同次変換行列で表したものを外部パラメータ行列Eという.
@@ -482,6 +495,10 @@ FACは式(14)と式(18)より
  \end{center}
 \end{figure}
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> d8f10989350f3fe780242c9e16d67101f027633a
 \section{射影変換行列の算出}
 \subsection{内部パラメータ行列の算出}
 OpenCVで内部パラメータ行列を求めることができる関数が用意されている.この関数は8点法\cite{fivepoint}を用いており,同じカメラで撮影した2枚の画像の対応付けられた点の座標を与えることによって内部パラメータ行列を算出することができる.
@@ -489,9 +506,39 @@ OpenCVで内部パラメータ行列を求めることができる関数が用�
 OpenCVでは外部パラメータ行列を求めることができる関数が用意されている.この関数は5点法\cite{fivepoint}を用いており,内部パラメータ行列,2枚の画像の対応付けられた点の座標を与えることによって外部パラメータ行列を算出することができる.
 
 \subsection{特徴点抽出と対応付け}
-SURFとknnmatch
+座標が既知の２点を算出するためにそれぞれ2枚の画像から
 
-1枚目の画像から抽出した特徴点が2枚目の画像のどこに対応しているのかを知るためにknnmachというマッチング方法を使用する.knnmatchとは抽出したすべての特徴点
+\begin{figure}[htp]
+ \begin{center}
+  \includegraphics[width=120mm]{img/soft/surf.png}
+ 　\caption{特徴点の抽出}
+  \label{fig:surf}%ここに文章中で使用する名前を指定する
+ \end{center}
+\end{figure}
+
+1枚目の画像から抽出した特徴点が2枚目の画像のどこに対応しているのかを知るためにk近傍法(k nearest neighbor)を使用する.
+1枚目の画像のある特徴点を
+
+\begin{eqnarray}
+	\vec{a}  & = & (a_1, a_2 \cdots, a_n)
+\end{eqnarray}
+
+2枚目の画像のある特徴点を
+
+\begin{eqnarray}
+	\vec{b}  & = & (b_1, b_2 \cdots, b_n)
+\end{eqnarray}
+
+とすると
+以下のように各特徴点の成分を差分し三平方の定理を用いることで対応している点の候補をk個(kは任意)算出する.
+
+%k近傍法によって抽出したすべての特徴点から特徴量と呼ばれる特徴点を構成するベクトルの差分が最も小さい上位k個(kは指定可能)を
+
+\begin{eqnarray}
+	d & = & \sqrt{(a_1-b_1)^2+ (a_2-b_2)^2 \cdots+ (a_n-b_n)^2}
+\end{eqnarray}
+
+この手法を用いて2枚の蝶が写っている画像を対応付けし,描画した画像を図\ref{fig:chou}に示す.
 
 \begin{figure}[htp]
  \begin{center}
@@ -501,6 +548,7 @@ SURFとknnmatch
  \end{center}
 \end{figure}
 
+図\ref{fig:chou}のように,座標が既知の２点を多数算出することができた.
 
 \subsection{射影変換行列の算出}
 \section{移動量の取得}
