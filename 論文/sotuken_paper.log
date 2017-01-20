@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.24)  20 JAN 2017 13:34
-=======
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2016.7.7)  20 JAN 2017 13:28
->>>>>>> d8f10989350f3fe780242c9e16d67101f027633a
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2016.7.7)  20 JAN 2017 15:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -411,35 +407,19 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 24.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 24.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 36.
-LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 36.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 36.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 36.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 36.
-
-LaTeX Warning: Reference `fig:rouka' on page 3 undefined on input line 36.
-
-
-LaTeX Warning: Reference `fig:rouka' on page 3 undefined on input line 36.
-
 [3
 
 ]
 File: img/soft/sankaku1.png Graphic file (type bmp)
  <img/soft/sankaku1.png>
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 41.
+(Font)              scaled to size 8.64899pt on input line 42.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 41.
+(Font)              scaled to size 8.64899pt on input line 42.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 41.
+(Font)              scaled to size 8.64899pt on input line 42.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 41.
+(Font)              scaled to size 8.64899pt on input line 42.
 File: img/soft/sankaku2.png Graphic file (type bmp)
  <img/soft/sankaku2.png> [4] [5]
 第2章
@@ -449,28 +429,31 @@ File: img/hard/tizu.jpg Graphic file (type bmp)
 ] [7] [8] [9]
 第3章
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 121.
+(Font)              scaled to size 6.72699pt on input line 122.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 121.
+(Font)              scaled to size 4.805pt on input line 122.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 121.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 122.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 121.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 122.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 121.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 122.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 121.
+(Font)              scaled to size 6.72699pt on input line 122.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 4.805pt on input line 121.
+(Font)              scaled to size 4.805pt on input line 122.
 File: img/hard/gaikan.jpg Graphic file (type bmp)
 <img/hard/gaikan.jpg>
 File: img/hard/sisutemu.png Graphic file (type bmp)
  <img/hard/sisutemu.png> [10
 
-] [11] [12]
-File: img/hard/fig1.png Graphic file (type bmp)
+]
+Overfull \vbox (2.32329pt too high) has occurred while \output is active []
 
-<img/hard/fig1.png>
+
+[11] [12]
+File: img/hard/fig1.png Graphic file (type bmp)
+ <img/hard/fig1.png>
 File: img/hard/fig2.png Graphic file (type bmp)
  <img/hard/fig2.png>
 File: img/hard/fig3.png Graphic file (type bmp)
@@ -489,7 +472,7 @@ File: img/hard/fig8.png Graphic file (type bmp)
  <img/hard/fig8.png>
 File: img/hard/4.png Graphic file (type bmp)
  <img/hard/4.png>
-Overfull \hbox (7.11319pt too wide) in paragraph at lines 361--362
+Overfull \hbox (7.11319pt too wide) in paragraph at lines 362--363
  [] 
  []
 
@@ -497,13 +480,12 @@ File: img/hard/3.png Graphic file (type bmp)
 <img/hard/3.png> [19] [20]
 File: img/hard/denkikairo.png Graphic file (type bmp)
  <img/hard/denkikairo.png>
-Overfull \hbox (7.11319pt too wide) in paragraph at lines 384--385
+Overfull \hbox (7.11319pt too wide) in paragraph at lines 385--386
  [] 
  []
 
 [21] [22] [23]
 第4章
-<<<<<<< HEAD
 [24
 
 ]
@@ -524,31 +506,11 @@ File: img/soft/zahyou.png Graphic file (type bmp)
 第5章
 File: img/soft/1.png Graphic file (type bmp)
 <img/soft/1.png> [30
-=======
-[22
-
-]
-File: img/soft/sankaku1.png Graphic file (type bmp)
- <img/soft/sankaku1.png> [23]
-File: img/soft/sankaku2.png Graphic file (type bmp)
- <img/soft/sankaku2.png> [24]
-File: img/soft/chou.png Graphic file (type bmp)
-
-<img/soft/chou.png>
-File: img/soft/motion.jpg Graphic file (type bmp)
- <img/soft/motion.jpg>
-File: img/soft/zahyou.png Graphic file (type bmp)
- <img/soft/zahyou.png> [25] [26]
-第5章
-File: img/soft/1.png Graphic file (type bmp)
-<img/soft/1.png> [27
->>>>>>> d8f10989350f3fe780242c9e16d67101f027633a
 
 ]
 File: img/soft/2.png Graphic file (type bmp)
  <img/soft/2.png>
 File: img/soft/gps.png Graphic file (type bmp)
-<<<<<<< HEAD
  <img/soft/gps.png> [31] [32]
 第6章
 [33
@@ -556,42 +518,19 @@ File: img/soft/gps.png Graphic file (type bmp)
 ] [34] [35
 
 ] [36
-=======
- <img/soft/gps.png> [28] [29]
-第6章
-[30
-
-] [31] [32
-
-] [33
->>>>>>> d8f10989350f3fe780242c9e16d67101f027633a
 
 ] (./sotuken_paper.aux)
-
-LaTeX Warning: There were undefined references.
-
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 2843 strings out of 495129
- 33363 string characters out of 6182594
+ 2837 strings out of 495129
+ 33291 string characters out of 6182596
  91881 words of memory out of 5000000
- 6078 multiletter control sequences out of 15000+600000
-=======
- 2841 strings out of 495129
- 33340 string characters out of 6182596
- 91881 words of memory out of 5000000
- 6077 multiletter control sequences out of 15000+600000
->>>>>>> d8f10989350f3fe780242c9e16d67101f027633a
- 48541 words of font info for 130 fonts, out of 8000000 for 9000
+ 6073 multiletter control sequences out of 15000+600000
+ 46845 words of font info for 129 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
  34i,12n,45p,786b,410s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-<<<<<<< HEAD
-Output written on sotuken_paper.dvi (36 pages, 62420 bytes).
-=======
-Output written on sotuken_paper.dvi (33 pages, 60300 bytes).
->>>>>>> d8f10989350f3fe780242c9e16d67101f027633a
+Output written on sotuken_paper.dvi (36 pages, 62012 bytes).
