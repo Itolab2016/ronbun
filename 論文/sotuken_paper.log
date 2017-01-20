@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.24)  19 JAN 2017 17:45
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2016.7.7)  19 JAN 2017 19:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -280,7 +280,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 LaTeX Warning: Label `tab:op' multiply defined.
 
 
-LaTeX Warning: Label `fig:sankaku１' multiply defined.
+LaTeX Warning: Label `fig:sankaku2' multiply defined.
 
 )
 \openout1 = `sotuken_paper.aux'.
@@ -418,9 +418,6 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 36.
 
-LaTeX Warning: Reference `fig:sankaku1' on page 3 undefined on input line 36.
-
-
 LaTeX Warning: Reference `fig:rouka' on page 3 undefined on input line 36.
 
 
@@ -505,42 +502,35 @@ Overfull \hbox (7.11319pt too wide) in paragraph at lines 382--383
 
 [19] [20] [21]
 第4章
-
-LaTeX Warning: Reference `fig:sankaku1' on page 22 undefined on input line 456.
-
-
 [22
 
 ]
 File: img/soft/sankaku1.png Graphic file (type bmp)
- <img/soft/sankaku1.png>
-
-LaTeX Warning: Reference `fig:sankaku1' on page 23 undefined on input line 474.
-
-
-[23]
+ <img/soft/sankaku1.png> [23]
+File: img/soft/sankaku2.png Graphic file (type bmp)
+ <img/soft/sankaku2.png> [24]
 File: img/soft/chou.png Graphic file (type bmp)
- <img/soft/chou.png> [24]
+
+<img/soft/chou.png>
 File: img/soft/motion.jpg Graphic file (type bmp)
  <img/soft/motion.jpg>
 File: img/soft/zahyou.png Graphic file (type bmp)
- <img/soft/zahyou.png>
-[25]
+ <img/soft/zahyou.png> [25] [26]
 第5章
 File: img/soft/1.png Graphic file (type bmp)
-<img/soft/1.png> [26
+<img/soft/1.png> [27
 
 ]
 File: img/soft/2.png Graphic file (type bmp)
  <img/soft/2.png>
 File: img/soft/gps.png Graphic file (type bmp)
- <img/soft/gps.png> [27] [28]
+ <img/soft/gps.png> [28] [29]
 第6章
-[29
+[30
 
-] [30] [31
+] [31] [32
 
-] [32
+] [33
 
 ] (./sotuken_paper.aux)
 
@@ -552,11 +542,11 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  2841 strings out of 495129
- 33340 string characters out of 6182594
- 90881 words of memory out of 5000000
+ 33340 string characters out of 6182596
+ 91881 words of memory out of 5000000
  6077 multiletter control sequences out of 15000+600000
  48541 words of font info for 130 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
  34i,12n,45p,771b,410s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on sotuken_paper.dvi (32 pages, 57728 bytes).
+Output written on sotuken_paper.dvi (33 pages, 59824 bytes).
