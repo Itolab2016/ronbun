@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.24)  20 JAN 2017 16:50
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2016.7.7)  24 JAN 2017 19:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -486,32 +486,32 @@ Overfull \hbox (7.11319pt too wide) in paragraph at lines 369--370
 File: img/soft/sankaku2.png Graphic file (type bmp)
  <img/soft/sankaku2.png> [24]
 File: img/soft/sankaku1.png Graphic file (type bmp)
- <img/soft/sankaku1.png>
+ <img/soft/sankaku1.png> [25]
 File: img/soft/surf.png Graphic file (type bmp)
- <img/soft/surf.png>
-[25]
+
+<img/soft/surf.png> [26]
 File: img/soft/chou.png Graphic file (type bmp)
- <img/soft/chou.png> [26]
+ <img/soft/chou.png> [27]
 File: img/soft/motion.jpg Graphic file (type bmp)
  <img/soft/motion.jpg>
 File: img/soft/zahyou.png Graphic file (type bmp)
- <img/soft/zahyou.png>
-[27] [28]
+
+<img/soft/zahyou.png> [28] [29]
 第5章
 File: img/soft/1.png Graphic file (type bmp)
-<img/soft/1.png> [29
+<img/soft/1.png> [30
 
 ]
 File: img/soft/2.png Graphic file (type bmp)
  <img/soft/2.png>
 File: img/soft/gps.png Graphic file (type bmp)
- <img/soft/gps.png> [30] [31]
+ <img/soft/gps.png> [31] [32]
 第6章
-[32
+[33
 
-] [33] [34
+] [34] [35
 
-] [35
+] [36
 
 ] (./sotuken_paper.aux)
 
@@ -519,12 +519,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2836 strings out of 495129
- 33276 string characters out of 6182594
+ 2838 strings out of 495129
+ 33298 string characters out of 6182596
  91881 words of memory out of 5000000
- 6072 multiletter control sequences out of 15000+600000
+ 6074 multiletter control sequences out of 15000+600000
  46845 words of font info for 129 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
  34i,12n,45p,786b,410s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on sotuken_paper.dvi (35 pages, 62372 bytes).
+Output written on sotuken_paper.dvi (36 pages, 65304 bytes).
