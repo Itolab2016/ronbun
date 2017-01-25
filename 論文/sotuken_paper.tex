@@ -649,7 +649,7 @@ OpenCVでは外部パラメータ行列を求めることができる関数が�
 %2012/8/21
 %\bibitem{kyonenn} GPS測位計算プログラム入門,ROS,http://www.enri.go.jp/~fks442/K_MUSEN
 \bibitem{ros} Bradski,Kaehler:詳解 OpenCV,433,株式会社オライリー・ジャパン(2012)
-\bibitem{kyonenn} 理解するためのGPS測位計算プログラム入門,http://www.enri.go.jp/~fks442%/K_MUSEN
+\bibitem{kyonenn} 理解するためのGPS測位計算プログラム入門,http://www.enri.go.jp/~fks442/K\_MUSEN
 \bibitem{fivepoint} 初期値推定付非線形最小二乗法による５点法の解法
 %  \bibitem{koukuu} 中村　資郎:新航空工学講座　第7巻　プロペラ：日本航空技術協会，pp．23-24，1988
 %  \bibitem{rikigaku} 加藤　寛一郎，大屋　昭男，柄沢　研治：航空機力学入門，東京大学出版会，pp．32，1982
@@ -667,6 +667,112 @@ OpenCVでは外部パラメータ行列を求めることができる関数が�
 
 同級生のメンバーには論文の作成,修正にご協力いただき心より感謝しております.
 その他,助けていただいた多くの皆様に心から感謝しております.ありがとうございました.
+%\input{test.tex}
+\chapter*{付録}
+\addcontentsline{toc}{chapter}{付録}
+\appendix{付録}%%%%%%%%この先付録%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{OpenCVのインストール}
+今回はUbuntuでOpenCVをインストールする手順を示す.基本的に以下のコマンドをcopy and pasteすればインストールが完了する.
+\subsection{必要なファイルをインストールする}
+\begin{itemize}
+\item 開発ツール
+
+sudo apt-get -yV install cmake libeigen3-dev
+
+ubuntu 16.04以降
+sudo apt -yV install cmake libeigen3-dev
+
+\item GUIフレームワーク関連
+
+sudo apt-get -yV install libgtk2.0-dev libgtkglext1-dev libqt4-dev freeglut3-dev
+
+
+ubuntu 16.04以降
+sudo apt -yV install libgtk2.0-dev libgtkglext1-dev libqt4-dev freeglut3-dev
+
+\item 並列処理関連
+
+sudo apt-get -yV install opencl-headers libtbb-dev
+
+ubuntu 16.04以降
+sudo apt -yV install opencl-headers libtbb-dev
+
+\item 画像フォーマット関連
+
+sudo apt-get -yV install libjpeg-dev libjasper-dev libpng++-dev libtiff-dev libopenexr-dev libwebp-dev
+ubuntu 16.04以降
+sudo apt -yV install libjpeg-dev libjasper-dev libpng++-dev libtiff-dev libopenexr-dev libwebp-dev
+
+
+\item Python関連
+
+sudo apt-get -yV install libpython3.4-dev python-numpy python-scipy python-matplotlib python3-numpy python3-scipy python3-matplotlib
+
+ubuntu 16.04以降
+sudo apt -yV install libpython3.4-dev python-numpy python-scipy python-matplotlib python3-numpy python3-scipy python3-matplotlib
+
+\item Qt関連
+
+sudo apt-get -yV install qtbase5-dev
+ubuntu 16.04以降
+
+sudo apt -yV install qtbase5-dev
+
+\item cmake-guiインストール
+
+sudo apt-get -yV install cmake-gui
+ubuntu 16.04以降
+
+sudo apt -yV install cmake-gui
+
+\end{itemize}
+\subsection{GitHubからOpenCVをクローンする}
+
+git clone https://github.com/Itseez/opencv.git
+
+git clone https://github.com/Itseez/opencv\_contrib.git
+
+\subsection{クローンしたOpenCVに移動しビルド用のフォルダを作成する}
+
+cd opencv
+
+mkdir build
+
+\subsection{CMame-guiを実行する}
+cmake-gui
+
+\subsection{CMake-guiを以下の手順で操作する}
+
+\begin{enumerate}
+\item Where is the source code:にopencvディレクトリまでのパスを指定する
+
+例) /home/kouhei/work/opencv
+
+\item Where to build the binarise:にビルドしたものを置くディレクトリを指定する.先に作ったbuildディレクトリを指定する.
+
+例) /home/kouhei/work/opencv/build
+
+\item configureボタンを押す
+
+\item OPENCV\_EXTRA\_MODULES\_PATHにopencv\_contrib/modulesまでのパスを指定する.
+
+例) /home/kouhei/work/opencv\_contrib/modules
+
+\item Configureボタンを押す
+
+\item Generateボタンを押す
+
+\item cmake-gui終了
+
+\end{enumerate}
+
+\subsection{OpenCVをコンパイル,インストールする}
+
+sudo make install
+
+\subsection{共有ライブラリの依存情報を更新して終了}
+
+sudo ldconfig
 
 \end{document}
 
