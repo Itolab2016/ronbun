@@ -44,7 +44,7 @@
 \contentsline {subsection}{\numberline {4.4.4}特徴点の対応付け}{26}
 \contentsline {subsection}{\numberline {4.4.5}射影変換行列の算出}{28}
 \contentsline {section}{\numberline {4.5}移動量の取得}{28}
-\contentsline {subsection}{\numberline {4.5.1}座標変換}{28}
+\contentsline {subsection}{\numberline {4.5.1}地平直行座標への変換}{28}
 \contentsline {chapter}{\numberline {第5章}マップ生成}{30}
 \contentsline {section}{\numberline {5.1}マップ生成環境}{30}
 \contentsline {section}{\numberline {5.2}マップ生成}{31}

@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2016.7.7)  25 JAN 2017 19:13
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2015.11.24)  26 JAN 2017 18:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -494,9 +494,12 @@ File: img/soft/chou.png Graphic file (type bmp)
  <img/soft/chou.png> [27]
 File: img/soft/motion.jpg Graphic file (type bmp)
  <img/soft/motion.jpg>
+(./zahyou.tex
 File: img/soft/zahyou.png Graphic file (type bmp)
-
-<img/soft/zahyou.png> [28] [29]
+ <img/soft/zahyou.png> [28]
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 30.
+) [29]
 第5章
 File: img/soft/1.png Graphic file (type bmp)
 <img/soft/1.png> [30
@@ -514,13 +517,13 @@ File: img/soft/gps.png Graphic file (type bmp)
 ] [36
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 678.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 669.
 
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 678.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 669.
 
 [37
 
@@ -530,12 +533,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2854 strings out of 495129
- 33583 string characters out of 6182596
+ 2858 strings out of 495129
+ 33628 string characters out of 6182594
  91881 words of memory out of 5000000
- 6088 multiletter control sequences out of 15000+600000
- 46845 words of font info for 129 fonts, out of 8000000 for 9000
+ 6090 multiletter control sequences out of 15000+600000
+ 48678 words of font info for 131 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
  34i,12n,45p,786b,410s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on sotuken_paper.dvi (39 pages, 69880 bytes).
+Output written on sotuken_paper.dvi (39 pages, 72780 bytes).
