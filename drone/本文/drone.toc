@@ -1,0 +1,49 @@
+\contentsline {chapter}{\numberline {第1章}はじめに}{3}
+\contentsline {section}{\numberline {1.1}研究背景}{3}
+\contentsline {section}{\numberline {1.2}研究目的}{3}
+\contentsline {section}{\numberline {1.3}本論文の構成}{3}
+\contentsline {chapter}{\numberline {第2章}ハードウェア}{4}
+\contentsline {section}{\numberline {2.1}目標}{4}
+\contentsline {section}{\numberline {2.2}仕様}{4}
+\contentsline {subsection}{\numberline {2.2.1}機体}{5}
+\contentsline {subsection}{\numberline {2.2.2}球体}{5}
+\contentsline {section}{\numberline {2.3}開発の経緯}{5}
+\contentsline {subsection}{\numberline {2.3.1}機体}{5}
+\contentsline {subsubsection}{1号機}{5}
+\contentsline {subsubsection}{2号機}{6}
+\contentsline {subsubsection}{3号機}{6}
+\contentsline {subsubsection}{3号機改}{7}
+\contentsline {subsection}{\numberline {2.3.2}球体}{7}
+\contentsline {subsubsection}{1号機}{7}
+\contentsline {subsubsection}{2号機}{7}
+\contentsline {subsubsection}{3号機}{7}
+\contentsline {section}{\numberline {2.4}理想的な機体,球体の仕様}{8}
+\contentsline {chapter}{\numberline {第3章}ソフトウェア}{11}
+\contentsline {section}{\numberline {3.1}目標}{11}
+\contentsline {section}{\numberline {3.2}概要}{11}
+\contentsline {section}{\numberline {3.3}開発環境}{12}
+\contentsline {section}{\numberline {3.4}コントローラ}{12}
+\contentsline {section}{\numberline {3.5}プログラムの流れ}{12}
+\contentsline {section}{\numberline {3.6}PID制御}{13}
+\contentsline {section}{\numberline {3.7}PID制御での飛行試験}{13}
+\contentsline {section}{\numberline {3.8}最適レギュレータ設計までの流れ}{14}
+\contentsline {subsection}{\numberline {3.8.1}運動方程式}{14}
+\contentsline {subsection}{\numberline {3.8.2}特性確認}{15}
+\contentsline {subsubsection}{物理特性}{15}
+\contentsline {subsubsection}{推力特性}{15}
+\contentsline {subsubsection}{モーメント特性}{16}
+\contentsline {subsection}{\numberline {3.8.3}ルンゲ・クッタ法を用いた機体のシュミレーション}{19}
+\contentsline {subsection}{\numberline {3.8.4}校正}{19}
+\contentsline {subsubsection}{加速度センサ}{20}
+\contentsline {subsubsection}{地磁気センサ}{21}
+\contentsline {section}{\numberline {3.9}最適レギュレータ}{22}
+\contentsline {subsection}{\numberline {3.9.1}最適レギュレータについて}{22}
+\contentsline {subsection}{\numberline {3.9.2}最適レギュレータの結果}{22}
+\contentsline {chapter}{\numberline {第4章}おわりに}{23}
+\contentsline {chapter}{謝辞}{24}
+\contentsline {chapter}{付録}{25}
+\contentsline {section}{\numberline {4.1}レーザー加工機}{25}
+\contentsline {subsection}{\numberline {4.1.1}加工可能な材料}{25}
+\contentsline {subsection}{\numberline {4.1.2}加工データ}{25}
+\contentsline {subsection}{\numberline {4.1.3}加工時の設定}{25}
+\contentsline {section}{\numberline {4.2}ソースコード}{25}
