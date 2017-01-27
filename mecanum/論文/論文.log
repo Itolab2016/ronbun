@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.11.30)  27 JAN 2017 17:34
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.11.30)  27 JAN 2017 19:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -499,27 +499,32 @@ File: Image/座標.png Graphic file (type bmp)
 第4章
 
 LaTeX Warning: Reference `積み込みロボット重心' on page 14 undefined on input l
-ine 251.
+ine 258.
 
 
 LaTeX Warning: Reference `積み込みロボット重心' on page 14 undefined on input l
-ine 251.
+ine 258.
 
 [14
 
 ]
 File: Image/積込ロボット重心.png Graphic file (type bmp)
- <Image/積込ロボット重心.png> [15] [16]
+ <Image/積込ロボット重心.png> [15]
+File: Image/Arduino9軸モーションシールド図.png Graphic file (type bmp)
+
+<Image/Arduino9軸モーションシールド図.png> [16] [17]
 第5章
-[17
-
-]
-
-LaTeX Warning: Empty `thebibliography' environment on input line 281.
-
 [18
 
-] [19
+]
+Underfull \hbox (badness 10000) in paragraph at lines 310--311
+[]\T1/ptm/m/n/10 Arduino9AxesMotionLibrary,http://www.arduino.org/learning/refe
+rence/9-axes-motion,2017/01/16
+ []
+
+[19
+
+] [20
 
 ] (./論文.aux)
 
@@ -527,12 +532,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2977 strings out of 493671
- 35358 string characters out of 6151254
+ 2986 strings out of 493671
+ 35548 string characters out of 6151254
  98753 words of memory out of 5000000
- 6435 multiletter control sequences out of 15000+600000
+ 6443 multiletter control sequences out of 15000+600000
  38811 words of font info for 102 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 34i,10n,45p,495b,502s stack positions out of 5000i,500n,10000p,500000b,80000s
+ 34i,11n,45p,495b,502s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on 論文.dvi (19 pages, 22916 bytes).
+Output written on 論文.dvi (20 pages, 25972 bytes).

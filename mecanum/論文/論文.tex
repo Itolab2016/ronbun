@@ -218,10 +218,17 @@
 		左スティックはY方向に傾けることで$L_y$、X方向に傾けることで$L_x$を出力する。右スティックはX方向に傾けることで$R_x$を出力する。モータのPWM値の計算式は以下のようになる。
 
 		\begin{eqnarray}
-		M_1 = L_y + L_x + R_x \\
-		M_2 = L_y - L_x + R_x \\
-		M_3 = L_y - L_x + R_x \\
+		M_1 = L_y + L_x + R_x
+		\label{式1}
+		\\
+		M_2 = L_y - L_x + R_x
+		\label{式2}
+		\\
+		M_3 = L_y - L_x + R_x
+		\label{式3}
+		\\
 		M_4 = L_y + L_x + R_x
+		\label{式4}
 		\end{eqnarray}
 
 \chapter{今回製作したロボットのメカナムホイールの問題点}
@@ -262,22 +269,45 @@
 		（失敗の例を表として示す予定）
 		\label{改善無しの直進実験}
 
-	\section{改善内容}
+	\section{方向自動修正}
+	ロボットの重心が問題であるのならばカウンターウェイトを用いて重心を整えればいいのではないのかと考えられる。しかし、今回のロボコンの競技上、重量制限があるため制御面で改善することにした。そこで用いたのが図\ref{Arduino9軸モーションシールド図}のArduino 9軸モーションシールドでその中に搭載されているジャイロセンサを使用し改善を行った。
+
+\begin{figure}[htp]
+		\begin{center}
+			\includegraphics[width=40mm]{Image/Arduino9軸モーションシールド図.png}
+			\caption{Arduino9軸モーションシールド図}
+			\label{Arduino9軸モーションシールド図}
+		\end{center}
+\end{figure}
 
 		\subsection{ジャイロセンサ}
-		理由はロボコンのルールに沿っているため
+		ジャイロセンサとは、角速度センサとも呼ばれ、角度が単位時間当たりにどれだけ変化しているのか計測できるセンサである。このセンサは身近にも用いられており、スマートフォンの加速度センサとの違い、加速度センサは重力方向によって左右上下の認識を行う。
 
 		\subsection{どのような動きか（式に入れることも）}
+		今回使用したプログラムでは$-180～180[deg]$の角度を読み取ることが可能で$0[deg]$からずれた分を補正値のPWM値として式\ref{式1},\ref{式2},\ref{式3},\ref{式4}にerrの形で代入し以下のような式となる。
+
+\begin{eqnarray}
+M_1 = L_y + L_x + R_x + err
+\\
+M_2 = L_y - L_x + R_x + err
+\\
+M_3 = L_y - L_x + R_x + err
+\\
+M_4 = L_y + L_x + R_x + err
+\end{eqnarray}
+
+このようにすることでDualshock3の左スティックを入力中も旋回の動作が自動で行われて自動方向修正が可能となる。
 
 		\subsection{結果}
 		（\ref{改善無しの直進実験}の直進実験からどのような変化があったか）
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{おわりに}
+メカナムホイールを用いることで容易にかつ素早く移動することができるが、ロボットの重心が中心から離れている場合、正しく移動することができない。それを改善するためには原因を修正するか、ジャイロセンサなどで補正する必要がある。
 
 % 参考文献
-\begin{thebibliography}{0}
-
+\begin{thebibliography}{1}
+\bibitem{gyro} Arduino9AxesMotionLibrary,http:{\slash}{\slash}www.arduino.org{\slash}learning{\slash}reference{\slash}9-axes-motion,2017{\slash}01{\slash}16閲覧
 \end{thebibliography}
 
 \chapter*{謝辞}

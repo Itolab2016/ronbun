@@ -24,10 +24,10 @@
 \contentsline {subsection}{\numberline {4.2.1}項目}{14}
 \contentsline {subsection}{\numberline {4.2.2}一番の原因と理由}{15}
 \contentsline {subsection}{\numberline {4.2.3}改善無しの直進実験}{15}
-\contentsline {section}{\numberline {4.3}改善内容}{16}
+\contentsline {section}{\numberline {4.3}方向自動修正}{16}
 \contentsline {subsection}{\numberline {4.3.1}ジャイロセンサ}{16}
 \contentsline {subsection}{\numberline {4.3.2}どのような動きか（式に入れることも）}{16}
-\contentsline {subsection}{\numberline {4.3.3}結果}{16}
-\contentsline {chapter}{\numberline {第5章}おわりに}{17}
-\contentsline {chapter}{参考文献}{18}
-\contentsline {chapter}{謝辞}{19}
+\contentsline {subsection}{\numberline {4.3.3}結果}{17}
+\contentsline {chapter}{\numberline {第5章}おわりに}{18}
+\contentsline {chapter}{参考文献}{19}
+\contentsline {chapter}{謝辞}{20}
