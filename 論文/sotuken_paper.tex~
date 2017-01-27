@@ -765,6 +765,9 @@ sudo make install
 
 sudo ldconfig
 
+
+\input{start.tex}
+
 \end{document}
 
 
