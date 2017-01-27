@@ -293,15 +293,13 @@ PID制御は目標値と現在の値の差に比例,積分,微分をそれぞれ
 \end{figure}
 
 以上からPID制御だけでは球体カバーを取り付けた状態での離陸は困難であることが判明した.
-制御系の設計を見直し,最適レギュレータを設計することにした.
+そのため,制御系の設計を見直すことにした.
 
-\section{最適レギュレータ設計までの流れ}
-
-\subsection{運動方程式}
+\section{運動方程式}
 運動方程式には航空機の運動方程式を利用する.
 前提条件として,左右対称,前後非対称,上下非対称,傾きが微小であることなどがある.
 この方程式をルンゲ・クッタ法を用いて解く.
-ルンゲ・クッタ法とは微分方程式を数値的に解く方法である.以下に実際に使用するルンゲ・クッタ法で代表的なルンゲ・クッタ法の公式を示す.
+ルンゲ・クッタ法とは微分方程式を数値的に解く方法である.以下に実際に使用するルンゲ・クッタ法で代表的なルンゲ・クッタの公式を示す.
 
 \begin{equation}
 	x_k+1 = x_k+\frac{1}{6}h(k_1+2k_2+2k_3+k_4)
@@ -344,7 +342,7 @@ PID制御は目標値と現在の値の差に比例,積分,微分をそれぞれ
 
 \(k_4\)を求めて　\(x_k+\frac{1}{6}hk_1+\frac{1}{3}hk_2+\frac{1}{3}hk_3+\frac{1}{6}hk_4\)　　　　　　　x=x+1/6k
 
-のようにxの値を増やしていくと,最後に得られたxは\(x_k+1\)になっている.\cite{runge} 
+のようにxの値をふやしていくと,最後に得られたxは\(x_k+1\)になっている.\cite{runge} 
 
 \subsection{特性確認}
 前述の運動方程式を解くために必要な値を実験などにより求める必要がある.
@@ -418,7 +416,7 @@ PID制御は目標値と現在の値の差に比例,積分,微分をそれぞれ
 図\ref{fig:moment-test}のように,マルチコプターに回転軸を取り付けて吊るした.
 この状態で1つのモータで機体が1回転するのにかかる時間を計測する.
 こちらも最適レギュレータ使用するので制御則を線形にする.
-実験により得られたグラフから機体が1回転するのにかかる時間と◯◯を式(\ref{eq6})に代入し,その近似直線をモータの制御式として用いる.
+実験により得られたグラフから機体が1回転する時の時間と慣性乗積を式(\ref{eq6})に代入し,その近似直線をモータの制御式として用いる.
 
 \begin{equation}
 	N = \frac{4J\pi}{t^2}
@@ -448,14 +446,14 @@ PID制御は目標値と現在の値の差に比例,積分,微分をそれぞれ
 
 \begin{figure}[htbp]
 	\begin{center}
-		\includegraphics[width=75mm]{image/moment/moment-R.eps}
+		\includegraphics[width=75mm]{image/moment/moment.eps}
 		\caption{RモータのPWM値とモーメントの関係とその近似直線}
 		\label{fig:moment-R}
 	\end{center}
 \end{figure}
 
 \subsection{ルンゲ・クッタ法を用いた機体のシュミレーション}
-上記の実験で運動方程式を解くのに必要な情報が得られたので,ルンゲ・クッタ法を用いて機体のシュミレーションを行った.
+上記の実験でルンゲ・クッタ法を解くのに必要な物理情報がまとまったので,ルンゲ・クッタ法を用いて機体のシュミレーションを行った.
 以下の表\ref{table:syumi}の条件でシュミレーションを行った.
 
 \begin{table}[htbp]
@@ -552,13 +550,64 @@ z軸について,校正前のデータを図\ref{fig:acc-calib-be}に,校正後�
 	\label{eq8}
 \end{equation}
 
-ここで,制御目的の重み行列Q(n×n)は非負定な対称行列,制御入力の重み行列R(m×m)は正定対称行列とする.\cite{regyu}
+ここで,制御目的の重み行列Q(n×n)は非負定な対称行列,制御入力の重み行列R(m×m)は正定対称行列とする.\cite{regyuu}
 
 \subsection{最適レギュレータの結果}
 最適レギュレータにより,球体カバーを取り付けた状態での離陸が可能となった.
+その時のジャイロセンサの取得値と各モータの指令値をグラフ化したものを図\ref{fig:regyu}に示す.
 
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=75mm]{image/regyu.png}
+		\caption{最適レギュレータ使用後の各値}
+		\label{fig:regyu}
+	\end{center}
+\end{figure}
+
+図\ref{fig:rugyu}は図\ref{fig:test-1}のPID制御を用いて制御を行っていた時に比べセンサの取得値がより０に近い値を示しているため機体の姿勢がより安定していることがわかる.
+また,向かい合うモータの指令値も同じような値を示しているためモータの出力差により機体の姿勢が不安定になることは少なくなったと考えられる.
 
 \chapter{おわりに}
+
+\section{結論}
+今年度の卒業研究の結論を以下の項にまとめる.
+
+\subsection{ハードウェアの結論}
+機体本体は厚さ3mmの木材を使用し,レーザー加工機を使用することにより簡単に複数の機体が制作できるようになった.また,球体もレーザー加工機で簡単に制作できるようになっている.そのため制御対象であるハードウェアの製作難易度は大きく低下し,誰でも簡単に機体を製作できる環境が整った.
+
+\subsection{ソフトウェアの結論}
+初めに,環境構築の方法はすでに確立されているので簡単に環境構築を行うことができる.
+制御環境は現在使用している最適レギュレータで離陸は可能となったので来年度以降の基板づくりには成功したと考えられる.
+
+\subsection{全体的な結論}
+初めに,上記のようにハードウェアをゼロから作成しプログラムの改良をしてマルチコプターを離陸できるように調整するという一連の流れが可能となっている.
+そのため,機械制御を学ぶ上で約に立つものを作るという目標は達成できたと考えられる.
+
+
+次に制御環境の構築は上記のように構築方法が確立したため目標は達成できた.
+
+
+最後に機体を球体カバーで覆うことにより機体の耐久性向上と共に安全化が図れたものが製作出来たと考えられる.
+
+\section{今後の課題}
+今後の課題を以下の項に示す.
+\subsection{解決すべき課題}
+機体の上昇に必要な推力を減らすことで機体の姿勢制御に使用できる推力を増やすため,ハードウェア全体を見なおし,軽量化が必要である.
+
+
+現在制御に用いているプログラムにおいてセンサ情報の取得は各センサのサンプルプログラムの組み合わせて使用しているためプラグラムの全体をうまく把握しきれていない.
+そのため,各サンプルプログラムをもう一度見直しセンサがどのような値をどの方向で取得しているかを再度確認する必要がある.
+\subsection{今後取り組んでみたいこと}
+現在ハードウェアの量産はレーザー加工を用いて簡単に行うことができる.また,球体に入れた状態で離陸可能なプログラムがすでにあるので球体マルチコプターを複数機用いて図\ref{fig:hen}のように編隊飛行に挑戦してみたい.
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=75mm]{image/hen.png}
+		\caption{編隊飛行}
+		\label{fig:hen}
+	\end{center}
+\end{figure}
+
 
 
 \chapter*{謝辞}
@@ -572,6 +621,10 @@ z軸について,校正前のデータを図\ref{fig:acc-calib-be}に,校正後�
 同級生のメンバーには論文の作成,修正にご協力いただき心より感謝しております.
 その他、助けていただいた多くの皆様に心から感謝しております.ありがとうございました.
 
+\begin{thebibliography}{8}
+	\bibitem{runge} 野波　健蔵, 西村　秀和, 平田　光男：MATLABによる制御系設計，東京電機大学出版局，pp. 49-50，1998
+	\bibitem{regyuu} 川上　一郎:数値計算　[理工系の数学入門コース8]：株式会社　岩波出版，pp．156-157，1989
+\end{thebibliography}
 
 \chapter*{付録}
 \addcontentsline{toc}{chapter}{付録}
@@ -593,6 +646,58 @@ dxf形式のデータやpng,jpgなどの画像も読み込むことができる.
 加工時には速度,レーザーの出力,DPI(Dot per inch)などが設定可能である.
 この値は材質によって異なる.
 基準値は説明書に記載されているが,実際に切ってみて調整を行うほうが良い.
+
+\section{RaspberryPi}
+本研究ではRaspberryPiを使用しているが,OSには専用のRaspbianやNOOBSではなく後述のemlid-raspbianを使用している.
+そのためGUIは使用できない.
+
+\subsection{初期設定}
+sudo raspi-config
+メモリ解放
+自動ログイン
+キーボード設定
+
+ネットワーク接続設定
+
+\section{Emlid}
+
+\subsection{emlid-raspbian}
+前述の通りGUIを使用することができない.
+https://docs.emlid.com/navio2/Navio-APM/configuring-raspberry-pi/
+
+\subsection{Navio2サンプルプログラム}
+EmlidがNavio2のセンサ情報取得のサンプルプログラムをGitHub上で公開している.
+https://github.com/emlid/Navio2.git
+
+\section{DUALSHOCK3の使用}
+DUALSHOCK3とのBluetooth通信にあたり,BluetoothドングルをRaspberryPiに接続する.
+RaspberryPi3ではオンボード上にBluetoothモジュールが搭載されているが,emlid-raspbianでは設定が複雑になっているよう.
+
+\subsection{bluez}
+wget http://www.kernel.org/pub/linux/bluetooth/bluez-5.37.tar.xz
+tar xvf bluez-5.37.tar.xz
+cd bluez-5.37/
+sudo apt-get install -y libusb-dev libdbus-1-dev libglib2.0-dev libudev-dev libical-dev libreadline-dev
+./configure
+make
+sudo make install
+sudo ldconfig
+
+\subsection{sixpair}
+wget http://www.pabr.org/sixlinux/sixpair.c
+gcc -o sixpair sixpair.c -lusb
+
+\subsection{QtSixA}
+wget http://sourceforge.net/projects/qtsixa/files/QtSixA%201.5.1/QtSixA-1.5.1-src.tar.gz
+tar xfvz QtSixA-1.5.1-src.tar.gz
+cd QtSixA-1.5.1/sixad
+make
+sudo mkdir -p /var/lib/sixad/profiles
+sudo checkinstall
+
+\subsection{接続方法}
+sudo hciconfig hci0 piscan
+%sudo sixad -s &
 
 \section{ソースコード}
 実際に使用したソースコードを以下に示す.
