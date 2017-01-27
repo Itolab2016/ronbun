@@ -272,6 +272,15 @@ Navio2のLEDがプログラムが動作していない時は緑に,プログラ�
 
 PIDとは比例(Proportional),積分(Integral),微分(Differential)の頭文字をとったものである.
 PID制御は目標値と現在の値の差に比例,積分,微分をそれぞれ行い,それらに補正値ゲインを掛けて足し合わせることで必要な制御量を求める制御方式である.\cite{pid}
+PID制御の制御則を図\ref{fig:PID}に示す.
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=75mm]{image/susiki/PID.png}
+		\caption{PID制御の制御則}
+		\label{fig:PID}
+	\end{center}
+\end{figure}
 
 \section{PID制御での飛行試験}
 製作した機体1号機と球体1号機を組み合わせ,天井から紐で吊るして飛行試験を行った.
@@ -419,7 +428,7 @@ PID制御は目標値と現在の値の差に比例,積分,微分をそれぞれ
 実験により得られたグラフから機体が1回転する時の時間と慣性乗積を式(\ref{eq6})に代入し,その近似直線をモータの制御式として用いる.
 
 \begin{equation}
-	N = \frac{4J\pi}{t^2}
+	N = \frac{4{I_{zz}}\pi}{t^2}
 	\label{eq6}
 \end{equation}
  
@@ -536,7 +545,7 @@ z軸について,校正前のデータを図\ref{fig:acc-calib-be}に,校正後�
 %解いた運動方程式を線形化し,その線形化したモデルに最適レギュレータを設計した.
 %最適レギュレータはセンサから得られた機体の各変位量を常にフィードバックし,その変位量が0になるよう制御して機体の状態を安定させる制御器である.
 
-最適レギュレータとは,評価関数を設け,それを最小とするように状態フィードバックによる最適制御入力を決定する設計法について以下に述べる.可制御で線形な時不定システムの式(\ref{eq7})
+最適レギュレータとは,評価関数を設け,それを最小とするように状態フィードバックによる最適制御入力を決定する設計法について以下に述べる.可制御で線形な時不定システム
 
 \begin{equation}
 	\dot{x}(t) = Ax(t)+Bu(t)
@@ -551,6 +560,15 @@ z軸について,校正前のデータを図\ref{fig:acc-calib-be}に,校正後�
 \end{equation}
 
 ここで,制御目的の重み行列Q(n×n)は非負定な対称行列,制御入力の重み行列R(m×m)は正定対称行列とする.\cite{regyuu}
+最適レギュレータの制御則を図\ref{fig:regyureta}に示す.
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=75mm]{image/susiki/regyureta.png}
+		\caption{最適レギュレータの制御}
+		\label{fig:regyureta}
+	\end{center}
+\end{figure}
 
 \subsection{最適レギュレータの結果}
 最適レギュレータにより,球体カバーを取り付けた状態での離陸が可能となった.

@@ -31,13 +31,13 @@
 \contentsline {subsubsection}{物理特性}{15}
 \contentsline {subsubsection}{推力特性}{15}
 \contentsline {subsubsection}{モーメント特性}{16}
-\contentsline {subsection}{\numberline {3.8.2}ルンゲ・クッタ法を用いた機体のシュミレーション}{17}
-\contentsline {subsection}{\numberline {3.8.3}校正}{19}
-\contentsline {subsubsection}{加速度センサ}{19}
+\contentsline {subsection}{\numberline {3.8.2}ルンゲ・クッタ法を用いた機体のシュミレーション}{18}
+\contentsline {subsection}{\numberline {3.8.3}校正}{20}
+\contentsline {subsubsection}{加速度センサ}{20}
 \contentsline {subsubsection}{地磁気センサ}{20}
-\contentsline {section}{\numberline {3.9}最適レギュレータ}{21}
-\contentsline {subsection}{\numberline {3.9.1}最適レギュレータについて}{21}
-\contentsline {subsection}{\numberline {3.9.2}最適レギュレータの結果}{22}
+\contentsline {section}{\numberline {3.9}最適レギュレータ}{22}
+\contentsline {subsection}{\numberline {3.9.1}最適レギュレータについて}{22}
+\contentsline {subsection}{\numberline {3.9.2}最適レギュレータの結果}{23}
 \contentsline {chapter}{\numberline {第4章}おわりに}{24}
 \contentsline {section}{\numberline {4.1}結論}{24}
 \contentsline {subsection}{\numberline {4.1.1}ハードウェアの結論}{24}
@@ -47,19 +47,20 @@
 \contentsline {subsection}{\numberline {4.2.1}解決すべき課題}{25}
 \contentsline {subsection}{\numberline {4.2.2}今後取り組んでみたいこと}{25}
 \contentsline {chapter}{謝辞}{27}
-\contentsline {chapter}{付録}{28}
-\contentsline {section}{\numberline {4.3}レーザー加工機}{28}
-\contentsline {subsection}{\numberline {4.3.1}加工可能な材料}{28}
-\contentsline {subsection}{\numberline {4.3.2}加工データ}{28}
-\contentsline {subsection}{\numberline {4.3.3}加工時の設定}{28}
-\contentsline {section}{\numberline {4.4}RaspberryPi}{29}
-\contentsline {subsection}{\numberline {4.4.1}初期設定}{29}
-\contentsline {section}{\numberline {4.5}Emlid}{29}
-\contentsline {subsection}{\numberline {4.5.1}emlid-raspbian}{29}
-\contentsline {subsection}{\numberline {4.5.2}Navio2サンプルプログラム}{29}
-\contentsline {section}{\numberline {4.6}DUALSHOCK3の使用}{29}
-\contentsline {subsection}{\numberline {4.6.1}bluez}{29}
-\contentsline {subsection}{\numberline {4.6.2}sixpair}{30}
-\contentsline {subsection}{\numberline {4.6.3}QtSixA}{30}
-\contentsline {subsection}{\numberline {4.6.4}接続方法}{30}
-\contentsline {section}{\numberline {4.7}ソースコード}{30}
+\contentsline {chapter}{参考文献}{28}
+\contentsline {chapter}{付録}{29}
+\contentsline {section}{\numberline {4.3}レーザー加工機}{29}
+\contentsline {subsection}{\numberline {4.3.1}加工可能な材料}{29}
+\contentsline {subsection}{\numberline {4.3.2}加工データ}{29}
+\contentsline {subsection}{\numberline {4.3.3}加工時の設定}{29}
+\contentsline {section}{\numberline {4.4}RaspberryPi}{30}
+\contentsline {subsection}{\numberline {4.4.1}初期設定}{30}
+\contentsline {section}{\numberline {4.5}Emlid}{30}
+\contentsline {subsection}{\numberline {4.5.1}emlid-raspbian}{30}
+\contentsline {subsection}{\numberline {4.5.2}Navio2サンプルプログラム}{30}
+\contentsline {section}{\numberline {4.6}DUALSHOCK3の使用}{30}
+\contentsline {subsection}{\numberline {4.6.1}bluez}{30}
+\contentsline {subsection}{\numberline {4.6.2}sixpair}{31}
+\contentsline {subsection}{\numberline {4.6.3}QtSixA}{31}
+\contentsline {subsection}{\numberline {4.6.4}接続方法}{31}
+\contentsline {section}{\numberline {4.7}ソースコード}{31}
