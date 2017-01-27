@@ -21,7 +21,7 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{超低重心6輪独立懸架ローバーの画像情報による自律走行}
+\title{超低重心6輪独立懸架ローバーの単眼カメラによる3次元測量}
 \author{金沢工業高等専門学校　佐々井翔也,戸澗健,畠中和久}
 \date{2016-12-20}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -103,7 +103,7 @@
 
 \begin{figure}[htp]
  \begin{center}
-  \includegraphics[width=70mm]{3.png}
+  \includegraphics[width=70mm]{image/3.png}
  　\caption{懸架装置}
   \label{fig:kenka}%ここに文章中で使用する名前を指定する
  \end{center}
@@ -118,7 +118,7 @@
 
 \begin{figure}[htp]
  \begin{center}
-  \includegraphics[width=30mm]{motion.jpg}
+  \includegraphics[width=30mm]{image/motion.jpg}
  　\caption{モーションセンサー}
   \label{fig:motion}%ここに文章中で使用する名前を指定する
  \end{center}
@@ -134,7 +134,7 @@
 
 \begin{figure}[htp]
  \begin{center}
-  \includegraphics[width=45mm]{1.png}
+  \includegraphics[width=45mm]{image/1.png}
  　\caption{マップ生成環境}
   \label{fig:map}%ここに文章中で使用する名前を指定する
  \end{center}
@@ -143,7 +143,7 @@
 
 \begin{figure}[htp]
  \begin{center}
-  \includegraphics[width=45mm]{2.png}
+  \includegraphics[width=45mm]{image/2.png}
  　\caption{生成したマップ}
   \label{fig:mapp}%ここに文章中で使用する名前を指定する
  \end{center}
