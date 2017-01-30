@@ -32,7 +32,7 @@
 \begin{document}
 %\layout
 \maketitle
-\thispagestyle{fancy}dvi
+\thispagestyle{fancy}
 \pagestyle{fancy}
 
 %行間

@@ -1,146 +1,139 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.11.30)  27 JAN 2017 19:17
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2016.7.7)  30 JAN 2017 18:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./前刷り.tex
-(./前刷り.tex
-pLaTeX2e <2016/11/29> (based on LaTeX2e <2016/03/31> patch level 3)
-Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+**�^^89^^8d�^^88激^^82^^8a.tex
+(./�^^89^^8d�^^88激^^82^^8a.tex
+pLaTeX2e <2006/11/10> (based on LaTeX2e <2011/06/27> patch level 0)
+Babel <3.9h> and hyphenation patterns for 11 languages loaded.
 (./sotsuken_abst.cls
 *** Manuscript Style for pLaTeX2e by kouhei ***
-(c:/w32tex/share/texmf-dist/tex/platex/jsclasses/jsarticle.cls
-Document Class: jsarticle 2016/12/13 okumura, texjporg
-\stockwidth=\dimen118
-\stockheight=\dimen119
-\jsc@mpt=\dimen120
-\jsc@mmm=\dimen121
-\jsc@smallskipamount=\skip41
-LaTeX Info: Redefining \rmfamily on input line 462.
-LaTeX Info: Redefining \sffamily on input line 465.
-LaTeX Info: Redefining \ttfamily on input line 468.
-LaTeX Info: Redefining \textmc on input line 471.
-LaTeX Info: Redefining \textgt on input line 473.
+(/usr/share/texlive/texmf-dist/tex/platex/jsclasses/jsarticle.cls
+Document Class: jsarticle 2013/05/14 okumura
+LaTeX Info: Redefining \rmfamily on input line 332.
+LaTeX Info: Redefining \sffamily on input line 335.
+LaTeX Info: Redefining \ttfamily on input line 338.
 \symmincho=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
-(Font)                  JY1/mc/m/n --> JY1/gt/m/n on input line 534.
+(Font)                  JY1/mc/m/n --> JY1/gt/m/n on input line 403.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 725.
+(Font)              scaled to size 9.60999pt on input line 593.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 725.
-\fullwidth=\dimen122
+(Font)              scaled to size 9.60999pt on input line 593.
+\fullwidth=\dimen118
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 7.68799pt on input line 877.
+(Font)              scaled to size 7.68799pt on input line 740.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 7.68799pt on input line 877.
-\c@part=\count82
-\c@section=\count83
-\c@subsection=\count84
-\c@subsubsection=\count85
-\c@paragraph=\count86
-\c@subparagraph=\count87
+(Font)              scaled to size 7.68799pt on input line 740.
+\c@part=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
 \@abstractbox=\box41
-\c@figure=\count88
-\c@table=\count89
-\abovecaptionskip=\skip42
-\belowcaptionskip=\skip43
-\jsc@tocl@width=\dimen123
-\@lnumwidth=\dimen124
-\bibindent=\dimen125
-(c:/w32tex/share/texmf-dist/tex/platex/jsclasses/jslogo.sty
-Package: jslogo 2016/07/14 okumura, texjporg
-LaTeX Info: Redefining \TeX on input line 94.
-LaTeX Info: Redefining \LaTeX on input line 147.
-LaTeX Info: Redefining \LaTeXe on input line 200.
-)
-\heisei=\count90
-)
-(c:/w32tex/share/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+\c@figure=\count87
+\c@table=\count88
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\@lnumwidth=\dimen119
+\bibindent=\dimen120
+LaTeX Info: Redefining \TeX on input line 1697.
+LaTeX Info: Redefining \LaTeX on input line 1723.
+LaTeX Info: Redefining \LaTeXe on input line 1748.
+\heisei=\count89
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(c:/w32tex/share/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks15
 )
-(c:/w32tex/share/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(c:/w32tex/share/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(c:/w32tex/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: dvipdfmx.def on input line 99.
+Package graphics Info: Driver file: dvipdfmx.def on input line 91.
 
-(c:/w32tex/share/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
-File: dvipdfmx.def 2016/07/11 v4.12 LaTeX color/graphics driver for dvipdfmx (L
-3/ChoF)
+(/usr/share/texlive/texmf-dist/tex/latex/dvipdfmx-def/dvipdfmx.def
+File: dvipdfmx.def 2014/01/23 v3.4 LaTeX graphics driver for dvipdfmx (TeX Live
+/ChoF)
 ))
-\Gin@req@height=\dimen126
-\Gin@req@width=\dimen127
+\Gin@req@height=\dimen121
+\Gin@req@width=\dimen122
 )
-(c:/w32tex/share/texmf-dist/tex/latex/subfigure/subfigure.sty
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
-\subfigtopskip=\skip44
-\subfigcapskip=\skip45
-\subfigcaptopadj=\dimen128
-\subfigbottomskip=\skip46
-\subfigcapmargin=\dimen129
-\subfiglabelskip=\skip47
-\c@subfigure=\count91
-\c@lofdepth=\count92
-\c@subtable=\count93
-\c@lotdepth=\count94
-\subfig@top=\skip48
-\subfig@bottom=\skip49
+\subfigtopskip=\skip43
+\subfigcapskip=\skip44
+\subfigcaptopadj=\dimen123
+\subfigbottomskip=\skip45
+\subfigcapmargin=\dimen124
+\subfiglabelskip=\skip46
+\c@subfigure=\count90
+\c@lofdepth=\count91
+\c@subtable=\count92
+\c@lotdepth=\count93
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip47
+\subfig@bottom=\skip48
 )
-(c:/w32tex/share/texmf-dist/tex/latex/tools/layout.sty
-Package: layout 2014/10/28 v1.2c Show layout parameters
-\oneinch=\count95
-\cnt@paperwidth=\count96
-\cnt@paperheight=\count97
-\cnt@hoffset=\count98
-\cnt@voffset=\count99
-\cnt@textheight=\count100
-\cnt@textwidth=\count101
-\cnt@topmargin=\count102
-\cnt@oddsidemargin=\count103
-\cnt@evensidemargin=\count104
-\cnt@headheight=\count105
-\cnt@headsep=\count106
-\cnt@marginparsep=\count107
-\cnt@marginparwidth=\count108
-\cnt@marginparpush=\count109
-\cnt@footskip=\count110
-\fheight=\count111
-\ref@top=\count112
-\ref@hoffset=\count113
-\ref@voffset=\count114
-\ref@head=\count115
-\ref@body=\count116
-\ref@foot=\count117
-\ref@margin=\count118
-\ref@marginwidth=\count119
-\ref@marginpar=\count120
-\Interval=\count121
-\ExtraYPos=\count122
-\PositionX=\count123
-\PositionY=\count124
-\ArrowLength=\count125
+(/usr/share/texlive/texmf-dist/tex/latex/tools/layout.sty
+Package: layout 2000/09/25 v1.2c Show layout parameters
+\oneinch=\count94
+\cnt@paperwidth=\count95
+\cnt@paperheight=\count96
+\cnt@hoffset=\count97
+\cnt@voffset=\count98
+\cnt@textheight=\count99
+\cnt@textwidth=\count100
+\cnt@topmargin=\count101
+\cnt@oddsidemargin=\count102
+\cnt@evensidemargin=\count103
+\cnt@headheight=\count104
+\cnt@headsep=\count105
+\cnt@marginparsep=\count106
+\cnt@marginparwidth=\count107
+\cnt@marginparpush=\count108
+\cnt@footskip=\count109
+\fheight=\count110
+\ref@top=\count111
+\ref@hoffset=\count112
+\ref@voffset=\count113
+\ref@head=\count114
+\ref@body=\count115
+\ref@foot=\count116
+\ref@margin=\count117
+\ref@marginwidth=\count118
+\ref@marginpar=\count119
+\Interval=\count120
+\ExtraYPos=\count121
+\PositionX=\count122
+\PositionY=\count123
+\ArrowLength=\count124
 )
-(c:/w32tex/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
-\fancy@headwidth=\skip50
-\f@ncyO@elh=\skip51
-\f@ncyO@erh=\skip52
-\f@ncyO@olh=\skip53
-\f@ncyO@orh=\skip54
-\f@ncyO@elf=\skip55
-\f@ncyO@erf=\skip56
-\f@ncyO@olf=\skip57
-\f@ncyO@orf=\skip58
-)) (./前刷り.aux)
-\openout1 = `前刷り.aux'.
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip49
+\f@ncyO@elh=\skip50
+\f@ncyO@erh=\skip51
+\f@ncyO@olh=\skip52
+\f@ncyO@orh=\skip53
+\f@ncyO@elf=\skip54
+\f@ncyO@erf=\skip55
+\f@ncyO@olf=\skip56
+\f@ncyO@orf=\skip57
+))
+(./�^^89^^8d�^^88激^^82^^8a.aux)
+\openout1 = `�^^89^^8d�^^88激^^82^^8a.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
 LaTeX Font Info:    ... okay on input line 32.
@@ -194,114 +187,53 @@ LaTeX Font Info:    Font shape `JY1/gt/bx/n' in size <10> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 49.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 49.
-File: Image/角度.jpg Graphic file (type bmp)
-
-<Image/角度.jpg>
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 66.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 66.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <9> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 66.
-LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 66.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <9> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 66.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 66.
-File: Image/対角.png Graphic file (type bmp)
- <Image/対角.png>
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 84.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 84.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 84.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 84.
-File: Image/無回転.jpg Graphic file (type bmp)
- <Image/無回転.jpg>
-Overfull \hbox (7.2756pt too wide) in paragraph at lines 87--88
- [] 
- []
-
-File: Image/回転.jpg Graphic file (type bmp)
-<Image/回転.jpg>
-Overfull \hbox (7.2756pt too wide) in paragraph at lines 93--94
- [] 
- []
-
-
-Overfull \hbox (15.33331pt too wide) in paragraph at lines 84--98
- [][][] 
- []
-
-File: Image/ロボット1.jpg Graphic file (type bmp)
-<Image/ロボット1.jpg>
-Overfull \hbox (0.81812pt too wide) in paragraph at lines 108--109
- [] 
- []
-
-File: Image/ロボット3.jpg Graphic file (type bmp)
-<Image/ロボット3.jpg>
-Overfull \hbox (0.81812pt too wide) in paragraph at lines 114--115
- [] 
- []
-
-File: Image/ロボット6.jpg Graphic file (type bmp)
-<Image/ロボット6.jpg>
-Overfull \hbox (0.81812pt too wide) in paragraph at lines 120--121
- [] 
- []
-
-
-Overfull \hbox (16.53711pt too wide) in paragraph at lines 105--125
- [][][] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 132.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 61.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 132.
+(Font)              scaled to size 9.60999pt on input line 61.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 132.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 61.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 132.
+(Font)              scaled to size 9.60999pt on input line 61.
 
 
-Package Fancyhdr Warning: \headheight is too small (25.98424pt): 
- Make it at least 28.27264pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[7
+LaTeX Warning: Reference `角度' on page 7 undefined on input line 61.
 
 
-]
-File: Image/積込みロボット重心.png Graphic file (type bmp)
- <Image/積込みロボット重心.png>
-File: Image/Arduino9軸モーションシールド図.png Graphic file (type bmp)
- <Image/Arduino9軸モーションシールド図.png>
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
-[]\OT1/cmr/m/n/10 Arduino9AxesMotionLibrary,http://
- []
+LaTeX Warning: Reference `角度' on page 7 undefined on input line 61.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
-\OT1/cmr/m/n/10 www.arduino.org/learning/reference/9-
- []
+LaTeX Warning: Reference `対角' on page 7 undefined on input line 61.
 
-[8] (./前刷り.aux) ) 
+
+LaTeX Warning: File `Image/角度.jpg' not found on input line 65.
+
+runsystem(extractbb Image/角度.jpg)...disabled (restricted).
+
+
+! LaTeX Error: File `Image/角度.xbb' not found. Use -shell-escape option to gen
+erate automatically.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.65 ...ncludegraphics[width=40mm]{Image/角度.jpg}
+                                                  
+? cd "/home/itolab/Desktop/ronbun/drone/前刷り"
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? x
+ 
 Here is how much of TeX's memory you used:
- 1247 strings out of 493671
- 15037 string characters out of 6151254
- 82175 words of memory out of 5000000
- 4842 multiletter control sequences out of 15000+600000
- 13554 words of font info for 62 fonts, out of 8000000 for 9000
- 934 hyphenation exceptions out of 8191
- 32i,10n,45p,509b,483s stack positions out of 5000i,500n,10000p,500000b,80000s
-
-Output written on 前刷り.dvi (2 pages, 9676 bytes).
+ 1096 strings out of 495129
+ 13127 string characters out of 6182596
+ 70604 words of memory out of 5000000
+ 4479 multiletter control sequences out of 15000+600000
+ 12209 words of font info for 54 fonts, out of 8000000 for 9000
+ 85 hyphenation exceptions out of 8191
+ 32i,2n,45p,367b,300s stack positions out of 5000i,500n,10000p,200000b,80000s
+No pages of output.
