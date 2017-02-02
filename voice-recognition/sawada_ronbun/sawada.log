@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2016.8.18)  27 JAN 2017 17:44
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2016.8.18)  31 JAN 2017 16:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -336,41 +336,7 @@ Adding the global options:
 to your \documentclass declaration may fix this.
 Try typing  <return>  to proceed.
 
-(./sawada.aux
-
-LaTeX Warning: Label `fig:voice-a' multiply defined.
-
-
-LaTeX Warning: Label `fig:voice-i' multiply defined.
-
-
-LaTeX Warning: Label `fig:voice-u' multiply defined.
-
-
-LaTeX Warning: Label `fig:voice-e' multiply defined.
-
-
-LaTeX Warning: Label `fig:voice-o' multiply defined.
-
-
-LaTeX Warning: Label `fig:a_fft' multiply defined.
-
-
-LaTeX Warning: Label `fig:i_fft' multiply defined.
-
-
-LaTeX Warning: Label `fig:u_fft' multiply defined.
-
-
-LaTeX Warning: Label `fig:e_fft' multiply defined.
-
-
-LaTeX Warning: Label `fig:o_fft' multiply defined.
-
-
-LaTeX Warning: Label `tab:result' multiply defined.
-
-)
+(./sawada.aux)
 \openout1 = `sawada.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -389,10 +355,11 @@ LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
- (I search kanjifont definition file: . . ) (I search font definition file: .
-. . . . . . )
+ (I search kanjifont definition file: . . )
+(I search font definition file: . . . . . . . )
 LaTeX Font Info:    Try loading font information for T1+ptm on input line 7.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 ! Undefined control sequence.
@@ -574,94 +541,11 @@ File: img/e_fft.png Graphic file (type bmp)
 File: img/o_fft.png Graphic file (type bmp)
 
 <img/o_fft.png> [7] [8]
-! Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.232 ...名&無料である&使用期限がない&認識率\hline
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! You can't use `\hrule' here except with leaders.
-\hline ->\noalign {\ifnum 0=`}\fi \hrule 
-                                         \@height \arrayrulewidth \futurelet...
-l.232 ...名&無料である&使用期限がない&認識率\hline
-                                                  
-To put a horizontal rule in an hbox or an alignment,
-you should use \leaders or \hrulefill (see The TeXbook).
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \futurelet 
-l.232 ...名&無料である&使用期限がない&認識率\hline
-                                                  
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \futurelet 
-l.232 ...名&無料である&使用期限がない&認識率\hline
-                                                  
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.233 Julius&
-             ○&○&90％\hline
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.233 Julius&○&○&90％\hline
-                             
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! You can't use `\hrule' here except with leaders.
-\hline ->\noalign {\ifnum 0=`}\fi \hrule 
-                                         \@height \arrayrulewidth \futurelet...
-l.233 Julius&○&○&90％\hline
-                             
-To put a horizontal rule in an hbox or an alignment,
-you should use \leaders or \hrulefill (see The TeXbook).
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \futurelet 
-l.233 Julius&○&○&90％\hline
-                             
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \futurelet 
-l.233 Julius&○&○&90％\hline
-                             
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
 ! Missing $ inserted.
 <inserted text> 
                 $
 l.234 ドラゴンスピーチ&\times
-                             &\times&不明\hline
+                             &\times&不明\\\hline
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -669,27 +553,18 @@ you left one out. Proceed, with fingers crossed.
 <inserted text> 
                 $
 l.234 ドラゴンスピーチ&\times&
-                              \times&不明\hline
+                              \times&不明\\\hline
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.234 ドラゴンスピーチ&\times&
-                              \times&不明\hline
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
 ! Missing $ inserted.
 <inserted text> 
                 $
 l.234 ドラゴンスピーチ&\times&\times
-                                    &不明\hline
+                                    &不明\\\hline
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -697,55 +572,18 @@ you left one out. Proceed, with fingers crossed.
 <inserted text> 
                 $
 l.234 ドラゴンスピーチ&\times&\times&
-                                     不明\hline
+                                     不明\\\hline
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-! Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.234 ドラゴンスピーチ&\times&\times&不明\hline
-                                               
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! You can't use `\hrule' here except with leaders.
-\hline ->\noalign {\ifnum 0=`}\fi \hrule 
-                                         \@height \arrayrulewidth \futurelet...
-l.234 ドラゴンスピーチ&\times&\times&不明\hline
-                                               
-To put a horizontal rule in an hbox or an alignment,
-you should use \leaders or \hrulefill (see The TeXbook).
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \futurelet 
-l.234 ドラゴンスピーチ&\times&\times&不明\hline
-                                               
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \futurelet 
-l.234 ドラゴンスピーチ&\times&\times&不明\hline
-                                               
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
 ! Missing $ inserted.
 <inserted text> 
                 $
 l.235 docomo音声認識API&\times
-                              &\times&不明\hline
+                              &\times&不明\\\hline
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -753,7 +591,7 @@ you left one out. Proceed, with fingers crossed.
 <inserted text> 
                 $
 l.235 docomo音声認識API&\times&
-                               \times&不明\hline
+                               \times&不明\\\hline
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -764,7 +602,7 @@ my insertion and my current dilemma will both disappear.
 <inserted text> 
                 $
 l.235 docomo音声認識API&\times&\times
-                                     &不明\hline
+                                     &不明\\\hline
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -772,64 +610,18 @@ you left one out. Proceed, with fingers crossed.
 <inserted text> 
                 $
 l.235 docomo音声認識API&\times&\times&
-                                      不明\hline
+                                      不明\\\hline
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.235 docomo音声認識API&\times&\times&
-                                      不明\hline
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.235 docomo音声認識API&\times&\times&不明\hline
-                                                
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! You can't use `\hrule' here except with leaders.
-\hline ->\noalign {\ifnum 0=`}\fi \hrule 
-                                         \@height \arrayrulewidth \futurelet...
-l.235 docomo音声認識API&\times&\times&不明\hline
-                                                
-To put a horizontal rule in an hbox or an alignment,
-you should use \leaders or \hrulefill (see The TeXbook).
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \futurelet 
-l.235 docomo音声認識API&\times&\times&不明\hline
-                                                
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \futurelet 
-l.235 docomo音声認識API&\times&\times&不明\hline
-                                                
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
 ! Missing $ inserted.
 <inserted text> 
                 $
 l.236 Ami Voice&\times
-                      &\times&不明\hline
+                      &\times&不明\\\hline
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -837,7 +629,7 @@ you left one out. Proceed, with fingers crossed.
 <inserted text> 
                 $
 l.236 Ami Voice&\times&
-                       \times&不明\hline
+                       \times&不明\\\hline
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -848,7 +640,7 @@ my insertion and my current dilemma will both disappear.
 <inserted text> 
                 $
 l.236 Ami Voice&\times&\times
-                             &不明\hline
+                             &不明\\\hline
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
@@ -856,58 +648,12 @@ you left one out. Proceed, with fingers crossed.
 <inserted text> 
                 $
 l.236 Ami Voice&\times&\times&
-                              不明\hline
+                              不明\\\hline
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
-
-! Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.236 Ami Voice&\times&\times&不明\hline
-                                        
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! You can't use `\hrule' here except with leaders.
-\hline ->\noalign {\ifnum 0=`}\fi \hrule 
-                                         \@height \arrayrulewidth \futurelet...
-l.236 Ami Voice&\times&\times&不明\hline
-                                        
-To put a horizontal rule in an hbox or an alignment,
-you should use \leaders or \hrulefill (see The TeXbook).
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \futurelet 
-l.236 Ami Voice&\times&\times&不明\hline
-                                        
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \futurelet 
-l.236 Ami Voice&\times&\times&不明\hline
-                                        
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.237 Google Speech API&
-                        \times&\times&不明
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
 
 ! Missing $ inserted.
 <inserted text> 
@@ -947,12 +693,8 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-
-Overfull \hbox (106.63998pt too wide) in paragraph at lines 231--241
- [] 
- []
-
-[9] [10]
+File: img/Julius.png Graphic file (type bmp)
+<img/Julius.png> [9] [10]
 
 ! LaTeX Error: Environment longtable undefined.
 
@@ -960,322 +702,92 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.253 \begin{longtable}
+l.262 \begin{longtable}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.256 ...る&感情表現ができる&海外の言語が話せるか&
-                                                  備考\hline
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.256 ...ができる&海外の言語が話せるか&備考\hline
-                                                 
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! You can't use `\hrule' here except with leaders.
-\hline ->\noalign {\ifnum 0=`}\fi \hrule 
-                                         \@height \arrayrulewidth \futurelet...
-l.256 ...ができる&海外の言語が話せるか&備考\hline
-                                                 
-To put a horizontal rule in an hbox or an alignment,
-you should use \leaders or \hrulefill (see The TeXbook).
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \futurelet 
-l.256 ...ができる&海外の言語が話せるか&備考\hline
-                                                 
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \futurelet 
-l.256 ...ができる&海外の言語が話せるか&備考\hline
-                                                 
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.257 Open-JTalk&◯&◯&\times
-                             &◯&◯&不明&なし\hline
+l.266 Open-JTalk&◯&◯&\times
+                             &◯&◯&不明&なし\\\hline
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.257 Open-JTalk&◯&◯&\times&
-                              ◯&◯&不明&なし\hline
+l.266 Open-JTalk&◯&◯&\times&
+                              ◯&◯&不明&なし\\\hline
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.257 Open-JTalk&◯&◯&\times&◯&◯&不明&
-                                         なし\hline
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.257 ...-JTalk&◯&◯&\times&◯&◯&不明&なし\hline
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! You can't use `\hrule' here except with leaders.
-\hline ->\noalign {\ifnum 0=`}\fi \hrule 
-                                         \@height \arrayrulewidth \futurelet...
-l.257 ...-JTalk&◯&◯&\times&◯&◯&不明&なし\hline
-                                                  
-To put a horizontal rule in an hbox or an alignment,
-you should use \leaders or \hrulefill (see The TeXbook).
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \futurelet 
-l.257 ...-JTalk&◯&◯&\times&◯&◯&不明&なし\hline
-                                                  
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \futurelet 
-l.257 ...-JTalk&◯&◯&\times&◯&◯&不明&なし\hline
-                                                  
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.258 Vocaloid&◯&\times
-                        &◯&不明&不明&不明&歌声合成ソフト\hline
+l.267 Vocaloid&◯&\times
+                        &◯&不明&不明&不明&歌声合成ソフト\\\hline
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.258 Vocaloid&◯&\times&
-                         ◯&不明&不明&不明&歌声合成ソフト\hline
+l.267 Vocaloid&◯&\times&
+                         ◯&不明&不明&不明&歌声合成ソフト\\\hline
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.258 Vocaloid&◯&\times&◯&不明&不明&不明&
-                                           歌声合成ソフト\hline
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.258 ...es&◯&不明&不明&不明&歌声合成ソフト\hline
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! You can't use `\hrule' here except with leaders.
-\hline ->\noalign {\ifnum 0=`}\fi \hrule 
-                                         \@height \arrayrulewidth \futurelet...
-l.258 ...es&◯&不明&不明&不明&歌声合成ソフト\hline
-                                                  
-To put a horizontal rule in an hbox or an alignment,
-you should use \leaders or \hrulefill (see The TeXbook).
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \futurelet 
-l.258 ...es&◯&不明&不明&不明&歌声合成ソフト\hline
-                                                  
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \futurelet 
-l.258 ...es&◯&不明&不明&不明&歌声合成ソフト\hline
-                                                  
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.259 AITalk&不明&\times
-                        &◯&◯&◯&◯&海外の言語は36種類\hline
+l.268 AITalk&不明&\times
+                        &◯&◯&◯&◯&海外の言語は36種類\\\hline
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.259 AITalk&不明&\times&
-                         ◯&◯&◯&◯&海外の言語は36種類\hline
+l.268 AITalk&不明&\times&
+                         ◯&◯&◯&◯&海外の言語は36種類\\\hline
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.259 AITalk&不明&\times&◯&◯&◯&◯&
-                                     海外の言語は36種類\hline
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.259 ...imes&◯&◯&◯&◯&海外の言語は36種類\hline
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! You can't use `\hrule' here except with leaders.
-\hline ->\noalign {\ifnum 0=`}\fi \hrule 
-                                         \@height \arrayrulewidth \futurelet...
-l.259 ...imes&◯&◯&◯&◯&海外の言語は36種類\hline
-                                                  
-To put a horizontal rule in an hbox or an alignment,
-you should use \leaders or \hrulefill (see The TeXbook).
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \futurelet 
-l.259 ...imes&◯&◯&◯&◯&海外の言語は36種類\hline
-                                                  
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \futurelet 
-l.259 ...imes&◯&◯&◯&◯&海外の言語は36種類\hline
-                                                  
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.260 VoiseTextv&不明&\times
-                            &◯&不明&不明&不明&なし\hline
+l.269 VoiceText&不明&\times
+                           &◯&不明&不明&不明&なし\\\hline
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.260 VoiseTextv&不明&\times&
-                             ◯&不明&不明&不明&なし\hline
+l.269 VoiceText&不明&\times&
+                            ◯&不明&不明&不明&なし\\\hline
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.260 VoiseTextv&不明&\times&◯&不明&不明&不明&
-                                               なし\hline
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.260 ...&不明&\times&◯&不明&不明&不明&なし\hline
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! You can't use `\hrule' here except with leaders.
-\hline ->\noalign {\ifnum 0=`}\fi \hrule 
-                                         \@height \arrayrulewidth \futurelet...
-l.260 ...&不明&\times&◯&不明&不明&不明&なし\hline
-                                                  
-To put a horizontal rule in an hbox or an alignment,
-you should use \leaders or \hrulefill (see The TeXbook).
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \futurelet 
-l.260 ...&不明&\times&◯&不明&不明&不明&なし\hline
-                                                  
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \futurelet 
-l.260 ...&不明&\times&◯&不明&不明&不明&なし\hline
-                                                  
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.261 テキストーク&◯&\times
+l.270 テキストーク&◯&\times
                             &◯&\times&\times&不明&Open-JTalkと提携した場合...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1283,7 +795,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.261 テキストーク&◯&\times&
+l.270 テキストーク&◯&\times&
                              ◯&\times&\times&不明&Open-JTalkと提携した場合...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1294,7 +806,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.261 テキストーク&◯&\times&◯&\times
+l.270 テキストーク&◯&\times&◯&\times
                                       &\times&不明&Open-JTalkと提携した場合...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1302,7 +814,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.261 テキストーク&◯&\times&◯&\times&
+l.270 テキストーク&◯&\times&◯&\times&
                                        \times&不明&Open-JTalkと提携した場合...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1313,7 +825,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.261 テキストーク&◯&\times&◯&\times&\times
+l.270 テキストーク&◯&\times&◯&\times&\times
                                              &不明&Open-JTalkと提携した場合...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1321,7 +833,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.261 テキストーク&◯&\times&◯&\times&\times&
+l.270 テキストーク&◯&\times&◯&\times&\times&
                                               不明&Open-JTalkと提携した場合...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1329,56 +841,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.261 ...ストーク&◯&\times&◯&\times&\times&不明&
-                                                  Open-JTalkと提携した場合に...
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.261 ...携した場合にのみ女性の声が使用可能\hline
-                                                 
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! You can't use `\hrule' here except with leaders.
-\hline ->\noalign {\ifnum 0=`}\fi \hrule 
-                                         \@height \arrayrulewidth \futurelet...
-l.261 ...携した場合にのみ女性の声が使用可能\hline
-                                                 
-To put a horizontal rule in an hbox or an alignment,
-you should use \leaders or \hrulefill (see The TeXbook).
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \futurelet 
-l.261 ...携した場合にのみ女性の声が使用可能\hline
-                                                 
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \futurelet 
-l.261 ...携した場合にのみ女性の声が使用可能\hline
-                                                 
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.262 ClipBoard Translator&不明&\times
+l.271 ClipBoard Translator&不明&\times
                                       &◯&不明&不明&不明&Windowsのみ使用可能...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1386,7 +852,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.262 ClipBoard Translator&不明&\times&
+l.271 ClipBoard Translator&不明&\times&
                                        ◯&不明&不明&不明&Windowsのみ使用可能...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1394,121 +860,29 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.262 ...Translator&不明&\times&◯&不明&不明&不明&
-                                                  Windowsのみ使用可能\hline
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.262 ...&不明&不明&不明&Windowsのみ使用可能\hline
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! You can't use `\hrule' here except with leaders.
-\hline ->\noalign {\ifnum 0=`}\fi \hrule 
-                                         \@height \arrayrulewidth \futurelet...
-l.262 ...&不明&不明&不明&Windowsのみ使用可能\hline
-                                                  
-To put a horizontal rule in an hbox or an alignment,
-you should use \leaders or \hrulefill (see The TeXbook).
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \futurelet 
-l.262 ...&不明&不明&不明&Windowsのみ使用可能\hline
-                                                  
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \futurelet 
-l.262 ...&不明&不明&不明&Windowsのみ使用可能\hline
-                                                  
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.263 棒読みちゃん&◯&\times
-                            &◯&不明&不明&不明&なし\hline
+l.272 棒読みちゃん&◯&\times
+                            &◯&不明&不明&不明&なし\\\hline
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.263 棒読みちゃん&◯&\times&
-                             ◯&不明&不明&不明&なし\hline
+l.272 棒読みちゃん&◯&\times&
+                             ◯&不明&不明&不明&なし\\\hline
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.263 棒読みちゃん&◯&\times&◯&不明&不明&不明&
-                                               なし\hline
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-! Misplaced \noalign.
-\hline ->\noalign 
-                  {\ifnum 0=`}\fi \hrule \@height \arrayrulewidth \futurelet...
-l.263 ...ん&◯&\times&◯&不明&不明&不明&なし\hline
-                                                  
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-! You can't use `\hrule' here except with leaders.
-\hline ->\noalign {\ifnum 0=`}\fi \hrule 
-                                         \@height \arrayrulewidth \futurelet...
-l.263 ...ん&◯&\times&◯&不明&不明&不明&なし\hline
-                                                  
-To put a horizontal rule in an hbox or an alignment,
-you should use \leaders or \hrulefill (see The TeXbook).
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \futurelet 
-l.263 ...ん&◯&\times&◯&不明&不明&不明&なし\hline
-                                                  
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \futurelet 
-l.263 ...ん&◯&\times&◯&不明&不明&不明&なし\hline
-                                                  
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.264 歌声合成ツールUTAU&不明&\times
+l.273 歌声合成ツールUTAU&不明&\times
                                     &◯&不明&不明&不明&歌声合成ソフト
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1516,7 +890,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.264 歌声合成ツールUTAU&不明&\times&
+l.273 歌声合成ツールUTAU&不明&\times&
                                      ◯&不明&不明&不明&歌声合成ソフト
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1524,34 +898,30 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-! Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.264 ...ツールUTAU&不明&\times&◯&不明&不明&不明&
-                                                  歌声合成ソフト
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
 
-
-Overfull \hbox (481.1312pt too wide) in paragraph at lines 255--268
+Overfull \hbox (414.14938pt too wide) in paragraph at lines 264--277
 [][]
  []
 
 
-! LaTeX Error: \begin{table} on input line 252 ended by \end{center}.
+! LaTeX Error: \begin{table} on input line 261 ended by \end{center}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.268 \end{center}
+l.277 \end{center}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[11] [12] [13]
+File: img/openjtalk.png Graphic file (type bmp)
+<img/openjtalk.png> [11] [12]
+
+LaTeX Warning: Text page 13 contains only floats.
+
+[13]
 第3章
 File: img/robo.JPG Graphic file (type bmp)
 <img/robo.JPG>
@@ -1563,7 +933,7 @@ File: img/mic.JPG Graphic file (type bmp)
 ! Undefined control sequence.
 <argument> \p@ \@captype 
                          \endcsname 0\endcsname 
-l.330 ...lt}に喫煙,表\ref{tab:yeahsmokrecogresult}
+l.347 ...lt}に喫煙,表\ref{tab:yeahsmokrecogresult}
                                                   に吸います,表\ref{tab:nons...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1574,7 +944,7 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
                    \endcsname 
-l.330 ...lt}に喫煙,表\ref{tab:yeahsmokrecogresult}
+l.347 ...lt}に喫煙,表\ref{tab:yeahsmokrecogresult}
                                                   に吸います,表\ref{tab:nons...
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1583,7 +953,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \endcsname 
-l.330 ...lt}に喫煙,表\ref{tab:yeahsmokrecogresult}
+l.347 ...lt}に喫煙,表\ref{tab:yeahsmokrecogresult}
                                                   に吸います,表\ref{tab:nons...
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, bp, or sp; but yours is a new one!
@@ -1595,21 +965,21 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Extra \endcsname.
 <recently read> \endcsname 
                            
-l.330 ...lt}に喫煙,表\ref{tab:yeahsmokrecogresult}
+l.347 ...lt}に喫煙,表\ref{tab:yeahsmokrecogresult}
                                                   に吸います,表\ref{tab:nons...
 I'm ignoring this, since I wasn't doing a \csname.
 
 ! Extra \endcsname.
 <argument> \p@ \@captype \endcsname 0\endcsname 
                                                 
-l.330 ...lt}に喫煙,表\ref{tab:yeahsmokrecogresult}
+l.347 ...lt}に喫煙,表\ref{tab:yeahsmokrecogresult}
                                                   に吸います,表\ref{tab:nons...
 I'm ignoring this, since I wasn't doing a \csname.
 
 ! Undefined control sequence.
 <argument> \p@ \@captype 
                          \endcsname 0\endcsname 
-l.330 ...に吸います,表\ref{tab:nonsmokrecogresult}
+l.347 ...に吸います,表\ref{tab:nonsmokrecogresult}
                                                   に吸いません,表\ref{tab:ne...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1620,7 +990,7 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
                    \endcsname 
-l.330 ...に吸います,表\ref{tab:nonsmokrecogresult}
+l.347 ...に吸います,表\ref{tab:nonsmokrecogresult}
                                                   に吸いません,表\ref{tab:ne...
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1629,7 +999,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \endcsname 
-l.330 ...に吸います,表\ref{tab:nonsmokrecogresult}
+l.347 ...に吸います,表\ref{tab:nonsmokrecogresult}
                                                   に吸いません,表\ref{tab:ne...
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, bp, or sp; but yours is a new one!
@@ -1641,21 +1011,21 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Extra \endcsname.
 <recently read> \endcsname 
                            
-l.330 ...に吸います,表\ref{tab:nonsmokrecogresult}
+l.347 ...に吸います,表\ref{tab:nonsmokrecogresult}
                                                   に吸いません,表\ref{tab:ne...
 I'm ignoring this, since I wasn't doing a \csname.
 
 ! Extra \endcsname.
 <argument> \p@ \@captype \endcsname 0\endcsname 
                                                 
-l.330 ...に吸います,表\ref{tab:nonsmokrecogresult}
+l.347 ...に吸います,表\ref{tab:nonsmokrecogresult}
                                                   に吸いません,表\ref{tab:ne...
 I'm ignoring this, since I wasn't doing a \csname.
 
 ! Undefined control sequence.
 <argument> \p@ \@captype 
                          \endcsname 0\endcsname 
-l.330 ...いません,表\ref{tab:neversmokrecogresult}
+l.347 ...いません,表\ref{tab:neversmokrecogresult}
                                                   に吸わないですの認識結果,\...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1666,7 +1036,7 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
                    \endcsname 
-l.330 ...いません,表\ref{tab:neversmokrecogresult}
+l.347 ...いません,表\ref{tab:neversmokrecogresult}
                                                   に吸わないですの認識結果,\...
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1675,7 +1045,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \endcsname 
-l.330 ...いません,表\ref{tab:neversmokrecogresult}
+l.347 ...いません,表\ref{tab:neversmokrecogresult}
                                                   に吸わないですの認識結果,\...
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, bp, or sp; but yours is a new one!
@@ -1687,42 +1057,81 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Extra \endcsname.
 <recently read> \endcsname 
                            
-l.330 ...いません,表\ref{tab:neversmokrecogresult}
+l.347 ...いません,表\ref{tab:neversmokrecogresult}
                                                   に吸わないですの認識結果,\...
 I'm ignoring this, since I wasn't doing a \csname.
 
 ! Extra \endcsname.
 <argument> \p@ \@captype \endcsname 0\endcsname 
                                                 
-l.330 ...いません,表\ref{tab:neversmokrecogresult}
+l.347 ...いません,表\ref{tab:neversmokrecogresult}
                                                   に吸わないですの認識結果,\...
 I'm ignoring this, since I wasn't doing a \csname.
 
+! Undefined control sequence.
+<argument> \p@ \@captype 
+                         \endcsname 0\endcsname 
+l.347 ...に吸わないですの認識結果,\ref{tab:result}
+                                                  に認識結果一覧を示す.また,...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-! LaTeX Error: Environment longtable undefined.
+! Missing number, treated as zero.
+<to be read again> 
+                   \endcsname 
+l.347 ...に吸わないですの認識結果,\ref{tab:result}
+                                                  に認識結果一覧を示す.また,...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.334 \begin{longtable}
-                       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \endcsname 
+l.347 ...に吸わないですの認識結果,\ref{tab:result}
+                                                  に認識結果一覧を示す.また,...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
 
+! Extra \endcsname.
+<recently read> \endcsname 
+                           
+l.347 ...に吸わないですの認識結果,\ref{tab:result}
+                                                  に認識結果一覧を示す.また,...
+I'm ignoring this, since I wasn't doing a \csname.
 
-! LaTeX Error: \begin{table} on input line 333 ended by \end{center}.
+! Extra \endcsname.
+<argument> \p@ \@captype \endcsname 0\endcsname 
+                                                
+l.347 ...に吸わないですの認識結果,\ref{tab:result}
+                                                  に認識結果一覧を示す.また,...
+I'm ignoring this, since I wasn't doing a \csname.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.366 \end{center}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.379 25&\times
+               &50&○&75&○&100&○
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.379 25&\times&
+                50&○&75&○&100&○
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
 
 ! LaTeX Error: \caption outside float.
@@ -1731,7 +1140,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.371 \caption
+l.388 \caption
               {喫煙の認識結果}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1739,7 +1148,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 \caption ... \endcsname \fi \fi \@dblarg {\@tempf 
                                                   \@captype }
-l.371 \caption
+l.388 \caption
               {喫煙の認識結果}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1750,7 +1159,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \caption ...e \fi \fi \@dblarg {\@tempf \@captype 
                                                   }
-l.371 \caption
+l.388 \caption
               {喫煙の認識結果}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1761,14 +1170,14 @@ and I'll forget about whatever was undefined.
 [17
 
 ]
-Overfull \vbox (283.64703pt too high) has occurred while \output is active []
+Overfull \vbox (291.64703pt too high) has occurred while \output is active []
 
 
 [18]
 ! Too many }'s.
 \@endfloatbox ...pagefalse \outer@nobreak \egroup 
                                                   \color@endbox 
-l.403 \end{table}
+l.420 \end{table}
                  
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
@@ -1776,14 +1185,14 @@ Such booboos are generally harmless, so keep going.
 ! Extra \endgroup.
 \color@endgroup ->\endgraf \endgroup 
                                      
-l.403 \end{table}
+l.420 \end{table}
                  
 Things are pretty mixed up, but I think the worst is over.
 
 ! Too many }'s.
 \color@endbox ->\color@endgroup \egroup 
                                         
-l.403 \end{table}
+l.420 \end{table}
                  
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
@@ -1795,7 +1204,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.403 \end{table}
+l.420 \end{table}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1804,14 +1213,14 @@ or  <return>  to continue without it.
 ! Extra \endgroup.
 <recently read> \endgroup 
                           
-l.403 \end{table}
+l.420 \end{table}
                  
 Things are pretty mixed up, but I think the worst is over.
 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.407 \caption
+l.424 \caption
               {吸いますの認識結果}
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -1819,7 +1228,7 @@ not appear between \csname and \endcsname.
 ! Extra \endcsname.
 \@ifundefined ...dafter \ifx \csname #1\endcsname 
                                                   \relax \expandafter \@firs...
-l.407 \caption
+l.424 \caption
               {吸いますの認識結果}
 I'm ignoring this, since I wasn't doing a \csname.
 
@@ -1830,7 +1239,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.407 \caption
+l.424 \caption
               {吸いますの認識結果}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1839,7 +1248,7 @@ or  <return>  to continue without it.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.407 \caption
+l.424 \caption
               {吸いますの認識結果}
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -1847,14 +1256,14 @@ not appear between \csname and \endcsname.
 ! Extra \endcsname.
 \stepcounter ... \@stpelt \csname cl@#1\endcsname 
                                                   \endgroup \fi 
-l.407 \caption
+l.424 \caption
               {吸いますの認識結果}
 I'm ignoring this, since I wasn't doing a \csname.
 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.407 \caption
+l.424 \caption
               {吸いますの認識結果}
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -1862,7 +1271,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.407 \caption
+l.424 \caption
               {吸いますの認識結果}
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -1870,14 +1279,14 @@ not appear between \csname and \endcsname.
 ! You can't use `\relax' after \the.
 <recently read> \@captype 
                           
-l.407 \caption
+l.424 \caption
               {吸いますの認識結果}
 I'm forgetting what you said and using zero instead.
 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.407 \caption
+l.424 \caption
               {吸いますの認識結果}
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -1885,14 +1294,14 @@ not appear between \csname and \endcsname.
 ! Extra \endcsname.
 \caption ...\csname @float@c@\@captype \endcsname 
                                                   \relax \else \expandafter ...
-l.407 \caption
+l.424 \caption
               {吸いますの認識結果}
 I'm ignoring this, since I wasn't doing a \csname.
 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.407 \caption{吸いますの認識結果}
+l.424 \caption{吸いますの認識結果}
                                   
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -1900,7 +1309,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.407 \caption{吸いますの認識結果}
+l.424 \caption{吸いますの認識結果}
                                   
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -1908,7 +1317,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.407 \caption{吸いますの認識結果}
+l.424 \caption{吸いますの認識結果}
                                   
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -1916,7 +1325,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.407 \caption{吸いますの認識結果}
+l.424 \caption{吸いますの認識結果}
                                   
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -1924,14 +1333,14 @@ not appear between \csname and \endcsname.
 ! You can't use `\relax' after \the.
 <recently read> \@captype 
                           
-l.407 \caption{吸いますの認識結果}
+l.424 \caption{吸いますの認識結果}
                                   
 I'm forgetting what you said and using zero instead.
 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.407 \caption{吸いますの認識結果}
+l.424 \caption{吸いますの認識結果}
                                   
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -1939,14 +1348,14 @@ not appear between \csname and \endcsname.
 ! Extra \endcsname.
 <argument> \csname fnum@\@captype \endcsname 
                                              \hskip 1zw\relax \ignorespaces ...
-l.407 \caption{吸いますの認識結果}
+l.424 \caption{吸いますの認識結果}
                                   
 I'm ignoring this, since I wasn't doing a \csname.
 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.407 \caption{吸いますの認識結果}
+l.424 \caption{吸いますの認識結果}
                                   
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -1954,14 +1363,14 @@ not appear between \csname and \endcsname.
 ! Extra \endcsname.
 <argument> \csname fnum@\@captype \endcsname 
                                              
-l.407 \caption{吸いますの認識結果}
+l.424 \caption{吸いますの認識結果}
                                   
 I'm ignoring this, since I wasn't doing a \csname.
 
 ! Too many }'s.
 \@endfloatbox ...pagefalse \outer@nobreak \egroup 
                                                   \color@endbox 
-l.439 \end{table}
+l.456 \end{table}
                  
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
@@ -1969,14 +1378,14 @@ Such booboos are generally harmless, so keep going.
 ! Extra \endgroup.
 \color@endgroup ->\endgraf \endgroup 
                                      
-l.439 \end{table}
+l.456 \end{table}
                  
 Things are pretty mixed up, but I think the worst is over.
 
 ! Too many }'s.
 \color@endbox ->\color@endgroup \egroup 
                                         
-l.439 \end{table}
+l.456 \end{table}
                  
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
@@ -1988,7 +1397,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.439 \end{table}
+l.456 \end{table}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1997,14 +1406,14 @@ or  <return>  to continue without it.
 ! Extra \endgroup.
 <recently read> \endgroup 
                           
-l.439 \end{table}
+l.456 \end{table}
                  
 Things are pretty mixed up, but I think the worst is over.
 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.443 \caption
+l.460 \caption
               {吸いませんの認識結果}
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2012,7 +1421,7 @@ not appear between \csname and \endcsname.
 ! Extra \endcsname.
 \@ifundefined ...dafter \ifx \csname #1\endcsname 
                                                   \relax \expandafter \@firs...
-l.443 \caption
+l.460 \caption
               {吸いませんの認識結果}
 I'm ignoring this, since I wasn't doing a \csname.
 
@@ -2023,7 +1432,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.443 \caption
+l.460 \caption
               {吸いませんの認識結果}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2032,7 +1441,7 @@ or  <return>  to continue without it.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.443 \caption
+l.460 \caption
               {吸いませんの認識結果}
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2040,14 +1449,14 @@ not appear between \csname and \endcsname.
 ! Extra \endcsname.
 \stepcounter ... \@stpelt \csname cl@#1\endcsname 
                                                   \endgroup \fi 
-l.443 \caption
+l.460 \caption
               {吸いませんの認識結果}
 I'm ignoring this, since I wasn't doing a \csname.
 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.443 \caption
+l.460 \caption
               {吸いませんの認識結果}
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2055,7 +1464,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.443 \caption
+l.460 \caption
               {吸いませんの認識結果}
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2063,14 +1472,14 @@ not appear between \csname and \endcsname.
 ! You can't use `\relax' after \the.
 <recently read> \@captype 
                           
-l.443 \caption
+l.460 \caption
               {吸いませんの認識結果}
 I'm forgetting what you said and using zero instead.
 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.443 \caption
+l.460 \caption
               {吸いませんの認識結果}
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2078,14 +1487,14 @@ not appear between \csname and \endcsname.
 ! Extra \endcsname.
 \caption ...\csname @float@c@\@captype \endcsname 
                                                   \relax \else \expandafter ...
-l.443 \caption
+l.460 \caption
               {吸いませんの認識結果}
 I'm ignoring this, since I wasn't doing a \csname.
 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.443 \caption{吸いませんの認識結果}
+l.460 \caption{吸いませんの認識結果}
                                     
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2093,7 +1502,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.443 \caption{吸いませんの認識結果}
+l.460 \caption{吸いませんの認識結果}
                                     
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2101,7 +1510,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.443 \caption{吸いませんの認識結果}
+l.460 \caption{吸いませんの認識結果}
                                     
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2109,7 +1518,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.443 \caption{吸いませんの認識結果}
+l.460 \caption{吸いませんの認識結果}
                                     
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2117,14 +1526,14 @@ not appear between \csname and \endcsname.
 ! You can't use `\relax' after \the.
 <recently read> \@captype 
                           
-l.443 \caption{吸いませんの認識結果}
+l.460 \caption{吸いませんの認識結果}
                                     
 I'm forgetting what you said and using zero instead.
 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.443 \caption{吸いませんの認識結果}
+l.460 \caption{吸いませんの認識結果}
                                     
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2132,14 +1541,14 @@ not appear between \csname and \endcsname.
 ! Extra \endcsname.
 <argument> \csname fnum@\@captype \endcsname 
                                              \hskip 1zw\relax \ignorespaces ...
-l.443 \caption{吸いませんの認識結果}
+l.460 \caption{吸いませんの認識結果}
                                     
 I'm ignoring this, since I wasn't doing a \csname.
 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.443 \caption{吸いませんの認識結果}
+l.460 \caption{吸いませんの認識結果}
                                     
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2147,7 +1556,7 @@ not appear between \csname and \endcsname.
 ! Extra \endcsname.
 <argument> \csname fnum@\@captype \endcsname 
                                              
-l.443 \caption{吸いませんの認識結果}
+l.460 \caption{吸いませんの認識結果}
                                     
 I'm ignoring this, since I wasn't doing a \csname.
 
@@ -2155,7 +1564,7 @@ I'm ignoring this, since I wasn't doing a \csname.
 ! Undefined control sequence.
 <write> \@writefile{\ext@ 
                           \@captype \endcsname }{\protect \contentsline {\@c...
-l.474 \end{center}
+l.491 \end{center}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2166,7 +1575,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <write> \@writefile{\ext@ 
                           \@captype \endcsname }{\protect \contentsline {\@c...
-l.474 \end{center}
+l.491 \end{center}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2178,7 +1587,7 @@ and I'll forget about whatever was undefined.
 ! Too many }'s.
 \@endfloatbox ...pagefalse \outer@nobreak \egroup 
                                                   \color@endbox 
-l.475 \end{table}
+l.492 \end{table}
                  
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
@@ -2186,14 +1595,14 @@ Such booboos are generally harmless, so keep going.
 ! Extra \endgroup.
 \color@endgroup ->\endgraf \endgroup 
                                      
-l.475 \end{table}
+l.492 \end{table}
                  
 Things are pretty mixed up, but I think the worst is over.
 
 ! Too many }'s.
 \color@endbox ->\color@endgroup \egroup 
                                         
-l.475 \end{table}
+l.492 \end{table}
                  
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
@@ -2205,7 +1614,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.475 \end{table}
+l.492 \end{table}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2214,14 +1623,14 @@ or  <return>  to continue without it.
 ! Extra \endgroup.
 <recently read> \endgroup 
                           
-l.475 \end{table}
+l.492 \end{table}
                  
 Things are pretty mixed up, but I think the worst is over.
 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.479 \caption
+l.496 \caption
               {吸わないですの認識結果}
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2229,7 +1638,7 @@ not appear between \csname and \endcsname.
 ! Extra \endcsname.
 \@ifundefined ...dafter \ifx \csname #1\endcsname 
                                                   \relax \expandafter \@firs...
-l.479 \caption
+l.496 \caption
               {吸わないですの認識結果}
 I'm ignoring this, since I wasn't doing a \csname.
 
@@ -2240,7 +1649,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.479 \caption
+l.496 \caption
               {吸わないですの認識結果}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2249,7 +1658,7 @@ or  <return>  to continue without it.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.479 \caption
+l.496 \caption
               {吸わないですの認識結果}
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2257,14 +1666,14 @@ not appear between \csname and \endcsname.
 ! Extra \endcsname.
 \stepcounter ... \@stpelt \csname cl@#1\endcsname 
                                                   \endgroup \fi 
-l.479 \caption
+l.496 \caption
               {吸わないですの認識結果}
 I'm ignoring this, since I wasn't doing a \csname.
 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.479 \caption
+l.496 \caption
               {吸わないですの認識結果}
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2272,7 +1681,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.479 \caption
+l.496 \caption
               {吸わないですの認識結果}
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2280,14 +1689,14 @@ not appear between \csname and \endcsname.
 ! You can't use `\relax' after \the.
 <recently read> \@captype 
                           
-l.479 \caption
+l.496 \caption
               {吸わないですの認識結果}
 I'm forgetting what you said and using zero instead.
 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.479 \caption
+l.496 \caption
               {吸わないですの認識結果}
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2295,14 +1704,14 @@ not appear between \csname and \endcsname.
 ! Extra \endcsname.
 \caption ...\csname @float@c@\@captype \endcsname 
                                                   \relax \else \expandafter ...
-l.479 \caption
+l.496 \caption
               {吸わないですの認識結果}
 I'm ignoring this, since I wasn't doing a \csname.
 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.479 \caption{吸わないですの認識結果}
+l.496 \caption{吸わないですの認識結果}
                                       
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2310,7 +1719,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.479 \caption{吸わないですの認識結果}
+l.496 \caption{吸わないですの認識結果}
                                       
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2318,7 +1727,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.479 \caption{吸わないですの認識結果}
+l.496 \caption{吸わないですの認識結果}
                                       
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2326,7 +1735,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.479 \caption{吸わないですの認識結果}
+l.496 \caption{吸わないですの認識結果}
                                       
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2334,14 +1743,14 @@ not appear between \csname and \endcsname.
 ! You can't use `\relax' after \the.
 <recently read> \@captype 
                           
-l.479 \caption{吸わないですの認識結果}
+l.496 \caption{吸わないですの認識結果}
                                       
 I'm forgetting what you said and using zero instead.
 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.479 \caption{吸わないですの認識結果}
+l.496 \caption{吸わないですの認識結果}
                                       
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2349,14 +1758,14 @@ not appear between \csname and \endcsname.
 ! Extra \endcsname.
 <argument> \csname fnum@\@captype \endcsname 
                                              \hskip 1zw\relax \ignorespaces ...
-l.479 \caption{吸わないですの認識結果}
+l.496 \caption{吸わないですの認識結果}
                                       
 I'm ignoring this, since I wasn't doing a \csname.
 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.479 \caption{吸わないですの認識結果}
+l.496 \caption{吸わないですの認識結果}
                                       
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2364,7 +1773,7 @@ not appear between \csname and \endcsname.
 ! Extra \endcsname.
 <argument> \csname fnum@\@captype \endcsname 
                                              
-l.479 \caption{吸わないですの認識結果}
+l.496 \caption{吸わないですの認識結果}
                                       
 I'm ignoring this, since I wasn't doing a \csname.
 
@@ -2372,7 +1781,7 @@ I'm ignoring this, since I wasn't doing a \csname.
 ! Undefined control sequence.
 <write> \@writefile{\ext@ 
                           \@captype \endcsname }{\protect \contentsline {\@c...
-l.510 \end{center}
+l.527 \end{center}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2384,7 +1793,7 @@ and I'll forget about whatever was undefined.
 ! Too many }'s.
 \@endfloatbox ...pagefalse \outer@nobreak \egroup 
                                                   \color@endbox 
-l.511 \end{table}
+l.528 \end{table}
                  
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
@@ -2392,14 +1801,14 @@ Such booboos are generally harmless, so keep going.
 ! Extra \endgroup.
 \color@endgroup ->\endgraf \endgroup 
                                      
-l.511 \end{table}
+l.528 \end{table}
                  
 Things are pretty mixed up, but I think the worst is over.
 
 ! Too many }'s.
 \color@endbox ->\color@endgroup \egroup 
                                         
-l.511 \end{table}
+l.528 \end{table}
                  
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
@@ -2411,7 +1820,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.511 \end{table}
+l.528 \end{table}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2420,14 +1829,14 @@ or  <return>  to continue without it.
 ! Extra \endgroup.
 <recently read> \endgroup 
                           
-l.511 \end{table}
+l.528 \end{table}
                  
 Things are pretty mixed up, but I think the worst is over.
 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.515 \caption
+l.532 \caption
               {認識結果一覧}
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2435,7 +1844,7 @@ not appear between \csname and \endcsname.
 ! Extra \endcsname.
 \@ifundefined ...dafter \ifx \csname #1\endcsname 
                                                   \relax \expandafter \@firs...
-l.515 \caption
+l.532 \caption
               {認識結果一覧}
 I'm ignoring this, since I wasn't doing a \csname.
 
@@ -2446,7 +1855,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.515 \caption
+l.532 \caption
               {認識結果一覧}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2455,7 +1864,7 @@ or  <return>  to continue without it.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.515 \caption
+l.532 \caption
               {認識結果一覧}
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2463,14 +1872,14 @@ not appear between \csname and \endcsname.
 ! Extra \endcsname.
 \stepcounter ... \@stpelt \csname cl@#1\endcsname 
                                                   \endgroup \fi 
-l.515 \caption
+l.532 \caption
               {認識結果一覧}
 I'm ignoring this, since I wasn't doing a \csname.
 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.515 \caption
+l.532 \caption
               {認識結果一覧}
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2478,7 +1887,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.515 \caption
+l.532 \caption
               {認識結果一覧}
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2486,14 +1895,14 @@ not appear between \csname and \endcsname.
 ! You can't use `\relax' after \the.
 <recently read> \@captype 
                           
-l.515 \caption
+l.532 \caption
               {認識結果一覧}
 I'm forgetting what you said and using zero instead.
 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.515 \caption
+l.532 \caption
               {認識結果一覧}
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2501,14 +1910,14 @@ not appear between \csname and \endcsname.
 ! Extra \endcsname.
 \caption ...\csname @float@c@\@captype \endcsname 
                                                   \relax \else \expandafter ...
-l.515 \caption
+l.532 \caption
               {認識結果一覧}
 I'm ignoring this, since I wasn't doing a \csname.
 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.515 \caption{認識結果一覧}
+l.532 \caption{認識結果一覧}
                             
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2516,7 +1925,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.515 \caption{認識結果一覧}
+l.532 \caption{認識結果一覧}
                             
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2524,7 +1933,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.515 \caption{認識結果一覧}
+l.532 \caption{認識結果一覧}
                             
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2532,7 +1941,7 @@ not appear between \csname and \endcsname.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.515 \caption{認識結果一覧}
+l.532 \caption{認識結果一覧}
                             
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2540,14 +1949,14 @@ not appear between \csname and \endcsname.
 ! You can't use `\relax' after \the.
 <recently read> \@captype 
                           
-l.515 \caption{認識結果一覧}
+l.532 \caption{認識結果一覧}
                             
 I'm forgetting what you said and using zero instead.
 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.515 \caption{認識結果一覧}
+l.532 \caption{認識結果一覧}
                             
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2555,14 +1964,14 @@ not appear between \csname and \endcsname.
 ! Extra \endcsname.
 <argument> \csname fnum@\@captype \endcsname 
                                              \hskip 1zw\relax \ignorespaces ...
-l.515 \caption{認識結果一覧}
+l.532 \caption{認識結果一覧}
                             
 I'm ignoring this, since I wasn't doing a \csname.
 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.515 \caption{認識結果一覧}
+l.532 \caption{認識結果一覧}
                             
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2570,14 +1979,14 @@ not appear between \csname and \endcsname.
 ! Extra \endcsname.
 <argument> \csname fnum@\@captype \endcsname 
                                              
-l.515 \caption{認識結果一覧}
+l.532 \caption{認識結果一覧}
                             
 I'm ignoring this, since I wasn't doing a \csname.
 
 ! Too many }'s.
 \@endfloatbox ...pagefalse \outer@nobreak \egroup 
                                                   \color@endbox 
-l.524 \end{table}
+l.541 \end{table}
                  
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
@@ -2585,14 +1994,14 @@ Such booboos are generally harmless, so keep going.
 ! Extra \endgroup.
 \color@endgroup ->\endgraf \endgroup 
                                      
-l.524 \end{table}
+l.541 \end{table}
                  
 Things are pretty mixed up, but I think the worst is over.
 
 ! Too many }'s.
 \color@endbox ->\color@endgroup \egroup 
                                         
-l.524 \end{table}
+l.541 \end{table}
                  
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
@@ -2604,7 +2013,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.524 \end{table}
+l.541 \end{table}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2613,16 +2022,1049 @@ or  <return>  to continue without it.
 ! Extra \endgroup.
 <recently read> \endgroup 
                           
-l.524 \end{table}
+l.541 \end{table}
                  
 Things are pretty mixed up, but I think the worst is over.
 
 File: img/result.png Graphic file (type bmp)
-<img/result.png> [21
+<img/result.png>
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.591 \caption
+              {喫煙の認識結果}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\@ifundefined ...dafter \ifx \csname #1\endcsname 
+                                                  \relax \expandafter \@firs...
+l.591 \caption
+              {喫煙の認識結果}
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+! LaTeX Error: No counter '\@captype ' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.591 \caption
+              {喫煙の認識結果}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.591 \caption
+              {喫煙の認識結果}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\stepcounter ... \@stpelt \csname cl@#1\endcsname 
+                                                  \endgroup \fi 
+l.591 \caption
+              {喫煙の認識結果}
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.591 \caption
+              {喫煙の認識結果}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.591 \caption
+              {喫煙の認識結果}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! You can't use `\relax' after \the.
+<recently read> \@captype 
+                          
+l.591 \caption
+              {喫煙の認識結果}
+I'm forgetting what you said and using zero instead.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.591 \caption
+              {喫煙の認識結果}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\caption ...\csname @float@c@\@captype \endcsname 
+                                                  \relax \else \expandafter ...
+l.591 \caption
+              {喫煙の認識結果}
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.591 \caption{喫煙の認識結果}
+                              
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.591 \caption{喫煙の認識結果}
+                              
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.591 \caption{喫煙の認識結果}
+                              
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.591 \caption{喫煙の認識結果}
+                              
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! You can't use `\relax' after \the.
+<recently read> \@captype 
+                          
+l.591 \caption{喫煙の認識結果}
+                              
+I'm forgetting what you said and using zero instead.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.591 \caption{喫煙の認識結果}
+                              
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+<argument> \csname fnum@\@captype \endcsname 
+                                             \hskip 1zw\relax \ignorespaces ...
+l.591 \caption{喫煙の認識結果}
+                              
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.591 \caption{喫煙の認識結果}
+                              
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+<argument> \csname fnum@\@captype \endcsname 
+                                             
+l.591 \caption{喫煙の認識結果}
+                              
+I'm ignoring this, since I wasn't doing a \csname.
+
+[21
 ! Undefined control sequence.
 <write> \@writefile{\ext@ 
                           \@captype \endcsname }{\protect \contentsline {\@c...
-l.538 
+l.622 \end{center}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<write> \@writefile{\ext@ 
+                          \@captype \endcsname }{\protect \contentsline {\@c...
+l.622 \end{center}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+]
+Overfull \vbox (30.17651pt too high) has occurred while \output is active []
+
+
+[22]
+! Too many }'s.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.623 \end{table}
+                 
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Extra \endgroup.
+\color@endgroup ->\endgraf \endgroup 
+                                     
+l.623 \end{table}
+                 
+Things are pretty mixed up, but I think the worst is over.
+
+! Too many }'s.
+\color@endbox ->\color@endgroup \egroup 
+                                        
+l.623 \end{table}
+                 
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+
+! LaTeX Error: \begin{document} ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.623 \end{table}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.623 \end{table}
+                 
+Things are pretty mixed up, but I think the worst is over.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.627 \caption
+              {吸いますの認識結果}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\@ifundefined ...dafter \ifx \csname #1\endcsname 
+                                                  \relax \expandafter \@firs...
+l.627 \caption
+              {吸いますの認識結果}
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+! LaTeX Error: No counter '\@captype ' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.627 \caption
+              {吸いますの認識結果}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.627 \caption
+              {吸いますの認識結果}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\stepcounter ... \@stpelt \csname cl@#1\endcsname 
+                                                  \endgroup \fi 
+l.627 \caption
+              {吸いますの認識結果}
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.627 \caption
+              {吸いますの認識結果}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.627 \caption
+              {吸いますの認識結果}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! You can't use `\relax' after \the.
+<recently read> \@captype 
+                          
+l.627 \caption
+              {吸いますの認識結果}
+I'm forgetting what you said and using zero instead.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.627 \caption
+              {吸いますの認識結果}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\caption ...\csname @float@c@\@captype \endcsname 
+                                                  \relax \else \expandafter ...
+l.627 \caption
+              {吸いますの認識結果}
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.627 \caption{吸いますの認識結果}
+                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.627 \caption{吸いますの認識結果}
+                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.627 \caption{吸いますの認識結果}
+                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.627 \caption{吸いますの認識結果}
+                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! You can't use `\relax' after \the.
+<recently read> \@captype 
+                          
+l.627 \caption{吸いますの認識結果}
+                                  
+I'm forgetting what you said and using zero instead.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.627 \caption{吸いますの認識結果}
+                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+<argument> \csname fnum@\@captype \endcsname 
+                                             \hskip 1zw\relax \ignorespaces ...
+l.627 \caption{吸いますの認識結果}
+                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.627 \caption{吸いますの認識結果}
+                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+<argument> \csname fnum@\@captype \endcsname 
+                                             
+l.627 \caption{吸いますの認識結果}
+                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+[23
+! Undefined control sequence.
+<write> \@writefile{\ext@ 
+                          \@captype \endcsname }{\protect \contentsline {\@c...
+l.658 \end{center}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+]
+! Too many }'s.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.659 \end{table}
+                 
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Extra \endgroup.
+\color@endgroup ->\endgraf \endgroup 
+                                     
+l.659 \end{table}
+                 
+Things are pretty mixed up, but I think the worst is over.
+
+! Too many }'s.
+\color@endbox ->\color@endgroup \egroup 
+                                        
+l.659 \end{table}
+                 
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+
+! LaTeX Error: \begin{document} ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.659 \end{table}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.659 \end{table}
+                 
+Things are pretty mixed up, but I think the worst is over.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.663 \caption
+              {吸いませんの認識結果}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\@ifundefined ...dafter \ifx \csname #1\endcsname 
+                                                  \relax \expandafter \@firs...
+l.663 \caption
+              {吸いませんの認識結果}
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+! LaTeX Error: No counter '\@captype ' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.663 \caption
+              {吸いませんの認識結果}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.663 \caption
+              {吸いませんの認識結果}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\stepcounter ... \@stpelt \csname cl@#1\endcsname 
+                                                  \endgroup \fi 
+l.663 \caption
+              {吸いませんの認識結果}
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.663 \caption
+              {吸いませんの認識結果}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.663 \caption
+              {吸いませんの認識結果}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! You can't use `\relax' after \the.
+<recently read> \@captype 
+                          
+l.663 \caption
+              {吸いませんの認識結果}
+I'm forgetting what you said and using zero instead.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.663 \caption
+              {吸いませんの認識結果}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\caption ...\csname @float@c@\@captype \endcsname 
+                                                  \relax \else \expandafter ...
+l.663 \caption
+              {吸いませんの認識結果}
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.663 \caption{吸いませんの認識結果}
+                                    
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.663 \caption{吸いませんの認識結果}
+                                    
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.663 \caption{吸いませんの認識結果}
+                                    
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.663 \caption{吸いませんの認識結果}
+                                    
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! You can't use `\relax' after \the.
+<recently read> \@captype 
+                          
+l.663 \caption{吸いませんの認識結果}
+                                    
+I'm forgetting what you said and using zero instead.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.663 \caption{吸いませんの認識結果}
+                                    
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+<argument> \csname fnum@\@captype \endcsname 
+                                             \hskip 1zw\relax \ignorespaces ...
+l.663 \caption{吸いませんの認識結果}
+                                    
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.663 \caption{吸いませんの認識結果}
+                                    
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+<argument> \csname fnum@\@captype \endcsname 
+                                             
+l.663 \caption{吸いませんの認識結果}
+                                    
+I'm ignoring this, since I wasn't doing a \csname.
+
+[24
+! Undefined control sequence.
+<write> \@writefile{\ext@ 
+                          \@captype \endcsname }{\protect \contentsline {\@c...
+l.694 \end{center}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+]
+! Too many }'s.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.695 \end{table}
+                 
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Extra \endgroup.
+\color@endgroup ->\endgraf \endgroup 
+                                     
+l.695 \end{table}
+                 
+Things are pretty mixed up, but I think the worst is over.
+
+! Too many }'s.
+\color@endbox ->\color@endgroup \egroup 
+                                        
+l.695 \end{table}
+                 
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+
+! LaTeX Error: \begin{document} ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.695 \end{table}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.695 \end{table}
+                 
+Things are pretty mixed up, but I think the worst is over.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.699 \caption
+              {吸わないですの認識結果}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\@ifundefined ...dafter \ifx \csname #1\endcsname 
+                                                  \relax \expandafter \@firs...
+l.699 \caption
+              {吸わないですの認識結果}
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+! LaTeX Error: No counter '\@captype ' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.699 \caption
+              {吸わないですの認識結果}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.699 \caption
+              {吸わないですの認識結果}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\stepcounter ... \@stpelt \csname cl@#1\endcsname 
+                                                  \endgroup \fi 
+l.699 \caption
+              {吸わないですの認識結果}
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.699 \caption
+              {吸わないですの認識結果}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.699 \caption
+              {吸わないですの認識結果}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! You can't use `\relax' after \the.
+<recently read> \@captype 
+                          
+l.699 \caption
+              {吸わないですの認識結果}
+I'm forgetting what you said and using zero instead.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.699 \caption
+              {吸わないですの認識結果}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\caption ...\csname @float@c@\@captype \endcsname 
+                                                  \relax \else \expandafter ...
+l.699 \caption
+              {吸わないですの認識結果}
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.699 \caption{吸わないですの認識結果}
+                                      
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.699 \caption{吸わないですの認識結果}
+                                      
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.699 \caption{吸わないですの認識結果}
+                                      
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.699 \caption{吸わないですの認識結果}
+                                      
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! You can't use `\relax' after \the.
+<recently read> \@captype 
+                          
+l.699 \caption{吸わないですの認識結果}
+                                      
+I'm forgetting what you said and using zero instead.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.699 \caption{吸わないですの認識結果}
+                                      
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+<argument> \csname fnum@\@captype \endcsname 
+                                             \hskip 1zw\relax \ignorespaces ...
+l.699 \caption{吸わないですの認識結果}
+                                      
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.699 \caption{吸わないですの認識結果}
+                                      
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+<argument> \csname fnum@\@captype \endcsname 
+                                             
+l.699 \caption{吸わないですの認識結果}
+                                      
+I'm ignoring this, since I wasn't doing a \csname.
+
+[25
+! Undefined control sequence.
+<write> \@writefile{\ext@ 
+                          \@captype \endcsname }{\protect \contentsline {\@c...
+l.730 \end{center}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+]
+! Too many }'s.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.731 \end{table}
+                 
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Extra \endgroup.
+\color@endgroup ->\endgraf \endgroup 
+                                     
+l.731 \end{table}
+                 
+Things are pretty mixed up, but I think the worst is over.
+
+! Too many }'s.
+\color@endbox ->\color@endgroup \egroup 
+                                        
+l.731 \end{table}
+                 
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+
+! LaTeX Error: \begin{document} ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.731 \end{table}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.731 \end{table}
+                 
+Things are pretty mixed up, but I think the worst is over.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.735 \caption
+              {認識結果一覧}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\@ifundefined ...dafter \ifx \csname #1\endcsname 
+                                                  \relax \expandafter \@firs...
+l.735 \caption
+              {認識結果一覧}
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+! LaTeX Error: No counter '\@captype ' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.735 \caption
+              {認識結果一覧}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.735 \caption
+              {認識結果一覧}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\stepcounter ... \@stpelt \csname cl@#1\endcsname 
+                                                  \endgroup \fi 
+l.735 \caption
+              {認識結果一覧}
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.735 \caption
+              {認識結果一覧}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.735 \caption
+              {認識結果一覧}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! You can't use `\relax' after \the.
+<recently read> \@captype 
+                          
+l.735 \caption
+              {認識結果一覧}
+I'm forgetting what you said and using zero instead.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.735 \caption
+              {認識結果一覧}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\caption ...\csname @float@c@\@captype \endcsname 
+                                                  \relax \else \expandafter ...
+l.735 \caption
+              {認識結果一覧}
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.735 \caption{認識結果一覧}
+                            
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.735 \caption{認識結果一覧}
+                            
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.735 \caption{認識結果一覧}
+                            
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.735 \caption{認識結果一覧}
+                            
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! You can't use `\relax' after \the.
+<recently read> \@captype 
+                          
+l.735 \caption{認識結果一覧}
+                            
+I'm forgetting what you said and using zero instead.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.735 \caption{認識結果一覧}
+                            
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+<argument> \csname fnum@\@captype \endcsname 
+                                             \hskip 1zw\relax \ignorespaces ...
+l.735 \caption{認識結果一覧}
+                            
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.735 \caption{認識結果一覧}
+                            
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+<argument> \csname fnum@\@captype \endcsname 
+                                             
+l.735 \caption{認識結果一覧}
+                            
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Too many }'s.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.744 \end{table}
+                 
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Extra \endgroup.
+\color@endgroup ->\endgraf \endgroup 
+                                     
+l.744 \end{table}
+                 
+Things are pretty mixed up, but I think the worst is over.
+
+! Too many }'s.
+\color@endbox ->\color@endgroup \egroup 
+                                        
+l.744 \end{table}
+                 
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+
+! LaTeX Error: \begin{document} ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.744 \end{table}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.744 \end{table}
+                 
+Things are pretty mixed up, but I think the worst is over.
+
+[26
+! Undefined control sequence.
+<write> \@writefile{\ext@ 
+                          \@captype \endcsname }{\protect \contentsline {\@c...
+l.750 
       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2630,21 +3072,21 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-] [22]
+] [27]
 第5章
-[23
+[28
 
 ]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.551 ...ttps://julius.osdn.jp/juliusbook/ja/desc_
+l.763 ...ttps://julius.osdn.jp/juliusbook/ja/desc_
                                                   search.html#id2538692・201...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! You can't use `macro parameter character #' in math mode.
-l.551 ...s.osdn.jp/juliusbook/ja/desc_search.html#
+l.763 ...s.osdn.jp/juliusbook/ja/desc_search.html#
                                                   id2538692・2017/01/20閲覧\\
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -2658,21 +3100,21 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.552 \end{thebibliography}
+l.764 \end{thebibliography}
                            
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-LaTeX Warning: Empty `thebibliography' environment on input line 552.
+LaTeX Warning: Empty `thebibliography' environment on input line 764.
 
 
-LaTeX Warning: Empty `thebibliography' environment on input line 552.
+LaTeX Warning: Empty `thebibliography' environment on input line 764.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.552 \end{thebibliography}
+l.764 \end{thebibliography}
                            
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2681,7 +3123,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (104.27577pt too wide) in paragraph at lines 551--553
+Overfull \hbox (104.27577pt too wide) in paragraph at lines 763--765
 []\T1/ptm/m/n/10 Julius book \JY1/mc/m/n/10 第 \T1/ptm/m/n/10 8 \JY1/mc/m/n/10 
 章 認識アルゴリズムとパラメ ータ \T1/ptm/m/n/10 https://julius.osdn.jp/juliusbo
 ok/ja/desc$[]\OML/ztmcm/m/it/10 earch:htmlid\OT1/ztmcm/m/n/10 2538692 \JY1/mc/m
@@ -2689,15 +3131,15 @@ ok/ja/desc$[]\OML/ztmcm/m/it/10 earch:htmlid\OT1/ztmcm/m/n/10 2538692 \JY1/mc/m
 cm/m/it/10 =\OT1/ztmcm/m/n/10 20 \JY1/mc/m/n/10 閲
  []
 
-[24
+[29
 
-] [25
+] [30
 
 ] (./sawada.aux
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.86 ... }{\ignorespaces 吸いますの認識結果}}{19}}
+l.79 ... }{\ignorespaces 吸いますの認識結果}}{19}}
                                                   
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2705,21 +3147,21 @@ not appear between \csname and \endcsname.
 ! Extra \endcsname.
 <argument> tf@\@captype \endcsname 
                                    
-l.86 ... }{\ignorespaces 吸いますの認識結果}}{19}}
+l.79 ... }{\ignorespaces 吸いますの認識結果}}{19}}
                                                   
 I'm ignoring this, since I wasn't doing a \csname.
 
 ! Extra \endcsname.
 \@ifundefined ...dafter \ifx \csname #1\endcsname 
                                                   \relax \expandafter \@firs...
-l.86 ... }{\ignorespaces 吸いますの認識結果}}{19}}
+l.79 ... }{\ignorespaces 吸いますの認識結果}}{19}}
                                                   
 I'm ignoring this, since I wasn't doing a \csname.
 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.88 ...{\ignorespaces 吸いませんの認識結果}}{19}}
+l.81 ...{\ignorespaces 吸いませんの認識結果}}{19}}
                                                   
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2727,21 +3169,21 @@ not appear between \csname and \endcsname.
 ! Extra \endcsname.
 <argument> tf@\@captype \endcsname 
                                    
-l.88 ...{\ignorespaces 吸いませんの認識結果}}{19}}
+l.81 ...{\ignorespaces 吸いませんの認識結果}}{19}}
                                                   
 I'm ignoring this, since I wasn't doing a \csname.
 
 ! Extra \endcsname.
 \@ifundefined ...dafter \ifx \csname #1\endcsname 
                                                   \relax \expandafter \@firs...
-l.88 ...{\ignorespaces 吸いませんの認識結果}}{19}}
+l.81 ...{\ignorespaces 吸いませんの認識結果}}{19}}
                                                   
 I'm ignoring this, since I wasn't doing a \csname.
 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.90 ...ignorespaces 吸わないですの認識結果}}{20}}
+l.83 ...ignorespaces 吸わないですの認識結果}}{20}}
                                                   
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2749,21 +3191,21 @@ not appear between \csname and \endcsname.
 ! Extra \endcsname.
 <argument> tf@\@captype \endcsname 
                                    
-l.90 ...ignorespaces 吸わないですの認識結果}}{20}}
+l.83 ...ignorespaces 吸わないですの認識結果}}{20}}
                                                   
 I'm ignoring this, since I wasn't doing a \csname.
 
 ! Extra \endcsname.
 \@ifundefined ...dafter \ifx \csname #1\endcsname 
                                                   \relax \expandafter \@firs...
-l.90 ...ignorespaces 吸わないですの認識結果}}{20}}
+l.83 ...ignorespaces 吸わないですの認識結果}}{20}}
                                                   
 I'm ignoring this, since I wasn't doing a \csname.
 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \@captype 
-l.92 ...csname }{\ignorespaces 認識結果一覧}}{21}}
+l.85 ...csname }{\ignorespaces 認識結果一覧}}{21}}
                                                   
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -2771,29 +3213,135 @@ not appear between \csname and \endcsname.
 ! Extra \endcsname.
 <argument> tf@\@captype \endcsname 
                                    
-l.92 ...csname }{\ignorespaces 認識結果一覧}}{21}}
+l.85 ...csname }{\ignorespaces 認識結果一覧}}{21}}
                                                   
 I'm ignoring this, since I wasn't doing a \csname.
 
 ! Extra \endcsname.
 \@ifundefined ...dafter \ifx \csname #1\endcsname 
                                                   \relax \expandafter \@firs...
-l.92 ...csname }{\ignorespaces 認識結果一覧}}{21}}
+l.85 ...csname }{\ignorespaces 認識結果一覧}}{21}}
                                                   
 I'm ignoring this, since I wasn't doing a \csname.
 
-)
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.87 ...name }{\ignorespaces 喫煙の認識結果}}{21}}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
 
-LaTeX Warning: There were multiply-defined labels.
+! Extra \endcsname.
+<argument> tf@\@captype \endcsname 
+                                   
+l.87 ...name }{\ignorespaces 喫煙の認識結果}}{21}}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
 
- ) 
+! Extra \endcsname.
+\@ifundefined ...dafter \ifx \csname #1\endcsname 
+                                                  \relax \expandafter \@firs...
+l.87 ...name }{\ignorespaces 喫煙の認識結果}}{21}}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.93 ... }{\ignorespaces 吸いますの認識結果}}{23}}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+<argument> tf@\@captype \endcsname 
+                                   
+l.93 ... }{\ignorespaces 吸いますの認識結果}}{23}}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Extra \endcsname.
+\@ifundefined ...dafter \ifx \csname #1\endcsname 
+                                                  \relax \expandafter \@firs...
+l.93 ... }{\ignorespaces 吸いますの認識結果}}{23}}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.95 ...{\ignorespaces 吸いませんの認識結果}}{24}}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+<argument> tf@\@captype \endcsname 
+                                   
+l.95 ...{\ignorespaces 吸いませんの認識結果}}{24}}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Extra \endcsname.
+\@ifundefined ...dafter \ifx \csname #1\endcsname 
+                                                  \relax \expandafter \@firs...
+l.95 ...{\ignorespaces 吸いませんの認識結果}}{24}}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.97 ...ignorespaces 吸わないですの認識結果}}{25}}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+<argument> tf@\@captype \endcsname 
+                                   
+l.97 ...ignorespaces 吸わないですの認識結果}}{25}}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Extra \endcsname.
+\@ifundefined ...dafter \ifx \csname #1\endcsname 
+                                                  \relax \expandafter \@firs...
+l.97 ...ignorespaces 吸わないですの認識結果}}{25}}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@captype 
+l.99 ...csname }{\ignorespaces 認識結果一覧}}{26}}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+<argument> tf@\@captype \endcsname 
+                                   
+l.99 ...csname }{\ignorespaces 認識結果一覧}}{26}}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Extra \endcsname.
+\@ifundefined ...dafter \ifx \csname #1\endcsname 
+                                                  \relax \expandafter \@firs...
+l.99 ...csname }{\ignorespaces 認識結果一覧}}{26}}
+                                                  
+I'm ignoring this, since I wasn't doing a \csname.
+
+) ) 
 Here is how much of TeX's memory you used:
- 3137 strings out of 494865
- 37648 string characters out of 6179769
- 112057 words of memory out of 5000000
- 6444 multiletter control sequences out of 15000+600000
+ 3151 strings out of 494865
+ 37976 string characters out of 6179769
+ 123057 words of memory out of 5000000
+ 6456 multiletter control sequences out of 15000+600000
  48670 words of font info for 131 fonts, out of 8000000 for 9000
  269 hyphenation exceptions out of 8191
- 34i,12n,45p,925b,421s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,12n,45p,919b,421s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on sawada.dvi (25 pages, 68828 bytes).
+Output written on sawada.dvi (30 pages, 102980 bytes).

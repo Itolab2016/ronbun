@@ -21,9 +21,9 @@
 \contentsline {subsection}{\numberline {4.1.1}実験方法}{17}
 \contentsline {subsection}{\numberline {4.1.2}実験結果}{17}
 \contentsline {subsection}{\numberline {4.1.3}Juliusを用いて行った実験結果}{17}
-\contentsline {subsection}{\numberline {4.1.4}考察}{21}
-\contentsline {chapter}{\numberline {第5章}結言}{23}
-\contentsline {section}{\numberline {5.1}本研究のまとめ}{23}
-\contentsline {section}{\numberline {5.2}今後の課題}{23}
-\contentsline {chapter}{参考文献}{24}
-\contentsline {chapter}{謝辞}{25}
+\contentsline {subsection}{\numberline {4.1.4}考察}{26}
+\contentsline {chapter}{\numberline {第5章}結言}{28}
+\contentsline {section}{\numberline {5.1}本研究のまとめ}{28}
+\contentsline {section}{\numberline {5.2}今後の課題}{28}
+\contentsline {chapter}{参考文献}{29}
+\contentsline {chapter}{謝辞}{30}
