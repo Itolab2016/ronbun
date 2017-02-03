@@ -31,36 +31,37 @@
 \contentsline {subsubsection}{物理特性}{15}
 \contentsline {subsubsection}{推力特性}{15}
 \contentsline {subsubsection}{モーメント特性}{16}
-\contentsline {subsection}{\numberline {3.8.2}ルンゲ・クッタ法を用いた機体のシュミレーション}{18}
-\contentsline {subsection}{\numberline {3.8.3}校正}{20}
-\contentsline {subsubsection}{加速度センサ}{20}
-\contentsline {subsubsection}{地磁気センサ}{20}
-\contentsline {section}{\numberline {3.9}最適レギュレータ}{22}
-\contentsline {subsection}{\numberline {3.9.1}最適レギュレータについて}{22}
-\contentsline {subsection}{\numberline {3.9.2}最適レギュレータの結果}{23}
-\contentsline {chapter}{\numberline {第4章}おわりに}{24}
-\contentsline {section}{\numberline {4.1}結論}{24}
-\contentsline {subsection}{\numberline {4.1.1}ハードウェアの結論}{24}
-\contentsline {subsection}{\numberline {4.1.2}ソフトウェアの結論}{24}
-\contentsline {subsection}{\numberline {4.1.3}全体的な結論}{24}
-\contentsline {section}{\numberline {4.2}今後の課題}{25}
-\contentsline {subsection}{\numberline {4.2.1}解決すべき課題}{25}
-\contentsline {subsection}{\numberline {4.2.2}今後取り組んでみたいこと}{25}
-\contentsline {chapter}{謝辞}{27}
-\contentsline {chapter}{参考文献}{28}
-\contentsline {chapter}{付録}{29}
-\contentsline {section}{\numberline {4.3}レーザー加工機}{29}
-\contentsline {subsection}{\numberline {4.3.1}加工可能な材料}{29}
-\contentsline {subsection}{\numberline {4.3.2}加工データ}{29}
-\contentsline {subsection}{\numberline {4.3.3}加工時の設定}{29}
-\contentsline {section}{\numberline {4.4}RaspberryPi}{30}
-\contentsline {subsection}{\numberline {4.4.1}初期設定}{30}
-\contentsline {section}{\numberline {4.5}Emlid}{30}
-\contentsline {subsection}{\numberline {4.5.1}emlid-raspbian}{30}
-\contentsline {subsection}{\numberline {4.5.2}Navio2サンプルプログラム}{30}
-\contentsline {section}{\numberline {4.6}DUALSHOCK3の使用}{30}
-\contentsline {subsection}{\numberline {4.6.1}bluez}{30}
-\contentsline {subsection}{\numberline {4.6.2}sixpair}{31}
-\contentsline {subsection}{\numberline {4.6.3}QtSixA}{31}
-\contentsline {subsection}{\numberline {4.6.4}接続方法}{31}
-\contentsline {section}{\numberline {4.7}ソースコード}{31}
+\contentsline {subsection}{\numberline {3.8.2}ルンゲ・クッタ法を用いた機体のシュミレーション}{19}
+\contentsline {subsection}{\numberline {3.8.3}校正}{21}
+\contentsline {subsubsection}{加速度センサ}{21}
+\contentsline {subsubsection}{地磁気センサ}{22}
+\contentsline {section}{\numberline {3.9}最適レギュレータ}{23}
+\contentsline {subsection}{\numberline {3.9.1}最適レギュレータについて}{23}
+\contentsline {subsection}{\numberline {3.9.2}最適レギュレータの結果}{24}
+\contentsline {chapter}{\numberline {第4章}おわりに}{26}
+\contentsline {section}{\numberline {4.1}結論}{26}
+\contentsline {subsection}{\numberline {4.1.1}ハードウェアの結論}{26}
+\contentsline {subsection}{\numberline {4.1.2}ソフトウェアの結論}{26}
+\contentsline {subsection}{\numberline {4.1.3}全体的な結論}{26}
+\contentsline {section}{\numberline {4.2}今後の課題}{27}
+\contentsline {subsection}{\numberline {4.2.1}解決すべき課題}{27}
+\contentsline {subsection}{\numberline {4.2.2}今後取り組んでみたいこと}{27}
+\contentsline {chapter}{謝辞}{29}
+\contentsline {chapter}{参考文献}{30}
+\contentsline {chapter}{付録}{31}
+\contentsline {section}{\numberline {4.3}レーザー加工機}{31}
+\contentsline {subsection}{\numberline {4.3.1}加工可能な材料}{31}
+\contentsline {subsection}{\numberline {4.3.2}加工データ}{31}
+\contentsline {subsection}{\numberline {4.3.3}加工時の設定}{31}
+\contentsline {section}{\numberline {4.4}RaspberryPi}{32}
+\contentsline {subsection}{\numberline {4.4.1}初期設定}{32}
+\contentsline {section}{\numberline {4.5}Emlid}{32}
+\contentsline {subsection}{\numberline {4.5.1}emlid-raspbian}{32}
+\contentsline {subsection}{\numberline {4.5.2}Navio2サンプルプログラム}{32}
+\contentsline {section}{\numberline {4.6}DUALSHOCK3の使用}{32}
+\contentsline {subsection}{\numberline {4.6.1}bluez}{32}
+\contentsline {subsection}{\numberline {4.6.2}sixpair}{33}
+\contentsline {subsection}{\numberline {4.6.3}QtSixA}{33}
+\contentsline {subsection}{\numberline {4.6.4}接続方法}{33}
+\contentsline {section}{\numberline {4.7}ソースコード}{33}
+\contentsline {section}{\numberline {4.8}機体の製作方法}{33}

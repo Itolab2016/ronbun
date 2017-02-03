@@ -256,8 +256,7 @@ Bluetooth通信によりRaspberryPiとDUALSHOCK3を接続し,スティック操�
 
 \section{コントローラ}
 前述の通りコントローラはDUALSHOCK3をBluetooth通信で接続し使用する.
-ペアリングにはsixpair,SixaxisジョイスティックマネージャーにはQtSixAを使用している.
-ペアリング,Bluetooth通信についての詳細は付録に記載する.
+ペアリングにはsixpair,SixaxisジョイスティックマネージャーにはQtSixAを使用している.ペアリング,Bluetooth通信についての詳細は付録に記載する.
 右スティックの前後方向をスロットル,左右方向をヨー方向制御,左スティックで前後左右移動する.
 また,スタートボタンで一時停止/再開,一時停止中にセレクトボタンでプログラムが終了する.
 Navio2のLEDがプログラムが動作していない時は緑に,プログラム動作中は赤に,一時停止中は青に点灯する.
@@ -307,7 +306,10 @@ PID制御の制御則を図\ref{fig:PID}に示す.
 \section{運動方程式}
 運動方程式には航空機の運動方程式を利用する.
 前提条件として,左右対称,前後非対称,上下非対称,傾きが微小であることなどがある.
+上記の条件を元に飛行機の運動方程式を用いてX,Y,Z各方向の速度,角度,移動量の運動方程式を立てる.
 この方程式をルンゲ・クッタ法を用いて解く.
+ルンゲ・クッタ法を用いる利点は他の微分方程式の解析法に比べ刻み幅hを大きな値にしても高い精度で機体のシュミレーションを行うことが出来る.
+そのため短時間で高精度なシュミレーションを行うことが出来る.
 ルンゲ・クッタ法とは微分方程式を数値的に解く方法である.以下に実際に使用するルンゲ・クッタ法で代表的なルンゲ・クッタの公式を示す.
 
 \begin{equation}
@@ -351,7 +353,9 @@ PID制御の制御則を図\ref{fig:PID}に示す.
 
 \(k_4\)を求めて　\(x_k+\frac{1}{6}hk_1+\frac{1}{3}hk_2+\frac{1}{3}hk_3+\frac{1}{6}hk_4\)　　　　　　　x=x+1/6k
 
-のようにxの値をふやしていくと,最後に得られたxは\(x_k+1\)になっている.\cite{runge} 
+のようにxの値を増やしていくと,最後に得られたxは\(x_k+1\)になっている.\cite{runge} 
+
+
 
 \subsection{特性確認}
 前述の運動方程式を解くために必要な値を実験などにより求める必要がある.
@@ -424,18 +428,7 @@ PID制御の制御則を図\ref{fig:PID}に示す.
 \subsubsection{モーメント特性}
 図\ref{fig:moment-test}のように,マルチコプターに回転軸を取り付けて吊るした.
 この状態で1つのモータで機体が1回転するのにかかる時間を計測する.
-こちらも最適レギュレータ使用するので制御則を線形にする.
-実験により得られたグラフから機体が1回転する時の時間と慣性乗積を式(\ref{eq6})に代入し,その近似直線をモータの制御式として用いる.
-
-\begin{equation}
-	N = \frac{4{I_{zz}}\pi}{t^2}
-	\label{eq6}
-\end{equation}
- 
-
-
 例としてRモータを回した時の機体が1回転するのにかかる時間を計測したものを図\ref{fig:moment-time-R}に示す.
-またモーメントを算出し,PWM値とモーメントの関係とその近似直線を表したものを図\ref{fig:moment-R}に示す.
 
 \begin{figure}[htbp]
 	\begin{center}
@@ -452,6 +445,31 @@ PID制御の制御則を図\ref{fig:PID}に示す.
 		\label{fig:moment-time-R}
 	\end{center}
 \end{figure}
+
+こちらも最適レギュレータ使用するため制御則を線形にする.
+下記に示す式(\ref{eq6})を式(\ref{eq7})に代入し,式(\ref{eq8})の形にした後,式(\ref{eq8})を式変形して式(\ref{eq9})のようなNを導き出す式にする.
+
+\begin{equation}
+	\dot{\omega} = \frac{N}{I_{zz}}
+	\label{eq6}
+\end{equation}
+
+\begin{equation}
+	\Theta = \frac{1}{2}\dot{\omega}{t^2}
+	\label{eq7}
+\end{equation}
+
+\begin{equation}
+	\Theta = \frac{1}{2}\frac{N}{I_{zz}}{t^2}
+	\label{eq8}
+\end{equation}
+
+\begin{equation}
+	N = \frac{4{I_{zz}}\pi}{t^2}
+	\label{eq9}
+\end{equation}
+ 
+実験により得られた値と慣性乗積を式(\ref{eq9})に代入することにより各PWM値における発生モーメントを算出した.こちらも例としてRモータのPWM値とモーメントの関係とその近似直線を表したものを図\ref{fig:moment-R}に示す.
 
 \begin{figure}[htbp]
 	\begin{center}
@@ -477,7 +495,8 @@ PID制御の制御則を図\ref{fig:PID}に示す.
 	\end{center}
 \end{table}
 
-XYZ方向の移動量のシュミレーション結果を図\ref{fig:UVW}に示す.
+上記の条件を元にシュミレーションを行った場合Z方向の移動量だけ増加し,他の運動量は変化しない変化が見られる.
+シュミレーション結果を図\ref{fig:UVW},図\ref{fig:tpy},図\ref{fig:XYZ}に示す.
 
 \begin{figure}[htbp]
 	\begin{center}
@@ -487,8 +506,27 @@ XYZ方向の移動量のシュミレーション結果を図\ref{fig:UVW}に示�
 	\end{center}
 \end{figure}
 
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=75mm]{image/tpy.eps}
+		\caption{各方向の角度}
+		\label{fig:tpy}
+	\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=75mm]{image/XYZ.eps}
+		\caption{各方向の角速度}
+		\label{fig:XYZ}
+	\end{center}
+\end{figure}
+
 図\ref{fig:UVW}より,すべてのモータに等しい推力を与えた場合Z方向の移動量だけが増加した.
-このように機体の条件を入力することにより機体の動きをシュミレーションすることができる.このシュミレーションと実際の制御時のグラフが正しいかどうかで制御がうまくいっているか確認できる.
+また,図\ref{fig:tpy},図\ref{fig:XYZ}より他の運動量に変化は見られない.
+狙い道理のシュミレーションが可能となった.
+このように機体の条件を入力することにより機体の動きをシュミレーションすることができる.
+このシュミレーションのグラフと実際の制御時のグラフがどの程度一致するかで制御がうまくいっているか確認できる.
 
 \subsection{校正}
 制御を正確なものにするため各センサに校正を行った.
@@ -549,14 +587,14 @@ z軸について,校正前のデータを図\ref{fig:acc-calib-be}に,校正後�
 
 \begin{equation}
 	\dot{x}(t) = Ax(t)+Bu(t)
-	\label{eq7}
+	\label{eq10}
 \end{equation}
 
 のもとで,ある評価関数を最小にする制御則が線形な状態フィードバック制御則となるため,評価関数は評価関数を以下の２次形式の式(\ref{eq8})にする必要がある.
 
 \begin{equation}
 	J = \int^{t_f}_0 [x^T(t)Qx(t)+u^T(t)Ru(t)]dt
-	\label{eq8}
+	\label{eq11}
 \end{equation}
 
 ここで,制御目的の重み行列Q(n×n)は非負定な対称行列,制御入力の重み行列R(m×m)は正定対称行列とする.\cite{regyuu}
@@ -582,7 +620,7 @@ z軸について,校正前のデータを図\ref{fig:acc-calib-be}に,校正後�
 	\end{center}
 \end{figure}
 
-図\ref{fig:rugyu}は図\ref{fig:test-1}のPID制御を用いて制御を行っていた時に比べセンサの取得値がより０に近い値を示しているため機体の姿勢がより安定していることがわかる.
+図\ref{fig:regyu}は図\ref{fig:test-1}のPID制御を用いて制御を行っていた時に比べセンサの取得値がより０に近い値を示しているため機体の姿勢がより安定していることがわかる.
 また,向かい合うモータの指令値も同じような値を示しているためモータの出力差により機体の姿勢が不安定になることは少なくなったと考えられる.
 
 \chapter{おわりに}
@@ -599,10 +637,10 @@ z軸について,校正前のデータを図\ref{fig:acc-calib-be}に,校正後�
 
 \subsection{全体的な結論}
 初めに,上記のようにハードウェアをゼロから作成しプログラムの改良をしてマルチコプターを離陸できるように調整するという一連の流れが可能となっている.
-そのため,機械制御を学ぶ上で約に立つものを作るという目標は達成できたと考えられる.
+そのため,機械制御を学ぶ上で役に立つものを作るという目標は達成できたと考えられる.
 
 
-次に制御環境の構築は上記のように構築方法が確立したため目標は達成できた.
+制御環境の構築は上記のように構築方法が確立したため目標は達成できた.
 
 
 最後に機体を球体カバーで覆うことにより機体の耐久性向上と共に安全化が図れたものが製作出来たと考えられる.
@@ -610,13 +648,16 @@ z軸について,校正前のデータを図\ref{fig:acc-calib-be}に,校正後�
 \section{今後の課題}
 今後の課題を以下の項に示す.
 \subsection{解決すべき課題}
-機体の上昇に必要な推力を減らすことで機体の姿勢制御に使用できる推力を増やすため,ハードウェア全体を見なおし,軽量化が必要である.
+機体の上昇に必要な推力を減らすことで機体の姿勢制御に使用できる推力を増やすためハードウェア全体を見直し,軽量化が必要である.
 
 
-現在制御に用いているプログラムにおいてセンサ情報の取得は各センサのサンプルプログラムの組み合わせて使用しているためプラグラムの全体をうまく把握しきれていない.
+%各計算式の見直し
+現在制御に用いているプログラムにおいてセンサ情報の取得は各センサのサンプルプログラムの組み合わせて使用しているため,プラグラムの全体をうまく把握しきれていない.
 そのため,各サンプルプログラムをもう一度見直しセンサがどのような値をどの方向で取得しているかを再度確認する必要がある.
+また,それに伴い制御に用いている各計算式を改善する必要がある.
+
+
 \subsection{今後取り組んでみたいこと}
-現在ハードウェアの量産はレーザー加工を用いて簡単に行うことができる.また,球体に入れた状態で離陸可能なプログラムがすでにあるので球体マルチコプターを複数機用いて図\ref{fig:hen}のように編隊飛行に挑戦してみたい.
 
 \begin{figure}[htbp]
 	\begin{center}
@@ -625,6 +666,10 @@ z軸について,校正前のデータを図\ref{fig:acc-calib-be}に,校正後�
 		\label{fig:hen}
 	\end{center}
 \end{figure}
+
+現在ハードウェアの製作はレーザー加工機を用いることにより簡単に量産することが出来る.また,球体に入れた状態で離陸可能なプログラムがすでにある.そのため,プログラムの改良を行い球体マルチコプターを複数機用いて図\ref{fig:hen}のように編隊飛行に挑戦してみたい.
+
+
 
 
 
@@ -720,6 +765,100 @@ sudo hciconfig hci0 piscan
 \section{ソースコード}
 実際に使用したソースコードを以下に示す.
 
+\section{機体の製作方法}
+本節では機体の製作方法について記載する.
+
+
+1.機体に必要な部品を揃える.
+機体製作に必要な部品を表\ref{table:kitai}に示す.
+
+\begin{table}[htbp]
+	\begin{center}
+		\caption{部品の個数}
+		\begin{tabular}{|l|l|} \hline
+			部品名 & 個数 \\ \hline 
+			M2ナット & 4 \\ \hline
+			M2ネジ & 12 \\ \hline
+			M2ワッシャ　& 8　\\ \hline
+			M2プラスチィックワッシャ & 4\\ \hline
+			M3ナット & 8 \\ \hline
+			M3ネジ　& 4 \\ \hline
+			M2スペーサ h10 & 12 \\ \hline
+			M2スペーサ h20 & 4 \\ \hline	
+			M3スペーサ h10 & 10 \\ \hline
+　　		\end{tabular}
+		\label{table:kitai}
+	\end{center}
+\end{table}
+
+
+2.図\ref{fig:kitai1}のように切り出したパーツを組み立てる.この時,パーツ同士のはめ合いが緩いため切込みに接着剤を塗り固定する.
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=75mm]{image/kitai/kitai1.jpg}
+		\caption{工程2}
+		\label{fig:kitai1}
+	\end{center}
+\end{figure}
+
+
+3.アームにモーターを取り付け,その後アームを十字に交差させはめ込む.
+
+
+4.M2スペーサ h10を8個とM2スペーサ h20を4個ずつ使用し,図\ref{fig:kitai2}のようにアームを動体で挟み込みスペーサで固定する.注意点として機体上面にねじ山が向くようにし,機体上面に穴から信号線を出すようにする.
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=75mm]{image/kitai/kitai2.jpg}
+		\caption{工程4}
+		\label{fig:kitai2}
+	\end{center}
+\end{figure}
+
+
+5.M2スペーサ h10を4個使用して,図\ref{fig:kitai3}のようにRasuberryPiを取付けスペーサを固定する.その後,スペーサにワッシャを入れる.
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=75mm]{image/kitai/kitai3.jpg}
+		\caption{工程5}
+		\label{fig:kitai3}
+	\end{center}
+\end{figure}
+
+
+6.図\ref{fig:kitai4}のようにワッシャを入れM2スペーサで固定する.
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=75mm]{image/kitai/kitai4.jpg}
+		\caption{工程6}
+		\label{fig:kitai4}
+	\end{center}
+\end{figure}
+
+
+7.図\ref{fig:kitai5}のようにバッテリーホルダーを作成する.
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=75mm]{image/kitai/kitai5.jpg}
+		\caption{工程7}
+		\label{fig:kitai5}
+	\end{center}
+\end{figure}
+
+
+8.最後に工程６までで作成したものにバッテリーホルダーを取り付けてバッテリーをバッテリーホルダー搭載し機体は完成.完成図を図\ref{fig:kitai}に示す.
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=75mm]{image/kitai/kitai.jpg}
+		\caption{完成図}
+		\label{fig:kitai}
+	\end{center}
+\end{figure}
 
 \end{document}
 

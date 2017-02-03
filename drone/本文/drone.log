@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2016.7.7)  27 JAN 2017 16:52
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2016.7.7)  3 FEB 2017 19:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -467,14 +467,14 @@ File: image/config.png Graphic file (type bmp)
 
 ] [12]
 
-LaTeX Warning: Citation `pid' on page 13 undefined on input line 274.
+LaTeX Warning: Citation `pid' on page 13 undefined on input line 273.
 
 File: image/susiki/PID.png Graphic file (type bmp)
 <image/susiki/PID.png>
 File: image/test-1.eps Graphic file (type eps)
  <image/test-1.eps> [13] [14]
 File: image/3DCAD.jpg Graphic file (type bmp)
- <image/3DCAD.jpg>
+ <image/3DCAD.jpg> [15]
 File: image/thrust/thrust-test.jpg Graphic file (type bmp)
 
 <image/thrust/thrust-test.jpg>
@@ -482,7 +482,7 @@ File: image/thrust/thrust-R.eps Graphic file (type eps)
  <image/thrust/thrust-R.eps>
 File: image/thrust/thrust-R-kinji.eps Graphic file (type eps)
 
-<image/thrust/thrust-R-kinji.eps> [15] [16]
+<image/thrust/thrust-R-kinji.eps> [16]
 
 LaTeX Warning: Text page 17 contains only floats.
 
@@ -490,58 +490,72 @@ LaTeX Warning: Text page 17 contains only floats.
 File: image/moment/moment-test.jpg Graphic file (type bmp)
  <image/moment/moment-test.jpg>
 File: image/moment/moment-time-R.eps Graphic file (type eps)
- <image/moment/moment-time-R.eps>
+ <image/moment/moment-time-R.eps> [18]
 File: image/moment/moment.eps Graphic file (type eps)
 
-<image/moment/moment.eps>
+<image/moment/moment.eps> [19]
 File: image/UVW.eps Graphic file (type eps)
- <image/UVW.eps> [18] [19]
+ <image/UVW.eps>
+File: image/tpy.eps Graphic file (type eps)
+ <image/tpy.eps>
+File: image/XYZ.eps Graphic file (type eps)
+ <image/XYZ.eps>
+[20]
 File: image/calibration/acc-calib-be.eps Graphic file (type eps)
-
-<image/calibration/acc-calib-be.eps>
+ <image/calibration/acc-calib-be.eps>
 File: image/calibration/acc-calib-af.eps Graphic file (type eps)
  <image/calibration/acc-calib-af.eps>
+[21]
 File: image/calibration/mag-calib-be.eps Graphic file (type eps)
-
-<image/calibration/mag-calib-be.eps>
+ <image/calibration/mag-calib-be.eps>
 File: image/calibration/mag-calib-af.eps Graphic file (type eps)
  <image/calibration/mag-calib-af.eps>
-[20]
-
-LaTeX Warning: Text page 21 contains only floats.
-
-[21]
+[22]
 File: image/susiki/regyureta.png Graphic file (type bmp)
- <image/susiki/regyureta.png> [22]
+ <image/susiki/regyureta.png> [23]
 File: image/regyu.png Graphic file (type bmp)
- <image/regyu.png>
-
-LaTeX Warning: Reference `fig:rugyu' on page 23 undefined on input line 585.
-
-[23]
+ <image/regyu.png> [24] [25]
 第4章
-[24
+[26
 
 ]
 File: image/hen.png Graphic file (type bmp)
- <image/hen.png> [25] [26] [27
+ <image/hen.png> [27] [28] [29
 
-] [28
+] [30
 
-] [29
+] [31
 
-] [30] [31] (./drone.aux)
+] [32]
+File: image/kitai/kitai1.jpg Graphic file (type bmp)
+ <image/kitai/kitai1.jpg>
+[33]
+File: image/kitai/kitai2.jpg Graphic file (type bmp)
+ <image/kitai/kitai2.jpg>
+File: image/kitai/kitai3.jpg Graphic file (type bmp)
+ <image/kitai/kitai3.jpg>
+File: image/kitai/kitai4.jpg Graphic file (type bmp)
+
+<image/kitai/kitai4.jpg> [34]
+File: image/kitai/kitai5.jpg Graphic file (type bmp)
+ <image/kitai/kitai5.jpg>
+File: image/kitai/kitai.jpg Graphic file (type bmp)
+ <image/kitai/kitai.jpg>
+[35] [36] (./drone.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 2863 strings out of 495129
- 33876 string characters out of 6182596
+ 2891 strings out of 495129
+ 34226 string characters out of 6182596
  92881 words of memory out of 5000000
- 6084 multiletter control sequences out of 15000+600000
+ 6103 multiletter control sequences out of 15000+600000
  38819 words of font info for 102 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
  34i,11n,45p,281b,410s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on drone.dvi (31 pages, 57304 bytes).
+Output written on drone.dvi (36 pages, 63996 bytes).
