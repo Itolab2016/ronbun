@@ -1,30 +1,30 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2016.7.7)  30 JAN 2017 18:25
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex 2016.8.5)  10 JAN 2017 15:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **drone.tex
 (./drone.tex
-pLaTeX2e <2006/11/10> (based on LaTeX2e <2011/06/27> patch level 0)
-Babel <3.9h> and hyphenation patterns for 11 languages loaded.
+pLaTeX2e <2006/11/10> (based on LaTeX2e <2016/02/01> patch level 0)
+Babel <3.9n> and hyphenation patterns for 11 languages loaded.
 (./sotsuken_abst.cls
 *** Manuscript Style for pLaTeX2e by kouhei ***
 (/usr/share/texlive/texmf-dist/tex/platex/jsclasses/jsarticle.cls
-Document Class: jsarticle 2013/05/14 okumura
-LaTeX Info: Redefining \rmfamily on input line 332.
-LaTeX Info: Redefining \sffamily on input line 335.
-LaTeX Info: Redefining \ttfamily on input line 338.
+Document Class: jsarticle 2014/02/07 okumura
+LaTeX Info: Redefining \rmfamily on input line 352.
+LaTeX Info: Redefining \sffamily on input line 355.
+LaTeX Info: Redefining \ttfamily on input line 358.
 \symmincho=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
-(Font)                  JY1/mc/m/n --> JY1/gt/m/n on input line 403.
+(Font)                  JY1/mc/m/n --> JY1/gt/m/n on input line 423.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 593.
+(Font)              scaled to size 9.60999pt on input line 613.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 593.
+(Font)              scaled to size 9.60999pt on input line 613.
 \fullwidth=\dimen118
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 7.68799pt on input line 740.
+(Font)              scaled to size 7.68799pt on input line 760.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 7.68799pt on input line 740.
+(Font)              scaled to size 7.68799pt on input line 760.
 \c@part=\count81
 \c@section=\count82
 \c@subsection=\count83
@@ -36,44 +36,51 @@ LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 \c@table=\count88
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
-\@lnumwidth=\dimen119
-\bibindent=\dimen120
-LaTeX Info: Redefining \TeX on input line 1697.
-LaTeX Info: Redefining \LaTeX on input line 1723.
-LaTeX Info: Redefining \LaTeXe on input line 1748.
+\js@tocl@width=\dimen119
+\@lnumwidth=\dimen120
+\bibindent=\dimen121
+LaTeX Info: Redefining \TeX on input line 1731.
+LaTeX Info: Redefining \LaTeX on input line 1757.
+LaTeX Info: Redefining \LaTeXe on input line 1782.
 \heisei=\count89
 ) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks15
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: dvipdfmx.def on input line 91.
+Package graphics Info: Driver file: dvipdfmx.def on input line 95.
 
 (/usr/share/texlive/texmf-dist/tex/latex/dvipdfmx-def/dvipdfmx.def
-File: dvipdfmx.def 2014/01/23 v3.4 LaTeX graphics driver for dvipdfmx (TeX Live
-/ChoF)
-))
-\Gin@req@height=\dimen121
-\Gin@req@width=\dimen122
+File: dvipdfmx.def 2015/11/04 v4.07 LaTeX color/graphics driver for dvipdfmx (T
+eX Live/ChoF)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)))
+\Gin@req@height=\dimen122
+\Gin@req@width=\dimen123
 )
 (/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigtopskip=\skip43
 \subfigcapskip=\skip44
-\subfigcaptopadj=\dimen123
+\subfigcaptopadj=\dimen124
 \subfigbottomskip=\skip45
-\subfigcapmargin=\dimen124
+\subfigcapmargin=\dimen125
 \subfiglabelskip=\skip46
 \c@subfigure=\count90
 \c@lofdepth=\count91
@@ -88,7 +95,7 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfig@bottom=\skip48
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/layout.sty
-Package: layout 2000/09/25 v1.2c Show layout parameters
+Package: layout 2014/10/28 v1.2c Show layout parameters
 \oneinch=\count94
 \cnt@paperwidth=\count95
 \cnt@paperheight=\count96
@@ -197,7 +204,7 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 53.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 53.
@@ -230,7 +237,7 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 106.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 106.
- [3
+ [13
 
 
 ]
@@ -238,14 +245,14 @@ File: image/config.png Graphic file (type bmp)
 
 <image/config.png>
 File: image/gyro.eps Graphic file (type eps)
- <image/gyro.eps> [4] (./drone.aux) ) 
+ <image/gyro.eps> [14] (./drone.aux) ) 
 Here is how much of TeX's memory you used:
- 1154 strings out of 495129
- 13666 string characters out of 6182596
- 72604 words of memory out of 5000000
- 4520 multiletter control sequences out of 15000+600000
- 15609 words of font info for 68 fonts, out of 8000000 for 9000
- 85 hyphenation exceptions out of 8191
- 32i,10n,45p,208b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 1362 strings out of 494865
+ 16781 string characters out of 6179770
+ 77157 words of memory out of 5000000
+ 4798 multiletter control sequences out of 15000+600000
+ 15601 words of font info for 68 fonts, out of 8000000 for 9000
+ 269 hyphenation exceptions out of 8191
+ 34i,10n,45p,240b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on drone.dvi (2 pages, 10736 bytes).

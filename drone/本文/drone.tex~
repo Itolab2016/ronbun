@@ -256,7 +256,8 @@ Bluetooth通信によりRaspberryPiとDUALSHOCK3を接続し,スティック操�
 
 \section{コントローラ}
 前述の通りコントローラはDUALSHOCK3をBluetooth通信で接続し使用する.
-ペアリングにはsixpair,SixaxisジョイスティックマネージャーにはQtSixAを使用している.ペアリング,Bluetooth通信についての詳細は付録に記載する.
+ペアリングにはsixpair,SixaxisジョイスティックマネージャーにはQtSixAを使用している.
+ペアリング,Bluetooth通信についての詳細は付録に記載する.
 右スティックの前後方向をスロットル,左右方向をヨー方向制御,左スティックで前後左右移動する.
 また,スタートボタンで一時停止/再開,一時停止中にセレクトボタンでプログラムが終了する.
 Navio2のLEDがプログラムが動作していない時は緑に,プログラム動作中は赤に,一時停止中は青に点灯する.
@@ -306,11 +307,8 @@ PID制御の制御則を図\ref{fig:PID}に示す.
 \section{運動方程式}
 運動方程式には航空機の運動方程式を利用する.
 前提条件として,左右対称,前後非対称,上下非対称,傾きが微小であることなどがある.
-上記の条件を元に飛行機の運動方程式を用いてX,Y,Z各方向の速度,角度,移動量の運動方程式を立てる.
 この方程式をルンゲ・クッタ法を用いて解く.
-ルンゲ・クッタ法を用いる利点は他の微分方程式の解析法に比べ刻み幅hを大きな値にしても高い精度で機体のシュミレーションを行うことが出来る.
-そのため短時間で高精度なシュミレーションを行うことが出来る.
-ルンゲ・クッタ法とは微分方程式を数値的に解く方法である.以下に実際に使用するルンゲ・クッタ法で代表的なルンゲ・クッタの公式を示す.
+ルンゲ・クッタ法とは微分方程式を数値的に解く方法である.実際に使用するルンゲ・クッタ法で代表的なルンゲ・クッタの公式を以下に示す.
 
 \begin{equation}
 	x_k+1 = x_k+\frac{1}{6}h(k_1+2k_2+2k_3+k_4)
@@ -353,9 +351,7 @@ PID制御の制御則を図\ref{fig:PID}に示す.
 
 \(k_4\)を求めて　\(x_k+\frac{1}{6}hk_1+\frac{1}{3}hk_2+\frac{1}{3}hk_3+\frac{1}{6}hk_4\)　　　　　　　x=x+1/6k
 
-のようにxの値を増やしていくと,最後に得られたxは\(x_k+1\)になっている.\cite{runge} 
-
-
+のようにxの値をふやしていくと,最後に得られたxは\(x_k+1\)になっている.\cite{runge} 
 
 \subsection{特性確認}
 前述の運動方程式を解くために必要な値を実験などにより求める必要がある.
@@ -447,7 +443,7 @@ PID制御の制御則を図\ref{fig:PID}に示す.
 \end{figure}
 
 こちらも最適レギュレータ使用するため制御則を線形にする.
-下記に示す式(\ref{label:eq6})を式(\ref{label:eq7})に代入し,式(\ref{label:eq8})の形にした後,式(\ref{label:eq8})を式変形して式(\ref{label:eq9})のようなNを導き出す式にする.
+下記に示す式(\ref{eq6})を式(\ref{eq7})に代入し,式(\ref{eq8})の形にした後,式(\ref{eq8})を式変形して式(\ref{eq9})のようなNを導き出す式にする.
 
 \begin{equation}
 	\dot{\omega} = \frac{N}{I_{zz}}
@@ -468,8 +464,26 @@ PID制御の制御則を図\ref{fig:PID}に示す.
 	N = \frac{4{I_{zz}}\pi}{t^2}
 	\label{eq9}
 \end{equation}
- 
-実験により得られた値と慣性乗積を式(\ref{label:eq9})に代入することにより各PWM値における発生モーメントを算出した.こちらも例としてRモータのPWM値とモーメントの関係とその近似直線を表したものを図\ref{fig:moment-R}に示す.
+
+
+例としてRモータを回した時の機体が1回転するのにかかる時間を計測したものを図\ref{fig:moment-time-R}に示す.
+またモーメントを算出し,PWM値とモーメントの関係とその近似直線を表したものを図\ref{fig:moment-R}に示す.
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=65mm]{image/moment/moment-test.jpg}
+		\caption{モーメント確認実験}
+		\label{fig:moment-test}
+	\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=75mm]{image/moment/moment-time-R.eps}
+		\caption{RモータのPWM値と1回転にかかる時間の関係}
+		\label{fig:moment-time-R}
+	\end{center}
+\end{figure}
 
 \begin{figure}[htbp]
 	\begin{center}
@@ -583,21 +597,21 @@ z軸について,校正前のデータを図\ref{fig:acc-calib-be}に,校正後�
 %解いた運動方程式を線形化し,その線形化したモデルに最適レギュレータを設計した.
 %最適レギュレータはセンサから得られた機体の各変位量を常にフィードバックし,その変位量が0になるよう制御して機体の状態を安定させる制御器である.
 
-最適レギュレータとは,評価関数を設け,それを最小とするように状態フィードバックによる最適制御入力を決定する設計法について以下に述べる.可制御で線形な時不定システム
+最適レギュレータとは,評価関数を設け,それを最小とするように状態フィードバックによる最適制御入力を決定する設計法について以下に述べる.可制御で線形な時不定システムの式(\ref{eq7})
 
 \begin{equation}
 	\dot{x}(t) = Ax(t)+Bu(t)
-	\label{eq9}
+	\label{eq10}
 \end{equation}
 
 のもとで,ある評価関数を最小にする制御則が線形な状態フィードバック制御則となるため,評価関数は評価関数を以下の２次形式の式(\ref{eq8})にする必要がある.
 
 \begin{equation}
 	J = \int^{t_f}_0 [x^T(t)Qx(t)+u^T(t)Ru(t)]dt
-	\label{eq10}
+	\label{eq11}
 \end{equation}
 
-ここで,制御目的の重み行列Q(n×n)は非負定な対称行列,制御入力の重み行列R(m×m)は正定対称行列とする.\cite{regyuu}
+ここで,制御目的の重み行列Q(n×n)は非負定な対称行列,制御入力の重み行列R(m×m)は正定対称行列とする.\cite{regyu}
 最適レギュレータの制御則を図\ref{fig:regyureta}に示す.
 
 \begin{figure}[htbp]
@@ -620,8 +634,9 @@ z軸について,校正前のデータを図\ref{fig:acc-calib-be}に,校正後�
 	\end{center}
 \end{figure}
 
-図\ref{fig:regyu}は図\ref{fig:test-1}のPID制御を用いて制御を行っていた時に比べセンサの取得値がより０に近い値を示しているため機体の姿勢がより安定していることがわかる.
+図\ref{fig:rugyu}は図\ref{fig:test-1}のPID制御を用いて制御を行っていた時に比べセンサの取得値がより0に近い値を示しているため機体の姿勢がより安定していることがわかる.
 また,向かい合うモータの指令値も同じような値を示しているためモータの出力差により機体の姿勢が不安定になることは少なくなったと考えられる.
+
 
 \chapter{おわりに}
 
@@ -658,7 +673,6 @@ z軸について,校正前のデータを図\ref{fig:acc-calib-be}に,校正後�
 
 
 \subsection{今後取り組んでみたいこと}
-現在ハードウェアの製作はレーザー加工機を用いることにより簡単に量産することが出来る.また,球体に入れた状態で離陸可能なプログラムがすでにある.そのため,プログラムの改良を行い球体マルチコプターを複数機用いて図\ref{fig:hen}のように編隊飛行に挑戦してみたい.
 
 \begin{figure}[htbp]
 	\begin{center}
@@ -668,6 +682,7 @@ z軸について,校正前のデータを図\ref{fig:acc-calib-be}に,校正後�
 	\end{center}
 \end{figure}
 
+現在ハードウェアの製作はレーザー加工機を用いることにより簡単に量産することが出来る.また,球体に入れた状態で離陸可能なプログラムがすでにある.そのため,プログラムの改良を行い球体マルチコプターを複数機用いて図\ref{fig:hen}のように編隊飛行に挑戦してみたい.
 
 
 \chapter*{謝辞}
@@ -681,86 +696,58 @@ z軸について,校正前のデータを図\ref{fig:acc-calib-be}に,校正後�
 同級生のメンバーには論文の作成,修正にご協力いただき心より感謝しております.
 その他、助けていただいた多くの皆様に心から感謝しております.ありがとうございました.
 
-\begin{thebibliography}{8}
-	\bibitem{runge} 野波　健蔵, 西村　秀和, 平田　光男：MATLABによる制御系設計，東京電機大学出版局，pp. 49-50，1998
-	\bibitem{regyuu} 川上　一郎:数値計算　[理工系の数学入門コース8]：株式会社　岩波出版，pp．156-157，1989
-\end{thebibliography}
 
-\chapter*{付録}
-\addcontentsline{toc}{chapter}{付録}
+\appendix
+\renewcommand{\thesection}{付録.\ \arabic{section}}
+\renewcommand{\thesubsection}{付録.\ \arabic{section}-\arabic{subsection}.}
 
 \section{レーザー加工機}
 機体,球体の製作にはレーザー加工機を使用するため,レーザー加工機について説明する.
-レーザー加工機は"プリンター"である.
+使用する加工機の機種はGCC LaserPro Spiritである.
 
-\subsection{加工可能な材料}
-アクリルなどのプラスチックや木,紙,コルク材などの材質が加工可能である.
-ただし塩ビなどの一部材質では、加工時に有毒ガスが発生するため加工不可である.
-大きさは460mm×640mm,厚さ約5mm程度まで加工可能である.
+\subsection{材料}
+加工可能な大きさは彫刻加工で640mm×460mm,カット加工で736mm×460mm,厚さ5mm程度である.
+
+加工可能な材質を以下に示す.
+
+\begin{itemize}
+	\item アクリル
+	\item 木材
+	\item ゴム
+	\item ガラス
+	\item 皮
+	\item 石
+	\item コルク
+	\item ダンボール
+\end{itemize}
+
+加工不可な材質を以下に示す.
+
+\begin{itemize}
+	\item 塩ビ系(有毒ガスが発生するため)
+	\item 金属系(レーザー光が反射するため)
+	\item 鏡(レーザー光が反射するため)
+	\item テフロン
+	\item プラスチック
+\end{itemize}
 
 \subsection{加工データ}
 加工データは主に加工機横に設置されているパソコンでCorelDRAWというペイントソフトを用いて作成する.
-dxf形式のデータやpng,jpgなどの画像も読み込むことができる.
+CorelDRAW以外にもAutoCADなどで作成したdxf形式の2次元CADデータやpng,jpgなどの画像も読み込むことができる.
 
 \subsection{加工時の設定}
-加工時には速度,レーザーの出力,DPI(Dot per inch)などが設定可能である.
-この値は材質によって異なる.
-基準値は説明書に記載されているが,実際に切ってみて調整を行うほうが良い.
+加工(印刷)時の環境設定について述べる.
+主に設定する必要があるのは以下の項目である.
 
-\section{RaspberryPi}
-本研究ではRaspberryPiを使用しているが,OSには専用のRaspbianやNOOBSではなく後述のemlid-raspbianを使用している.
-そのためGUIは使用できない.
-
-\subsection{初期設定}
-sudo raspi-config
-メモリ解放
-自動ログイン
-キーボード設定
-
-ネットワーク接続設定
-
-\section{Emlid}
-
-\subsection{emlid-raspbian}
-前述の通りGUIを使用することができない.
-https://docs.emlid.com/navio2/Navio-APM/configuring-raspberry-pi/
-
-\subsection{Navio2サンプルプログラム}
-EmlidがNavio2のセンサ情報取得のサンプルプログラムをGitHub上で公開している.
-https://github.com/emlid/Navio2.git
-
-\section{DUALSHOCK3の使用}
-DUALSHOCK3とのBluetooth通信にあたり,BluetoothドングルをRaspberryPiに接続する.
-RaspberryPi3ではオンボード上にBluetoothモジュールが搭載されているが,emlid-raspbianでは設定が複雑になっているよう.
-
-\subsection{bluez}
-wget http://www.kernel.org/pub/linux/bluetooth/bluez-5.37.tar.xz
-tar xvf bluez-5.37.tar.xz
-cd bluez-5.37/
-sudo apt-get install -y libusb-dev libdbus-1-dev libglib2.0-dev libudev-dev libical-dev libreadline-dev
-./configure
-make
-sudo make install
-sudo ldconfig
-
-\subsection{sixpair}
-wget http://www.pabr.org/sixlinux/sixpair.c
-gcc -o sixpair sixpair.c -lusb
-
-\subsection{QtSixA}
-wget http://sourceforge.net/projects/qtsixa/files/QtSixA%201.5.1/QtSixA-1.5.1-src.tar.gz
-tar xfvz QtSixA-1.5.1-src.tar.gz
-cd QtSixA-1.5.1/sixad
-make
-sudo mkdir -p /var/lib/sixad/profiles
-sudo checkinstall
-
-\subsection{接続方法}
-sudo hciconfig hci0 piscan
-%sudo sixad -s &
-
-\section{ソースコード}
-実際に使用したソースコードを以下に示す.
+\begin{itemize}
+	\item DPI:1インチの線を何ドットで表現するか(125,250,300,380,500,600,760,1000,1500の中から選択).
+	\item Pen:加工データの線を色分けすることで,以下の項目を16パターン設定できる.
+		\begin{itemize}
+			\item Speed:加工速度(0.1\%～100.0\%の範囲で設定)
+			\item Power:レーザーの出力(0\%～100\%の範囲で設定)
+			\item PPI:1インチの線を描く間に何回レーザー光を発射するか(30～∞の範囲で設定)
+		\end{itemize}
+\end{itemize}
 
 \section{機体の製作方法}
 本節では機体の製作方法について記載する.
@@ -856,6 +843,10 @@ sudo hciconfig hci0 piscan
 		\label{fig:kitai}
 	\end{center}
 \end{figure}
+
+\section{ソースコード}
+実際に使用したソースコードを以下に示す.
+
 
 \end{document}
 
