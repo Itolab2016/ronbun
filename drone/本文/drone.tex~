@@ -1,5 +1,29 @@
 \documentclass[12pt,oneside]{sotsuken_paper}
 
+\usepackage{listings}
+
+\renewcommand{\lstlistingname}{ソースコード}
+
+\lstset{%
+  language={C},
+  basicstyle={\small},%
+  identifierstyle={\small},%
+  commentstyle={\small\itshape},%
+  keywordstyle={\small\bfseries},%
+  ndkeywordstyle={\small},%
+  stringstyle={\small\ttfamily},
+  frame={tb},
+  breaklines=true,
+  columns=[l]{fullflexible},%
+  numbers=left,%
+  xrightmargin=0zw,%
+  xleftmargin=3zw,%
+  numberstyle={\scriptsize},%
+  stepnumber=1,
+  numbersep=1zw,%
+  lineskip=-0.5ex%
+}
+
 % タイトル
 \title{安全な教育用マルチコプターの開発}
 \author{北山天斗・剱崎健太郎}
@@ -151,8 +175,7 @@ RaspberryPi,バッテリーの固定にはABS樹脂板で専用の取付板を�
 \end{figure}
 
 \subsubsection{2号機}
-接合部でのスチレンと紙の剥離が起こらないように接合部に図\ref{fig:kigumi}のような木組み構造を取り入れた.
-これによりスチレンと紙の剥離は起こらなくなった.
+2号機ではスチレンと紙の剥離が起こらないように接合部に図\ref{fig:kigumi}のような木組み構造を取り入れた.
 製作した2号機を図\ref{fig:sphere-2}に示す.
 
 \begin{figure}[htbp]
@@ -193,7 +216,7 @@ RaspberryPi,バッテリーの固定にはABS樹脂板で専用の取付板を�
 
 \begin{figure}[htbp]
 	\begin{center}
-		\includegraphics[width=80mm]{image/drone/CD-data.jpg}
+		\includegraphics[width=120mm]{image/drone/CD-data.jpg}
 		\caption{機体パーツの切り出し用データ}
 		\label{fig:CD-data}
 	\end{center}
@@ -201,7 +224,7 @@ RaspberryPi,バッテリーの固定にはABS樹脂板で専用の取付板を�
 
 \begin{figure}[htbp]
 	\begin{center}
-		\includegraphics[width=80mm]{image/drone/cut.jpg}
+		\includegraphics[width=120mm]{image/drone/cut.jpg}
 		\caption{実際に切り出した機体パーツ}
 		\label{fig:cut}
 	\end{center}
@@ -291,13 +314,13 @@ PID制御の制御則を図\ref{fig:PID}に示す.
 
 機体3号機に現在の球体を取り付け,地面に置いた状態からの飛行を試みた.
 しかし,足を取り付けた状態では姿勢が安定していたのに対し,球体カバーを取り付けた状態では姿勢が不安定なため傾きが発散し離陸することができなかった.
-球体カバーを取り付けた状態で離陸を試みた際の角速度をグラフ化したものを図\ref{fig:test-1}に示す.
+球体カバーを取り付けた状態で離陸を試みた際の角速度をグラフ化したものを図\ref{fig:PID-flight}に示す.
 
 \begin{figure}[htbp]
 	\begin{center}
-		\includegraphics[width=75mm]{image/test-1.eps}
+		\includegraphics[width=75mm]{image/flight-test/PID-flight.eps}
 		\caption{離陸時の角速度}
-		\label{fig:test-1}
+		\label{fig:PID-flight}
 	\end{center}
 \end{figure}
 
@@ -363,7 +386,7 @@ PID制御の制御則を図\ref{fig:PID}に示す.
 
 \begin{figure}[htbp]
 	\begin{center}
-		\includegraphics[width=60mm]{image/3DCAD.jpg}
+		\includegraphics[width=50mm]{image/3DCAD.jpg}
 		\caption{作成した3次元CADデータ}
 		\label{fig:3DCAD}
 	\end{center}
@@ -373,18 +396,18 @@ PID制御の制御則を図\ref{fig:PID}に示す.
 	\begin{center}
 		\caption{物理特性}
 		\begin{tabular}{|l|l|r|} \hline
-			 & x & 0.607[mm] \\
-			重心 & y & -0.266[mm] \\
-			 & z & 8.044[mm]　\\ \hline
-			　& Ix & 82460067.681[g・mm2] \\
-			慣性モーメント & Iy & 82647566.473[g・mm2] \\
-			 & Iz & 62125193.829[g・mm2] \\ \hline
-			 & Ixx & 82508567.214[g・mm2] \\
-			 & Iyx & 14332.870[g・mm2] \\
-			慣性乗積 & Iyy & 82560633.418[g・mm2] \\
-			 & Izx & 115114.862[g・mm2] \\
-			 & Izy & 1631241.057[g・mm2] \\
-			 & Izz & 62256449.912[g・mm2] \\ \hline
+			 & x & 0.607[mm]\\
+			重心 & y & -0.266[mm]\\
+			 & z & 8.044[mm]\\\hline
+			　& Ix & 82460067.681[g・mm2]\\
+			慣性モーメント & Iy & 82647566.473[g・mm2]\\
+			 & Iz & 62125193.829[g・mm2]\\\hline
+			 & Ixx & 82508567.214[g・mm2]\\
+			 & Iyx & 14332.870[g・mm2]\\
+			慣性乗積 & Iyy & 82560633.418[g・mm2]\\
+			 & Izx & 115114.862[g・mm2]\\
+			 & Izy & 1631241.057[g・mm2]\\
+			 & Izz & 62256449.912[g・mm2]\\\hline
 		\end{tabular}
 		\label{table:phy}
 	\end{center}
@@ -407,7 +430,7 @@ PID制御の制御則を図\ref{fig:PID}に示す.
 
 \begin{figure}[htbp]
 	\begin{center}
-		\includegraphics[width=75mm]{image/thrust/thrust-R.eps}
+		\includegraphics[width=80mm]{image/thrust/thrust-R.eps}
 		\caption{RモータのPWM値と推力の関係}
 		\label{fig:thrust-R}
 	\end{center}
@@ -415,7 +438,7 @@ PID制御の制御則を図\ref{fig:PID}に示す.
 
 \begin{figure}[htbp]
 	\begin{center}
-		\includegraphics[width=75mm]{image/thrust/thrust-R-kinji.eps}
+		\includegraphics[width=80mm]{image/thrust/thrust-R-kinji.eps}
 		\caption{RモータのPWM値と推力の近似直線}
 		\label{fig:thrust-R-kinji}
 	\end{center}
@@ -425,25 +448,8 @@ PID制御の制御則を図\ref{fig:PID}に示す.
 図\ref{fig:moment-test}のように,マルチコプターに回転軸を取り付けて吊るした.
 この状態で1つのモータで機体が1回転するのにかかる時間を計測する.
 例としてRモータを回した時の機体が1回転するのにかかる時間を計測したものを図\ref{fig:moment-time-R}に示す.
-
-\begin{figure}[htbp]
-	\begin{center}
-		\includegraphics[width=65mm]{image/moment/moment-test.jpg}
-		\caption{モーメント確認実験}
-		\label{fig:moment-test}
-	\end{center}
-\end{figure}
-
-\begin{figure}[htbp]
-	\begin{center}
-		\includegraphics[width=75mm]{image/moment/moment-time-R.eps}
-		\caption{RモータのPWM値と1回転にかかる時間の関係}
-		\label{fig:moment-time-R}
-	\end{center}
-\end{figure}
-
 こちらも最適レギュレータ使用するため制御則を線形にする.
-下記に示す式(\ref{eq6})を式(\ref{eq7})に代入し,式(\ref{eq8})の形にした後,式(\ref{eq8})を式変形して式(\ref{eq9})のようなNを導き出す式にする.
+モーメントNは,以下に示す式(\ref{eq6}),式(\ref{eq7})より,式(\ref{eq8})で求めることができる.
 
 \begin{equation}
 	\dot{\omega} = \frac{N}{I_{zz}}
@@ -456,13 +462,8 @@ PID制御の制御則を図\ref{fig:PID}に示す.
 \end{equation}
 
 \begin{equation}
-	\Theta = \frac{1}{2}\frac{N}{I_{zz}}{t^2}
-	\label{eq8}
-\end{equation}
-
-\begin{equation}
 	N = \frac{4{I_{zz}}\pi}{t^2}
-	\label{eq9}
+	\label{eq8}
 \end{equation}
 
 
@@ -479,7 +480,7 @@ PID制御の制御則を図\ref{fig:PID}に示す.
 
 \begin{figure}[htbp]
 	\begin{center}
-		\includegraphics[width=75mm]{image/moment/moment-time-R.eps}
+		\includegraphics[width=80mm]{image/moment/moment-time-R.eps}
 		\caption{RモータのPWM値と1回転にかかる時間の関係}
 		\label{fig:moment-time-R}
 	\end{center}
@@ -487,14 +488,14 @@ PID制御の制御則を図\ref{fig:PID}に示す.
 
 \begin{figure}[htbp]
 	\begin{center}
-		\includegraphics[width=75mm]{image/moment/moment.eps}
+		\includegraphics[width=80mm]{image/moment/moment.eps}
 		\caption{RモータのPWM値とモーメントの関係とその近似直線}
 		\label{fig:moment-R}
 	\end{center}
 \end{figure}
 
 \subsection{ルンゲ・クッタ法を用いた機体のシュミレーション}
-上記の実験でルンゲ・クッタ法を解くのに必要な物理情報がまとまったので,ルンゲ・クッタ法を用いて機体のシュミレーションを行った.
+以上の実験でルンゲ・クッタ法を解くのに必要な物理情報がまとまったため,ルンゲ・クッタ法を用いて機体の動きシュミレーションを行った.
 以下の表\ref{table:syumi}の条件でシュミレーションを行った.
 
 \begin{table}[htbp]
@@ -509,12 +510,12 @@ PID制御の制御則を図\ref{fig:PID}に示す.
 	\end{center}
 \end{table}
 
-上記の条件を元にシュミレーションを行った場合Z方向の移動量だけ増加し,他の運動量は変化しない変化が見られる.
+表\ref{table:syumi}の条件を元にシュミレーションを行った場合,Z方向の移動量だけ増加し,他の運動量は変化しないという結果が見られる.
 シュミレーション結果を図\ref{fig:UVW},図\ref{fig:tpy},図\ref{fig:XYZ}に示す.
 
 \begin{figure}[htbp]
 	\begin{center}
-		\includegraphics[width=75mm]{image/UVW.eps}
+		\includegraphics[width=75mm]{image/simulation/UVW.eps}
 		\caption{各方向の移動量}
 		\label{fig:UVW}
 	\end{center}
@@ -522,7 +523,7 @@ PID制御の制御則を図\ref{fig:PID}に示す.
 
 \begin{figure}[htbp]
 	\begin{center}
-		\includegraphics[width=75mm]{image/tpy.eps}
+		\includegraphics[width=75mm]{image/simulation/tpy.eps}
 		\caption{各方向の角度}
 		\label{fig:tpy}
 	\end{center}
@@ -530,7 +531,7 @@ PID制御の制御則を図\ref{fig:PID}に示す.
 
 \begin{figure}[htbp]
 	\begin{center}
-		\includegraphics[width=75mm]{image/XYZ.eps}
+		\includegraphics[width=75mm]{image/simulation/XYZ.eps}
 		\caption{各方向の角速度}
 		\label{fig:XYZ}
 	\end{center}
@@ -572,7 +573,7 @@ z軸について,校正前のデータを図\ref{fig:acc-calib-be}に,校正後�
 センサから出力された値からこの値を引くことで校正する.
 縦軸にx方向の地磁気,横軸にy方向の地磁気をとったグラフを校正前のものを図\ref{fig:mag-calib-be}に,校正後のものを図\ref{fig:mag-calib-af}に示す.
 本来x=0,y=0を中心とする正円の点群が得られるのが望ましいが,校正前は中心がずれ,楕円形になっている.
-校正後はおおよそ正しいものになった.
+校正後はおおよそ正しいものとなった.
 
 \begin{figure}[htbp]
 	\begin{center}
@@ -597,7 +598,9 @@ z軸について,校正前のデータを図\ref{fig:acc-calib-be}に,校正後�
 %解いた運動方程式を線形化し,その線形化したモデルに最適レギュレータを設計した.
 %最適レギュレータはセンサから得られた機体の各変位量を常にフィードバックし,その変位量が0になるよう制御して機体の状態を安定させる制御器である.
 
-最適レギュレータとは,評価関数を設け,それを最小とするように状態フィードバックによる最適制御入力を決定する設計法について以下に述べる.可制御で線形な時不定システムの式(\ref{eq7})
+最適レギュレータとは,評価関数を設け,それを最小とするように状態フィードバックによる最適制御入力を決定する制御器である.
+設計法について以下に述べる.
+可制御で線形な時不定システムの式(\ref{eq7})
 
 \begin{equation}
 	\dot{x}(t) = Ax(t)+Bu(t)
@@ -611,30 +614,38 @@ z軸について,校正前のデータを図\ref{fig:acc-calib-be}に,校正後�
 	\label{eq11}
 \end{equation}
 
-ここで,制御目的の重み行列Q(n×n)は非負定な対称行列,制御入力の重み行列R(m×m)は正定対称行列とする.\cite{regyu}
+ここで,制御目的の重み行列Q(n×n)は非負定な対称行列,制御入力の重み行列R(m×m)は正定対称行列とする.\cite{regulator}
 最適レギュレータの制御則を図\ref{fig:regyureta}に示す.
 
 \begin{figure}[htbp]
 	\begin{center}
-		\includegraphics[width=75mm]{image/susiki/regyureta.png}
-		\caption{最適レギュレータの制御}
+		\includegraphics[width=75mm]{image/susiki/regulator.png}
+		\caption{最適レギュレータの制御則}
 		\label{fig:regyureta}
 	\end{center}
 \end{figure}
 
 \subsection{最適レギュレータの結果}
 最適レギュレータにより,球体カバーを取り付けた状態での離陸が可能となった.
-その時のジャイロセンサの取得値と各モータの指令値をグラフ化したものを図\ref{fig:regyu}に示す.
+実際に飛行試験を行った際のジャイロセンサの取得値を図\ref{fig:rate}に,各モータへの指令値をグラフ化したものを図\ref{fig:RLFB}に示す.
 
 \begin{figure}[htbp]
 	\begin{center}
-		\includegraphics[width=75mm]{image/regyu.png}
-		\caption{最適レギュレータ使用後の各値}
-		\label{fig:regyu}
+		\includegraphics[width=75mm]{image/flight-test/regulator-rate.eps}
+		\caption{最適レギュレータでの角速度}
+		\label{fig:rate}
 	\end{center}
 \end{figure}
 
-図\ref{fig:rugyu}は図\ref{fig:test-1}のPID制御を用いて制御を行っていた時に比べセンサの取得値がより0に近い値を示しているため機体の姿勢がより安定していることがわかる.
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=75mm]{image/flight-test/regulator-RLFB.eps}
+		\caption{最適レギュレータでのモータ指令値}
+		\label{fig:RLFB}
+	\end{center}
+\end{figure}
+
+図\ref{fig:rate}は図\ref{fig:PID-flight}に比べセンサの取得値がより0に近い値を示しているため機体の姿勢がより安定していることがわかる.
 また,向かい合うモータの指令値も同じような値を示しているためモータの出力差により機体の姿勢が不安定になることは少なくなったと考えられる.
 
 
@@ -647,32 +658,35 @@ z軸について,校正前のデータを図\ref{fig:acc-calib-be}に,校正後�
 機体本体は厚さ3mmの木材を使用し,レーザー加工機を使用することにより簡単に複数の機体が制作できるようになった.また,球体もレーザー加工機で簡単に制作できるようになっている.そのため制御対象であるハードウェアの製作難易度は大きく低下し,誰でも簡単に機体を製作できる環境が整った.
 
 \subsection{ソフトウェアの結論}
-初めに,環境構築の方法はすでに確立されているので簡単に環境構築を行うことができる.
-制御環境は現在使用している最適レギュレータで離陸は可能となったので来年度以降の基板づくりには成功したと考えられる.
+ソフトウェアの骨組みはすでに確立されているので簡単に環境構築を行うことができる.
+制御環境は現在使用している最適レギュレータで離陸は可能となったので来年度以降の基盤づくりには成功したと考えられる.
 
 \subsection{全体的な結論}
-初めに,上記のようにハードウェアをゼロから作成しプログラムの改良をしてマルチコプターを離陸できるように調整するという一連の流れが可能となっている.
+上記のようにハードウェアを一から製作しプログラムの改良を行いマルチコプターを離陸できるように調整するという一連の流れが可能となっている.
 そのため,機械制御を学ぶ上で役に立つものを作るという目標は達成できたと考えられる.
 
 
 制御環境の構築は上記のように構築方法が確立したため目標は達成できた.
 
 
-最後に機体を球体カバーで覆うことにより機体の耐久性向上と共に安全化が図れたものが製作出来たと考えられる.
+最後に機体を球体カバーで覆うことにより機体の耐久性向上と共に安全化が図られたものが製作出来たと考えられる.
 
 \section{今後の課題}
 今後の課題を以下の項に示す.
+
 \subsection{解決すべき課題}
-機体の上昇に必要な推力を減らすことで機体の姿勢制御に使用できる推力を増やすためハードウェア全体を見直し,軽量化が必要である.
+機体の上昇に必要な推力を減らすことで機体の姿勢制御に使用できる推力を増やすため,機体,球体などハードウェア全体の軽量化が必要である.
 
 
-%各計算式の見直し
-現在制御に用いているプログラムにおいてセンサ情報の取得は各センサのサンプルプログラムの組み合わせて使用しているため,プラグラムの全体をうまく把握しきれていない.
-そのため,各サンプルプログラムをもう一度見直しセンサがどのような値をどの方向で取得しているかを再度確認する必要がある.
+現在制御に用いているプログラムにおいてセンサ情報の取得は各センサのサンプルプログラムの組み合わせて使用しているため,プログラムの細部が不透明である.
+そのため,各サンプルプログラム内で用いられている式を見直し,センサがどのような値をどの方向で取得しているかを再度確認する必要がある.
 また,それに伴い制御に用いている各計算式を改善する必要がある.
 
 
 \subsection{今後取り組んでみたいこと}
+
+現在ハードウェアの製作はレーザー加工機を用いることにより簡単に量産することが出来る.また,球体に入れた状態で離陸可能なプログラムがすでにある.
+そのため,プログラムの改良を行い球体マルチコプターを複数機用いて図\ref{fig:hen}のように編隊飛行に挑戦してみたい.
 
 \begin{figure}[htbp]
 	\begin{center}
@@ -681,8 +695,6 @@ z軸について,校正前のデータを図\ref{fig:acc-calib-be}に,校正後�
 		\label{fig:hen}
 	\end{center}
 \end{figure}
-
-現在ハードウェアの製作はレーザー加工機を用いることにより簡単に量産することが出来る.また,球体に入れた状態で離陸可能なプログラムがすでにある.そのため,プログラムの改良を行い球体マルチコプターを複数機用いて図\ref{fig:hen}のように編隊飛行に挑戦してみたい.
 
 
 \chapter*{謝辞}
@@ -693,13 +705,18 @@ z軸について,校正前のデータを図\ref{fig:acc-calib-be}に,校正後�
 特に分析においても論文の書き方においても論文を何度も読んでいただき,指導していただいた伊藤恒平教授に大変ご苦労をかけてしまいましたことにも心よりお詫び申し上げたいです.
 
 
-同級生のメンバーには論文の作成,修正にご協力いただき心より感謝しております.
+また,同研究室の佐々井翔也氏にはプログラム作成時に,戸澗健氏には機体のパーツ加工において助力いただきました.
 その他、助けていただいた多くの皆様に心から感謝しております.ありがとうございました.
 
+\begin{thebibliography}{8}
+	\bibitem{runge} 野波　健蔵, 西村　秀和, 平田　光男：MATLABによる制御系設計，東京電機大学出版局，pp. 49-50，1998
+	\bibitem{regulator} 川上　一郎:数値計算　[理工系の数学入門コース8]：株式会社　岩波出版，pp．156-157，1989
+\end{thebibliography}
 
+\chapter*{付録}
 \appendix
-\renewcommand{\thesection}{付録.\ \arabic{section}}
-\renewcommand{\thesubsection}{付録.\ \arabic{section}-\arabic{subsection}.}
+\renewcommand{\thesection}{A}
+\renewcommand{\thesubsection}{A.\ \arabic{section}}
 
 \section{レーザー加工機}
 機体,球体の製作にはレーザー加工機を使用するため,レーザー加工機について説明する.
@@ -759,17 +776,17 @@ CorelDRAW以外にもAutoCADなどで作成したdxf形式の2次元CADデータ
 \begin{table}[htbp]
 	\begin{center}
 		\caption{部品の個数}
-		\begin{tabular}{|l|l|} \hline
+		\begin{tabular}{|l|r|} \hline
 			部品名 & 個数 \\ \hline 
 			M2ナット & 4 \\ \hline
 			M2ネジ & 12 \\ \hline
 			M2ワッシャ　& 8　\\ \hline
-			M2プラスチィックワッシャ & 4\\ \hline
+			M2プラスチィックワッシャ & 4 \\ \hline
 			M3ナット & 8 \\ \hline
 			M3ネジ　& 4 \\ \hline
 			M2スペーサ h10 & 12 \\ \hline
 			M2スペーサ h20 & 4 \\ \hline	
-			M3スペーサ h10 & 10 \\ \hline
+			M3スペーサ h10 & 10 \\\hline
 　　		\end{tabular}
 		\label{table:kitai}
 	\end{center}
@@ -787,7 +804,7 @@ CorelDRAW以外にもAutoCADなどで作成したdxf形式の2次元CADデータ
 \end{figure}
 
 
-3.アームにモーターを取り付け,その後アームを十字に交差させはめ込む.
+3.アームにモーターを取り付けた後アームを十字に交差させはめ込む.
 
 
 4.M2スペーサ h10を8個とM2スペーサ h20を4個ずつ使用し,図\ref{fig:kitai2}のようにアームを動体で挟み込みスペーサで固定する.注意点として機体上面にねじ山が向くようにし,機体上面に穴から信号線を出すようにする.
@@ -833,6 +850,7 @@ CorelDRAW以外にもAutoCADなどで作成したdxf形式の2次元CADデータ
 	\end{center}
 \end{figure}
 
+\newpage
 
 8.最後に工程６までで作成したものにバッテリーホルダーを取り付けてバッテリーをバッテリーホルダー搭載し機体は完成.完成図を図\ref{fig:kitai}に示す.
 
@@ -844,9 +862,12 @@ CorelDRAW以外にもAutoCADなどで作成したdxf形式の2次元CADデータ
 	\end{center}
 \end{figure}
 
+\clearpage
+
 \section{ソースコード}
-実際に使用したソースコードを以下に示す.
+実際に使用したソースコードを以下に示す.また,別途Emlidが配布しているNavio2用サンプルプログラムからMPU9250.cpp,LSM9DS1.cpp,gpio.cpp,RGBled.cpp,PWM.cpp,Util.cppを用意する必要がある.
+
+\lstinputlisting[caption=メインプログラム,label=main]{main.cpp}
 
 
 \end{document}
-
