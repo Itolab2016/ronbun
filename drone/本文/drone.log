@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2016.7.7)  8 FEB 2017 14:58
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2016.7.7)  8 FEB 2017 15:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -515,12 +515,15 @@ File: image/thrust/thrust-test.jpg Graphic file (type bmp)
  <image/thrust/thrust-test.jpg>
 File: image/thrust/thrust-R.eps Graphic file (type eps)
 
-<image/thrust/thrust-R.eps> [16]
+<image/thrust/thrust-R.eps>
 File: image/thrust/thrust-R-kinji.eps Graphic file (type eps)
- <image/thrust/thrust-R-kinji.eps> [17]
-File: image/moment/moment-test.jpg Graphic file (type bmp)
+ <image/thrust/thrust-R-kinji.eps> [16]
 
-<image/moment/moment-test.jpg>
+LaTeX Warning: Text page 17 contains only floats.
+
+[17]
+File: image/moment/moment-test.jpg Graphic file (type bmp)
+ <image/moment/moment-test.jpg>
 File: image/moment/moment-time-R.eps Graphic file (type eps)
  <image/moment/moment-time-R.eps>
 File: image/moment/moment.eps Graphic file (type eps)
@@ -641,4 +644,4 @@ Here is how much of TeX's memory you used:
  85 hyphenation exceptions out of 8191
  34i,11n,49p,281b,1807s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on drone.dvi (45 pages, 108056 bytes).
+Output written on drone.dvi (45 pages, 108340 bytes).
