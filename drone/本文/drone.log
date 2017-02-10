@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2016.7.7)  8 FEB 2017 15:46
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2016.7.7)  10 FEB 2017 19:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -461,10 +461,10 @@ File: image/drone/drone-2.jpg Graphic file (type bmp)
 
 <image/drone/drone-2.jpg>
 File: image/drone/drone-3-1.jpg Graphic file (type bmp)
- <image/drone/drone-3-1.jpg> [6]
+ <image/drone/drone-3-1.jpg>
 File: image/drone/drone-3-2.jpg Graphic file (type bmp)
 
-<image/drone/drone-3-2.jpg>
+<image/drone/drone-3-2.jpg> [6]
 File: image/sphere/sphere-1.jpg Graphic file (type bmp)
  <image/sphere/sphere-1.jpg>
 File: image/sphere/kigumi.jpg Graphic file (type bmp)
@@ -484,40 +484,25 @@ File: image/drone/CD-data.jpg Graphic file (type bmp)
 File: image/drone/cut.jpg Graphic file (type bmp)
  <image/drone/cut.jpg> [9] [10]
 第3章
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 247.
-LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 247.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 247.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 247.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 247.
-
-LaTeX Warning: Citation `config' on page 11 undefined on input line 247.
-
 File: image/config.png Graphic file (type bmp)
 <image/config.png> [11
 
 ] [12]
-
-LaTeX Warning: Citation `pid' on page 13 undefined on input line 297.
-
 File: image/susiki/PID.png Graphic file (type bmp)
-<image/susiki/PID.png>
+ <image/susiki/PID.png>
 File: image/flight-test/PID-flight.eps Graphic file (type eps)
- <image/flight-test/PID-flight.eps> [13] [14]
+
+<image/flight-test/PID-flight.eps> [13] [14]
 File: image/3DCAD.jpg Graphic file (type bmp)
-
-<image/3DCAD.jpg> [15]
+ <image/3DCAD.jpg> [15]
 File: image/thrust/thrust-test.jpg Graphic file (type bmp)
- <image/thrust/thrust-test.jpg>
-File: image/thrust/thrust-R.eps Graphic file (type eps)
 
-<image/thrust/thrust-R.eps>
+<image/thrust/thrust-test.jpg>
+File: image/thrust/thrust-R.eps Graphic file (type eps)
+ <image/thrust/thrust-R.eps>
 File: image/thrust/thrust-R-kinji.eps Graphic file (type eps)
- <image/thrust/thrust-R-kinji.eps> [16]
+
+<image/thrust/thrust-R-kinji.eps> [16]
 
 LaTeX Warning: Text page 17 contains only floats.
 
@@ -528,14 +513,14 @@ File: image/moment/moment-time-R.eps Graphic file (type eps)
  <image/moment/moment-time-R.eps>
 File: image/moment/moment.eps Graphic file (type eps)
 
-<image/moment/moment.eps> [18]
+<image/moment/moment.eps>
 File: image/simulation/UVW.eps Graphic file (type eps)
  <image/simulation/UVW.eps>
 File: image/simulation/tpy.eps Graphic file (type eps)
 
 <image/simulation/tpy.eps>
 File: image/simulation/XYZ.eps Graphic file (type eps)
- <image/simulation/XYZ.eps> [19]
+ <image/simulation/XYZ.eps> [18] [19]
 
 LaTeX Warning: Text page 20 contains only floats.
 
@@ -544,11 +529,15 @@ File: image/calibration/acc-calib-be.eps Graphic file (type eps)
  <image/calibration/acc-calib-be.eps>
 File: image/calibration/acc-calib-af.eps Graphic file (type eps)
  <image/calibration/acc-calib-af.eps>
-[21]
 File: image/calibration/mag-calib-be.eps Graphic file (type eps)
- <image/calibration/mag-calib-be.eps>
+
+<image/calibration/mag-calib-be.eps>
 File: image/calibration/mag-calib-af.eps Graphic file (type eps)
  <image/calibration/mag-calib-af.eps>
+[21]
+
+LaTeX Warning: Text page 22 contains only floats.
+
 [22]
 File: image/susiki/regulator.png Graphic file (type bmp)
  <image/susiki/regulator.png> [23]
@@ -569,6 +558,16 @@ File: image/hen.png Graphic file (type bmp)
 ] [30
 
 ]
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 765.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 765.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 765.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 765.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 765.
 File: image/kitai/kitai1.jpg Graphic file (type bmp)
  <image/kitai/kitai1.jpg> [31]
 File: image/kitai/kitai2.jpg Graphic file (type bmp)
@@ -630,18 +629,14 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 4.805pt on input line 66.
  [36] [37]
-[38] [39] [40] [41] [42] [43] [44]) [45] (./drone.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+[38] [39] [40] [41] [42] [43] [44]) [45] (./drone.aux) ) 
 Here is how much of TeX's memory you used:
- 4631 strings out of 495129
- 58721 string characters out of 6182596
- 329306 words of memory out of 5000000
- 7812 multiletter control sequences out of 15000+600000
+ 4630 strings out of 495129
+ 58715 string characters out of 6182596
+ 330306 words of memory out of 5000000
+ 7811 multiletter control sequences out of 15000+600000
  54350 words of font info for 136 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
- 34i,11n,49p,281b,1807s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,11n,49p,284b,1805s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on drone.dvi (45 pages, 108380 bytes).
+Output written on drone.dvi (45 pages, 109044 bytes).
