@@ -1,31 +1,30 @@
 \contentsline {chapter}{\numberline {第1章}序論}{3}
 \contentsline {section}{\numberline {1.1}研究の背景}{3}
-\contentsline {section}{\numberline {1.2}研究の目的}{4}
+\contentsline {section}{\numberline {1.2}研究の目的}{3}
 \contentsline {section}{\numberline {1.3}論文の構成}{5}
-\contentsline {chapter}{\numberline {第2章}飲食店での接客について}{6}
-\contentsline {subsection}{\numberline {2.0.1}接客の業務内容}{6}
-\contentsline {subsection}{\numberline {2.0.2}研究として検討する接客の業務内容}{6}
-\contentsline {section}{\numberline {2.1}声とは}{6}
-\contentsline {subsection}{\numberline {2.1.1}フーリエ変換とは}{6}
-\contentsline {subsection}{\numberline {2.1.2}高速フーリエ変換とは}{8}
-\contentsline {section}{\numberline {2.2}各社音声認識用ソフトの調査}{8}
+\contentsline {chapter}{\numberline {第2章}飲食店での接客について}{7}
+\contentsline {subsection}{\numberline {2.0.1}接客の業務内容}{7}
+\contentsline {subsection}{\numberline {2.0.2}研究として検討する接客の業務内容}{7}
+\contentsline {section}{\numberline {2.1}声とは}{7}
+\contentsline {subsection}{\numberline {2.1.1}フーリエ変換とは}{9}
+\contentsline {subsection}{\numberline {2.1.2}高速フーリエ変換とは}{9}
+\contentsline {section}{\numberline {2.2}各社音声認識用ソフトの調査}{10}
 \contentsline {section}{\numberline {2.3}音声認識とは}{11}
 \contentsline {section}{\numberline {2.4}各社音声合成用ソフトの調査}{12}
-\contentsline {section}{\numberline {2.5}音声合成とは}{14}
-\contentsline {chapter}{\numberline {第3章}検討用のシステムについて}{15}
-\contentsline {subsection}{\numberline {3.0.1}実験で使用するマイク}{15}
-\contentsline {subsection}{\numberline {3.0.2}Julius}{16}
-\contentsline {subsubsection}{Juliusの仕組み}{16}
-\contentsline {subsection}{\numberline {3.0.3}Open-JTalk}{17}
-\contentsline {chapter}{\numberline {第4章}音声認識実験}{18}
-\contentsline {section}{\numberline {4.1}実験目的}{18}
-\contentsline {subsection}{\numberline {4.1.1}実験方法}{18}
-\contentsline {subsection}{\numberline {4.1.2}実験結果}{18}
-\contentsline {subsection}{\numberline {4.1.3}Juliusを用いて行った実験結果}{18}
-\contentsline {subsection}{\numberline {4.1.4}考察}{19}
-\contentsline {chapter}{\numberline {第5章}結言}{30}
-\contentsline {section}{\numberline {5.1}本研究のまとめ}{30}
-\contentsline {section}{\numberline {5.2}今後の課題}{30}
-\contentsline {section}{\numberline {.1}今回使用したもの}{30}
-\contentsline {chapter}{参考文献}{33}
-\contentsline {chapter}{謝辞}{34}
+\contentsline {section}{\numberline {2.5}音声合成とは}{13}
+\contentsline {chapter}{\numberline {第3章}検討用のシステムについて}{18}
+\contentsline {subsection}{\numberline {3.0.1}実験で使用するマイク}{19}
+\contentsline {subsection}{\numberline {3.0.2}Julius}{19}
+\contentsline {subsubsection}{Juliusの仕組み}{20}
+\contentsline {subsection}{\numberline {3.0.3}Open-JTalk}{20}
+\contentsline {chapter}{\numberline {第4章}音声認識実験}{21}
+\contentsline {section}{\numberline {4.1}実験目的}{21}
+\contentsline {subsection}{\numberline {4.1.1}実験方法}{21}
+\contentsline {subsection}{\numberline {4.1.2}実験結果}{21}
+\contentsline {subsection}{\numberline {4.1.3}Juliusを用いて行った実験結果}{21}
+\contentsline {subsection}{\numberline {4.1.4}考察}{22}
+\contentsline {chapter}{\numberline {第5章}結言}{34}
+\contentsline {section}{\numberline {5.1}本研究のまとめ}{34}
+\contentsline {section}{\numberline {5.2}今後の課題}{34}
+\contentsline {chapter}{参考文献}{35}
+\contentsline {chapter}{謝辞}{36}
