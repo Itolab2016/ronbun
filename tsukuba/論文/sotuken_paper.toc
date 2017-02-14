@@ -17,64 +17,66 @@
 \contentsline {subsection}{\numberline {3.1.2}ロボットの外観}{9}
 \contentsline {subsection}{\numberline {3.1.3}システムの構成}{9}
 \contentsline {section}{\numberline {3.2}機械設計}{10}
-\contentsline {subsection}{\numberline {3.2.1}ハードウェア開発の狙い}{10}
+\contentsline {subsection}{\numberline {3.2.1}ハードウェア開発の狙い}{11}
 \contentsline {subsection}{\numberline {3.2.2}サスペンションの概要}{11}
-\contentsline {subsection}{\numberline {3.2.3}メカの概要}{12}
+\contentsline {subsection}{\numberline {3.2.3}メカの概要}{13}
 \contentsline {subsection}{\numberline {3.2.4}サスペンションの配置}{13}
-\contentsline {subsection}{\numberline {3.2.5}ばねのストロークの算出}{13}
+\contentsline {subsection}{\numberline {3.2.5}ばねのストロークの算出}{14}
 \contentsline {subsection}{\numberline {3.2.6}ばね定数の算出}{15}
-\contentsline {subsubsection}{点Aでの力学計算}{16}
-\contentsline {subsubsection}{点Bでの力学計算}{16}
-\contentsline {subsubsection}{点Cでの力学計算}{16}
+\contentsline {subsubsection}{点Aでの力学計算}{17}
+\contentsline {subsubsection}{点Bでの力学計算}{17}
+\contentsline {subsubsection}{点Cでの力学計算}{17}
 \contentsline {subsection}{\numberline {3.2.7}使用したばね定数}{18}
 \contentsline {subsection}{\numberline {3.2.8}低重心化の実現}{18}
-\contentsline {subsection}{\numberline {3.2.9}超堤・超壕能力}{19}
-\contentsline {subsection}{\numberline {3.2.10}電気設計}{20}
-\contentsline {section}{\numberline {3.3}ソフト}{20}
-\contentsline {subsection}{\numberline {3.3.1}使用ソフトウェア}{20}
-\contentsline {subsection}{\numberline {3.3.2}使用したライブラリ}{20}
-\contentsline {chapter}{\numberline {第4章}単眼カメラによる三次元測量}{23}
-\contentsline {section}{\numberline {4.1}カメラの幾何学}{23}
-\contentsline {section}{\numberline {4.2}三角測量の原理}{23}
-\contentsline {section}{\numberline {4.3}単眼カメラによる三角測量}{24}
-\contentsline {section}{\numberline {4.4}射影変換行列の算出}{25}
-\contentsline {subsection}{\numberline {4.4.1}内部パラメータ行列の算出}{25}
-\contentsline {subsection}{\numberline {4.4.2}外部パラメータ行列の算出}{25}
-\contentsline {subsection}{\numberline {4.4.3}特徴点抽出}{26}
-\contentsline {subsection}{\numberline {4.4.4}特徴点の対応付け}{26}
-\contentsline {subsection}{\numberline {4.4.5}射影変換行列の算出}{28}
-\contentsline {section}{\numberline {4.5}移動量の取得}{28}
-\contentsline {subsection}{\numberline {4.5.1}地平直行座標への変換}{28}
-\contentsline {chapter}{\numberline {第5章}マップ生成}{30}
-\contentsline {section}{\numberline {5.1}マップ生成環境}{30}
-\contentsline {section}{\numberline {5.2}マップ生成}{31}
-\contentsline {section}{\numberline {5.3}移動量のばらつき}{31}
-\contentsline {chapter}{\numberline {第6章}結言}{33}
-\contentsline {section}{\numberline {6.1}本研究のまとめ}{33}
-\contentsline {section}{\numberline {6.2}今後の課題}{33}
-\contentsline {subsection}{\numberline {6.2.1}自己位置推定}{33}
-\contentsline {subsection}{\numberline {6.2.2}タイヤ素材検討}{34}
-\contentsline {subsection}{\numberline {6.2.3}屋内対応}{34}
-\contentsline {subsection}{\numberline {6.2.4}全天候性の付与}{34}
-\contentsline {chapter}{参考文献}{35}
-\contentsline {chapter}{謝辞}{36}
-\contentsline {chapter}{付録}{37}
-\contentsline {section}{\numberline {.1}OpenCVのインストール}{37}
-\contentsline {subsection}{\numberline {.1.1}必要なファイルをインストールする}{37}
-\contentsline {subsection}{\numberline {.1.2}GitHubからOpenCVをクローンする}{38}
-\contentsline {subsection}{\numberline {.1.3}クローンしたOpenCVに移動しビルド用のフォルダを作成する}{38}
-\contentsline {subsection}{\numberline {.1.4}CMame-guiを実行する}{38}
-\contentsline {subsection}{\numberline {.1.5}CMake-guiを以下の手順で操作する}{38}
-\contentsline {subsection}{\numberline {.1.6}OpenCVをコンパイル,インストールする}{39}
-\contentsline {subsection}{\numberline {.1.7}共有ライブラリの依存情報を更新して終了}{39}
-\contentsline {section}{\numberline {.2}ロボットの起動方法}{39}
-\contentsline {subsection}{\numberline {.2.1}起動}{39}
-\contentsline {subsection}{\numberline {.2.2}無線通信}{39}
-\contentsline {section}{\numberline {.3}機械の整備}{40}
-\contentsline {subsection}{\numberline {.3.1}必要な工具}{40}
-\contentsline {subsection}{\numberline {.3.2}分解方法}{40}
-\contentsline {subsubsection}{ポールとアクリル板の取り外し}{41}
-\contentsline {subsubsection}{DモジュールとCモジュールの分解}{41}
-\contentsline {subsubsection}{ポール分解}{41}
-\contentsline {subsubsection}{センサの取り外し}{41}
-\contentsline {subsubsection}{箱つめ}{42}
+\contentsline {subsection}{\numberline {3.2.9}超堤・超壕能力}{20}
+\contentsline {subsection}{\numberline {3.2.10}電気設計}{21}
+\contentsline {section}{\numberline {3.3}ソフト}{22}
+\contentsline {subsection}{\numberline {3.3.1}使用ソフトウェア}{22}
+\contentsline {subsection}{\numberline {3.3.2}使用したライブラリ}{23}
+\contentsline {chapter}{\numberline {第4章}単眼カメラによる三次元測量}{25}
+\contentsline {section}{\numberline {4.1}カメラの幾何学}{25}
+\contentsline {section}{\numberline {4.2}三角測量の原理}{26}
+\contentsline {section}{\numberline {4.3}単眼カメラによる三角測量}{27}
+\contentsline {section}{\numberline {4.4}射影変換行列の算出}{27}
+\contentsline {subsection}{\numberline {4.4.1}内部パラメータ行列の算出}{27}
+\contentsline {subsection}{\numberline {4.4.2}外部パラメータ行列の算出}{28}
+\contentsline {subsection}{\numberline {4.4.3}特徴点抽出}{28}
+\contentsline {subsection}{\numberline {4.4.4}特徴点の対応付け}{29}
+\contentsline {subsection}{\numberline {4.4.5}射影変換行列の算出}{30}
+\contentsline {section}{\numberline {4.5}移動量の取得}{30}
+\contentsline {subsection}{\numberline {4.5.1}地平直行座標への変換}{30}
+\contentsline {chapter}{\numberline {第5章}マップ生成}{33}
+\contentsline {section}{\numberline {5.1}マップ生成環境}{33}
+\contentsline {section}{\numberline {5.2}マップ生成}{34}
+\contentsline {section}{\numberline {5.3}移動量のばらつき}{34}
+\contentsline {chapter}{\numberline {第6章}結言}{36}
+\contentsline {section}{\numberline {6.1}本研究のまとめ}{36}
+\contentsline {section}{\numberline {6.2}今後の課題}{36}
+\contentsline {subsection}{\numberline {6.2.1}自己位置推定}{36}
+\contentsline {subsection}{\numberline {6.2.2}タイヤ素材検討}{37}
+\contentsline {subsection}{\numberline {6.2.3}屋内対応}{37}
+\contentsline {subsection}{\numberline {6.2.4}全天候性の付与}{37}
+\contentsline {chapter}{参考文献}{38}
+\contentsline {chapter}{謝辞}{39}
+\contentsline {section}{\numberline {A}OpenCVのインストール}{40}
+\contentsline {subsection}{\numberline {A.1}必要なファイルをインストールする}{40}
+\contentsline {subsection}{\numberline {A.2}GitHubからOpenCVをクローンする}{41}
+\contentsline {subsection}{\numberline {A.3}クローンしたOpenCVに移動しビルド用のフォルダを作成する}{41}
+\contentsline {subsection}{\numberline {A.4}CMame-guiを実行する}{41}
+\contentsline {subsection}{\numberline {A.5}CMake-guiを以下の手順で操作する}{41}
+\contentsline {subsection}{\numberline {A.6}OpenCVをコンパイル,インストールする}{42}
+\contentsline {subsection}{\numberline {A.7}共有ライブラリの依存情報を更新して終了}{42}
+\contentsline {section}{\numberline {B}ロボットの起動方法}{43}
+\contentsline {subsection}{\numberline {B.1}起動}{43}
+\contentsline {subsection}{\numberline {B.2}無線通信}{43}
+\contentsline {subsection}{\numberline {B.3}Dualshock3のBluetooth接続}{44}
+\contentsline {subsection}{\numberline {B.4}プログラムの実行}{44}
+\contentsline {section}{\numberline {C}機械の整備}{45}
+\contentsline {subsection}{\numberline {C.1}必要な工具}{45}
+\contentsline {subsection}{\numberline {C.2}分解方法}{45}
+\contentsline {subsection}{\numberline {C.3}ポールとアクリル板の取り外し}{45}
+\contentsline {subsection}{\numberline {C.4}DモジュールとCモジュールの分解}{46}
+\contentsline {subsection}{\numberline {C.5}ポール分解}{49}
+\contentsline {subsection}{\numberline {C.6}センサの取り外し}{50}
+\contentsline {subsection}{\numberline {C.7}箱つめ}{51}
+\contentsline {section}{\numberline {D}ソースコード}{52}
