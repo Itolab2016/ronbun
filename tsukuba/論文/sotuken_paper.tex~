@@ -1,6 +1,16 @@
 \documentclass[12pt,oneside]{sotsuken_paper}
+\usepackage{listings}
+\renewcommand{\lstlistingname}{コード}
+\lstset{language=C,%
+        basicstyle=\footnotesize,%
+        commentstyle=\textit,%
+        classoffset=1,%
+        keywordstyle=\bfseries,%
+	frame=tRBl,framesep=5pt,%
+	showstringspaces=false,%
+        numbers=left,stepnumber=1,numberstyle=\footnotesize%
+	}%
 
-% タイトル
 \title{超低重心6輪独立懸架ローバーの画像情報による自律走行}
 \author{佐々井翔也・戸澗健・畠中和久}
 
@@ -34,7 +44,7 @@
 \subsection{三角測量とカメラの移動量}
 ローカルマップを生成するために周囲との位置関係を求める必要がある.
 カメラでは対象物を写した2枚の画像とそれらの画像間距離から三角測量の原理を用いることで対象物からカメラまでの距離を計測することができる.
-この原理を用いるためには,カメラの姿勢と移動量が既知の値の必要があり,それらを求めなければならない.
+この原理を用いるためには,カメラの姿勢と移動量を求めなければならない.
 
 
 
@@ -78,7 +88,7 @@
 ロボットは環境内にもともと存在する街路樹や縁石柵あるいは建物を走行のガイドとして用いるのは自由であるが,ロボットの走行の為に新しくガイドとなるものを設置することや,環境を改変することは許されない. 
 
 \subsection{ロボットに必要な機能} 
-つくばチャレンジは人間が暮らす環境で行われる.人間は多少の凸凹や路面のひび割れ,フレーチングの溝などの障害は問題なく歩行できる.だが,ロボットは人間のようにフレキシブルではない,段差で転んだり溝にハマることが大いに考えられる.よって走行の際に必要なロボットの機能として悪路が走行できる,溝に嵌っても自力で這い上がることができる等路面走行に対してフレキシブルに対応することが求められる. 
+つくばチャレンジは人間が暮らす環境で行われる.人間は多少の凸凹や路面のひび割れ,グレーチングの溝などの障害は問題なく歩行できる.だが,ロボットは人間のようにフレキシブルではない,段差で転んだり溝にハマることが大いに考えられる.よって走行の際に必要なロボットの機能として悪路が走行できる,溝に嵌っても自力で這い上がることができる等路面走行に対してフレキシブルに対応することが求められる. 
 
 
 
@@ -148,8 +158,11 @@
  \end{center} 
 \end{figure} 
 
-\section{機械設計} 
 
+
+
+\section{機械設計}
+\newpage 
 \subsection{ハードウェア開発の狙い} 
 サスペンションを内蔵するハードウェアを制作する.つくばチャレンジ2016では走破性向上を目的として低重心を目標としているため,ハードウェアの全高を小さく設計することでその目標に尽くす.また今回のロボットの超低重心を実現するための数値を表\ref{tab:joken} に示す 
 
@@ -167,7 +180,7 @@
 \end{table} 
 
 \subsection{サスペンションの概要} 
-製作するロボットはある程度の段差を超えるための上下できる機構が必要である.よって近年最も身近な上下機構を持つ機械として,車に利用されるサスペンションを参考にした.図\ref{fig:doublewish}に示すダブルウィッシュボーン式サスペンションは上下のアームとショックアブソーバ,ばねからなるもので,レーシングカーに多く使用されている.図\ref{fig:strat}に示すストラット式サスペンションと呼ばれるものはショックアブソーバとサスペンションを一体化したものをアッパーアームにしたもので,近年の車やミニ四駆などに使用されている.両方とも独立懸架で安定性や利便性に置いてはストラット式が大きく優るが,今回はコンパクトに構成することも必要なため,もともと上下アームで囲われているスペースを活かせることができそうなダブルウィッシュボーン式サスペンションを基礎として開発する. 
+製作するロボットはある程度の段差を超えるための上下できる機構が必要である.よって近年最も身近な上下機構を持つ機械として,車に利用されるサスペンションを参考にした.図\ref{fig:doublewish}に示すダブルウィッシュボーン式サスペンションは上下のアームとショックアブソーバ,ばねからなるもので,レーシングカーに多く使用されている.図\ref{fig:strat}に示すストラット式サスペンションと呼ばれるものはショックアブソーバとサスペンションを一体化したものをアッパーアームにしたもので,近年の車やミニ四駆などに使用されている.両方とも独立懸架で安定性や利便性に置いてはストラット式が大きく優るが,今回はコンパクトに構成することも必要なため,もともと上下アームで囲われているスペースを活かせるダブルウィッシュボーン式サスペンションを基礎として開発する. 
 
 \begin{figure}[htp] 
  \begin{center} 
@@ -191,7 +204,7 @@
 
 \begin{figure}[htp] 
  \begin{center} 
-  \includegraphics[width=100mm]{img/hard/fig3.png} 
+  \includegraphics[width=100mm]{img/hard/sekkeizu.png} 
  　\caption{6輪ローバ} 
   \label{fig:rokurin}%ここに文章中で使用する名前を指定する 
  \end{center} 
@@ -214,7 +227,7 @@
 図\ref{fig:bix}に平行リンクの簡易図を示す.また平行リンクが移動した際の図を図\ref{fig:rink}示す.これらの数値よりサスペンションのストロークの長さを求める.サスペンションの全体長さは斜辺に設置するため余弦定理より 
 \begin{eqnarray} 
    AC = b^2 & = & a_1^2+c^2-2a_1\cdot c\cdot cos\angle B \\ 
-  b & = & \sqrt{38^2+60^2-2\cdot 38\cdot 60\cdot cos90} \\ 
+  b & = & \sqrt{38^2+60^2-2\cdot 38\cdot 60\cdot cos90}^\circ \\ 
     & = &71.022 ≒　71.0[mm] 
 \end{eqnarray} 
 となる.また今回は30[mm]程度の障害物を乗り越える想定しているため,この平行リンクが点A,Bを回転軸として点C,Dが30[mm]上昇した際の平行四辺形の斜辺AC'を求める必要がある.平行リンクが移動してできるΔAC'Eの斜辺AC'はΔAD'Eの辺d'に等しい.よってAC'の式は余弦定理と代入法より 
@@ -225,10 +238,10 @@
 \end{eqnarray} 
 となる.またΔAD'Eの\[\angle A\]は30[mm]上がった際に30[deg]になることから,斜辺AC'は 
 \begin{eqnarray} 
-	d' &=& \sqrt{30^2+60^2-2\cdot 30\cdot 60\cdot cos\angle 60} \\ 
+	d' &=& \sqrt{30^2+60^2-2\cdot 30\cdot 60\cdot cos\angle 60^\circ} \\ 
 	d'&=&30\sqrt{3}=c' \\ 
 	AC'&= &e_2  =  \sqrt{c'^2+a_3^2-2\cdot c'\cdot a_3\cdot cos\angle E}  \\ 
-	AC' &=& \sqrt{(30\sqrt{3})^2+8^2-2\cdot 30\sqrt{3}\cdot 8\cdot cos90} \\ 
+	AC' &=& \sqrt{(30\sqrt{3})^2+8^2-2\cdot 30\sqrt{3}\cdot 8\cdot cos90^\circ} \\ 
 	& = & 52.574 ≒ 52.6 [mm] 
 \end{eqnarray} 
 となる.　\\ 
@@ -317,7 +330,7 @@ FACは式(14)と式(18)より
 \end{eqnarray} 
 となる.よってばね定数は1.0[N/mm]の物を採用する. 
 \subsection{使用したばね定数} 
-上記でばね定数を求めたが,実際に使用した際に車体が沈むのが確認された.想定していた15kgを超えたせいだと考えられる.車体を沈ませないこと,また段差を超えるため車体を浮かせるために2,3N/mmの物を用意し,使用した.結果的に2N/mmは沈まなかったがばねが反発しなかったため,3N/mmのばねを使用することとなった. 
+上記でばね定数を求めたが,実際に使用した際に車体が沈むのが確認された.想定していた15kgを超えたせいだと考えられる.車体を沈ませないこと,また段差を超えるため車体を浮かせるために2N/mmと3N/mmの物を用意し,使用した.結果的に2N/mmは沈まなかったがばねが反発しなかったため,3N/mmのばねを使用することとなった. 
 
 \begin{figure}[htp] 
  \begin{center} 
@@ -359,14 +372,53 @@ FACは式(14)と式(18)より
 
 
 \subsection{超堤・超壕能力} 
-今回作成したロボットの性能を調査するため,超堤・超壕実験を行った結果,超堤:110[mm],超壕220[mm]が得られた. 
+今回作成したロボットの性能を調査するため,超堤・超壕実験を行った結果,超堤:110[mm],超壕220[mm]が得られた.図を\ref{fig:tyotei}と\ref{fig:tyogo}に示す.
+\begin{table}[h] 
+ 　\begin{center} 
+    \caption{実験条件} 
+    \small 
+  \scalebox{0.85}{ 
+  \begin{tabular}{|c|c|c|} \hline 
+    条件 &　超堤 & 超壕 \\ \hline 
+    実験速度 & 4m/h & 4m/h \\ \hline 
+     助走 & 300mm & 0mm \\ \hline
+     使用場所 & 木製の台 & 学校内の段差　\\ \hline 
+     使用タイヤ直径 & 190mm & 190mm \\ \hline 
+    
+  \end{tabular} 
+  } 
+　   \label{tab:op} 
+  \end{center} 
+\end{table}  
+
+
+\begin{figure}[htp] 
+ \begin{center} 
+  \includegraphics[width=100mm]{img/hard/tyoteii.png} 
+ 　\caption{超堤実験図} 
+  \label{fig:tyotei}%ここに文章中で使用する名前を指定する 
+ \end{center} 
+\end{figure} 
+
+\begin{figure}[htp] 
+ \begin{center} 
+  \includegraphics[width=100mm]{img/hard/tyogouu.png} 
+ 　\caption{超壕実験図} 
+  \label{fig:tyogo}%ここに文章中で使用する名前を指定する 
+ \end{center} 
+\end{figure} 
+
+
+
+
+
 
 \subsection{電気設計} 
 ロボットに搭載したモータドライバの回路図を図\ref{fig:denkikairo}に示し,使用した部品を表\ref{tab:denkibuhin}に示す.モータドライバは各Dモジュールに1つづつの設置とした. 
 
 \begin{figure}[htp] 
  \begin{center} 
-  \includegraphics[width=150mm]{img/hard/denkikairo.png} 
+  \includegraphics[width=140mm]{img/hard/kairozu.png} 
  　\caption{モータドライバ} 
   \label{fig:denkikairo}%ここに文章中で使用する名前を指定する 
  \end{center} 
@@ -376,20 +428,20 @@ FACは式(14)と式(18)より
 \begin{table}[htp] 
  　\begin{center} 
     \caption{使用した電気部品} 
-  \begin{tabular}{|c|c|c|c|} \hline 
-品名 & 型番 & メーカ & 単価 \\  \hline 
-自作MD板  &\\ \hline 
-トロイダルコイル 330μH9A  & 秋月電子\\ \hline 
-EIコネクタ4ピンオス  &\\ \hline 
-EIコネクタ2ピンオス  &  \\ \hline 
-FET & \\ \hline 
-カーボン抵抗 1/4Ｗ 47kΩ （100本入） & R-25473 \\ \hline 
-カーボン抵抗 1/4Ｗ 47Ω （100本入） &  R-25470\\ \hline 
-カーボン抵抗 1/4Ｗ 10kΩ （100本入） & R-25103 \\ \hline 
-セラミックコンデンサ103 &  \\ \hline 
-セラミックコンデンサ105 &  \\ \hline 
-発光ダイオード &  \\ \hline 
-RX220マイコンボード & K-08769 \\ \hline 
+  \begin{tabular}{|c|c|c|} \hline 
+品名 & 型番 & メーカ   \\  \hline 
+自作MD板  & 　&\\ \hline 
+トロイダルコイル 330μH9A  &  &秋月電子\\ \hline 
+EIコネクタ4ピンオス  & 171825-4　& タイコエレクトロニクス\\ \hline 
+EIコネクタ2ピンオス  & 171825-2 & タイコエレクトロニクス \\ \hline 
+FET(電界効果トランジスタ) & EKI04047 & 秋月電子\\ \hline 
+カーボン抵抗 1/4Ｗ 47kΩ （100本入） & R-25473 & 秋月電子\\ \hline 
+カーボン抵抗 1/4Ｗ 47Ω （100本入） &  R-25470 &　秋月電子\\ \hline 
+カーボン抵抗 1/4Ｗ 10kΩ （100本入） & R-25103 &　秋月電子\\ \hline 
+セラミックコンデンサ103 & RPEF11H104Z2P1A01B &　秋月電子 \\ \hline 
+セラミックコンデンサ105 & RDEC71E106K2K1C03B & 秋月電子 \\ \hline 
+発光ダイオード &  &\\ \hline 
+RX220マイコンボード & K-08769 & 秋月電子\\ \hline 
   \end{tabular} 
 　   \label{tab:denkibuhin} 
   \end{center} 
@@ -465,7 +517,7 @@ RX220マイコンボード & K-08769 \\ \hline
  \begin{center}
   \includegraphics[width=120mm]{img/soft/sankaku2.png}
  　\caption{三角測量の原理}
-  \label{fig:sankaku2}%ここに文章中で使用する名前を指定する
+  \label{fig:sankaku1}%ここに文章中で使用する名前を指定する
  \end{center}
 \end{figure}
 
@@ -477,7 +529,7 @@ RX220マイコンボード & K-08769 \\ \hline
  \begin{center}
   \includegraphics[width=120mm]{img/soft/sankaku1.png}
  　\caption{単眼カメラによる三角測量}
-  \label{fig:sankaku1}%ここに文章中で使用する名前を指定する
+  \label{fig:sankaku2}%ここに文章中で使用する名前を指定する
  \end{center}
 \end{figure}
 
@@ -651,17 +703,15 @@ OpenCVでは外部パラメータ行列を求めることができる関数が�
 \chapter*{謝辞}
 \addcontentsline{toc}{chapter}{謝辞}
 本論文作成にあたりテーマの決定,研究の考え方,方法のまとめ方など全てにおいて長期にわたって厳しくも熱意のあるご指導,ご鞭撻していただいた,伊藤恒平教授に厚く御礼申し上げます.
+また,休日も我々の研究にご指導していただき大変ご苦労をかけてしまいましたことを心よりお詫び申し上げます.
 
-
-特に分析においても論文の書き方においても論文を何度も読んでいただき,指導していただいた伊藤恒平教授に大変ご苦労をかけてしまいましたことにも心よりお詫び申し上げたいです.
-
-
-同級生のメンバーには論文の作成,修正にご協力いただき心より感謝しております.
+同研究室の北山　天斗氏には回路製作、剱崎　健太郎氏にはパーツ加工、澤田　茂人氏には大会会場までの荷物手配などにご協力いただき深く御礼申し上げます.
 その他,助けていただいた多くの皆様に心から感謝しております.ありがとうございました.
 %\input{test.tex}
+
 \chapter*{付録}
-\addcontentsline{toc}{chapter}{付録}
-\appendix{付録}%%%%%%%%この先付録%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\thesection{\Alph{section}}
+\appendix%%%%%%%%この先付録%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{OpenCVのインストール}
 今回はUbuntuでOpenCVをインストールする手順を示す.基本的に以下のコマンドをcopy and pasteすればインストールが完了する.
 \subsection{必要なファイルをインストールする}
@@ -765,9 +815,30 @@ sudo make install
 
 sudo ldconfig
 
-
+\newpage
 \input{start.tex}
-
+\input{kikai_huroku.tex}
+\newpage
+\section{ソースコード}
+\lstinputlisting[caption=つくばチャレンジ２０１６,label=tsukuba]{main.cpp}
+\lstinputlisting[caption=回避,label=tsukuba]{avoid.h}
+\lstinputlisting[caption=回避,label=tsukuba]{avoid.cpp}
+\lstinputlisting[caption=三次元復元,label=tsukuba]{camera.h}
+\lstinputlisting[caption=三次元復元,label=tsukuba]{camera.cpp}
+\lstinputlisting[caption=DUALSHOCK3,label=tsukuba]{joystick.h}
+\lstinputlisting[caption=DUALSHOCK3,label=tsukuba]{joystick.cpp}
+\lstinputlisting[caption=モーター,label=tsukuba]{motor.h}
+\lstinputlisting[caption=モーター,label=tsukuba]{motor.cpp}
+\lstinputlisting[caption=比例航法,label=tsukuba]{navigation.h}
+\lstinputlisting[caption=比例航法,label=tsukuba]{navigation.cpp}
+\lstinputlisting[caption=タイマー,label=tsukuba]{tsukuba_time.h}
+\lstinputlisting[caption=タイマー,label=tsukuba]{tsukuba_time.cpp}
+\lstinputlisting[caption=測域センサー,label=tsukuba]{tsukuba_urg.h}
+\lstinputlisting[caption=測域センサー,label=tsukuba]{tsukuba_urg.cpp}
+\lstinputlisting[caption=モーションセンサー,label=tsukuba]{tsukuba_tkk.h}
+\lstinputlisting[caption=モーションセンサー,label=tsukuba]{tsukuba_tkk.cpp}
+\lstinputlisting[caption=定義,label=tsukuba]{tsukuba_def.h}
+\lstinputlisting[caption=マップ生成,label=tsukuba]{match.cpp}
 \end{document}
 
 
